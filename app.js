@@ -25,6 +25,7 @@ app.configure('development', function(){
 });
 
 app.get('/', routes.index);
+app.get('/api/:bird', routes.bird_api);
 
 http.createServer(app).listen(3000);
 
