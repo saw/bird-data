@@ -1,9 +1,8 @@
 var jsdom = require("jsdom");
 
-var cache = {};
+var cache = {}, app;
 
-
-exports.index = function(req, res){
+var index = function(req, res){
     
     var bird = req.params.bird;
     console.log(bird);
@@ -19,7 +18,7 @@ exports.index = function(req, res){
 
               var out = '';
               var text = window.$('#mw-content-text p').each(function(index, el){
-                 out += window.$(el).html().replace(/\"\/wiki\//g, '="http://en.wikipedia.org/wiki/') + '\n'; 
+                 out += window.$(el).html().replace(/\"\/wiki\//g, '"http://en.wikipedia.org/wiki/') + '\n'; 
               });
               res.set('Content-Type', 'text/plain');
               var outData = {
@@ -30,8 +29,11 @@ exports.index = function(req, res){
               cache[bird] = outData;
           }
         );
-    }
-
-  
+    } 
 };
 
+module.exports = function(myapp) {
+    app = myapp;
+    
+    app.get('/api/:bird', index);
+}

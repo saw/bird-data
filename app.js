@@ -4,7 +4,6 @@
  */
 
 var express = require('express')
-  , routes = require('./routes')
   , hbs = require('express-hbs')
   , http = require('http');
 
@@ -26,8 +25,10 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-app.get('/', routes.index);
-app.get('/api/:bird', routes.bird_api);
+var routes = require('./routes')(app);
+
+// app.get('/', routes.index);
+// app.get('/api/:bird', routes.bird_api);
 
 http.createServer(app).listen(1337);
 

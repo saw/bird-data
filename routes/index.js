@@ -1,10 +1,16 @@
+"use strict";
+var fs = require('fs');
 
-/*
- * GET home page.
- */
 
-exports.index = function(req, res){
-  res.render('index', { title: 'Express' });
-};
+module.exports = function(app) {
 
-exports.bird_api = require('./bird_api.js').index;
+    var dir = fs.readdirSync(__dirname);
+
+    dir.forEach(function(file) {
+        if(file.match(/.+\-route\.js/)) {
+            require(__dirname + '/' +file)(app);
+        }
+    })
+
+    
+}
