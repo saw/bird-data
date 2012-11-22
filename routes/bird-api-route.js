@@ -5,8 +5,7 @@ var cache = {}, app;
 var index = function(req, res){
     
     var bird = req.params.bird;
-    console.log(bird);
-    console.log("http://en.wikipedia.org/wiki/" + bird);
+
     
     if(cache[bird]) {
         res.end(JSON.stringify(cache[bird]));
