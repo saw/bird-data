@@ -5,7 +5,6 @@ var cache = {}, app;
 var index = function(req, res){
     
     var bird = req.params.bird;
-
     
     if(cache[bird]) {
         res.end(JSON.stringify(cache[bird]));
