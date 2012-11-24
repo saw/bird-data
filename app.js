@@ -6,8 +6,12 @@
 var express = require('express')
   , hbs = require('express-hbs')
   , http = require('http');
+  
+
 
 var app = express();
+
+var birdList = require(__dirname + '/models/bird-list.js').birdList;
 
 app.configure(function(){
   app.set('views', __dirname + '/views');
@@ -18,12 +22,19 @@ app.configure(function(){
   app.use(express.static(__dirname + '/public'));
   app.use(express.bodyParser());
   app.use(express.methodOverride());
+  app.use(function(req, res, next) {
+      
+      req.birdList = birdList;
+      next();
+  });
   app.use(app.router);
+
 });
 
 app.configure('development', function(){
   app.use(express.errorHandler());
 });
+
 
 var routes = require('./routes')(app);
 

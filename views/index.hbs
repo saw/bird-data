@@ -1,7 +1,6 @@
 <h1>A guide to Birds!</h1>
-<ul>
-	<li><a href="/bird/California_Condor">California Condor</a></li>
-	<li><a href="/bird/Ruffed_Grouse">Ruffed Grouse</a></li>
-	<li><a href="/bird/fail">fail</a></li>
-	<li><a href=""></a></li>
-</ul>
+<ol start="0">
+	{{#birds}}
+	<li><a href="{{path}}">{{name}} ({{latin}})</a></li>
+	{{/birds}}
+</ol>
