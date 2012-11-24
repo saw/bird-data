@@ -15,7 +15,7 @@ function getArticle(name) {
         }
         var out = cache[name];
         process.nextTick(function(){
-            promise.resolve(out);
+            promise.resolve(Object.create(out));
         });
         return promise;
     }else {
@@ -42,8 +42,9 @@ function getArticle(name) {
                   content:out
               };
               
-              promise.resolve(outData);
               cache[name] = outData;
+              promise.resolve(Object.create(outData));
+              
           }
         );
         return promise;
