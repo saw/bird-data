@@ -6,6 +6,7 @@
     "start": "node app"
   },
   "dependencies": {
+    "async":"*",
     "express": "*",
     "jsdom":"*",
     "express-hbs":"*",
