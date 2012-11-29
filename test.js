@@ -15,18 +15,17 @@
 // }).on('error', function(e) {
 //   console.log("Got error: " + e.message);
 // });
-var jsdom = require("jsdom");
 
-jsdom.env(
-  "http://en.wikipedia.org/wiki/Ruffed_Grouse",
-  ["http://code.jquery.com/jquery.js"],
-  function (errors, window) {
-      
-      var out = '';
-      var text = window.$('#mw-content-text p').each(function(index, el){
-         out += window.$(el).text() + '\n'; 
-      });
-      console.log(out);
-      
-  }
-);
+var foo = 2;
+
+switch (foo) {
+    case 1:
+        console.log(1);
+    case 2: 
+        console.log(2);
+    case 3: 
+        console.log(3);
+        break;
+    default: 
+        console.log('default');
+}

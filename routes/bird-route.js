@@ -1,9 +1,26 @@
 var app;
 var wiki = require('../models/wiki.js');
-
+var fs = require('fs');
 var idMap = {};
 
+var Flickr = require('flickr-with-uploads').Flickr;
+
+
+var photoCache = {};
+
+function render(res, data) {
+    res.render('bird', data);
+}
+
+var client = new Flickr('b04fabc8322a5f5f45f5b172c9c176fd', 'aa4a2055a2cdd145');
+function api(method_name, data, callback) {
+  // overloaded as (method_name, data, callback)
+  return client.createRequest(method_name, data, true, callback).send();
+}
+
 function birdPage(req, res, next) {
+    
+    var words = false, photos = false, data = {};
     
     console.time('load bird');
     var birdId;
@@ -24,17 +41,43 @@ function birdPage(req, res, next) {
         return;
     }
     
+    if(photoCache[req.params.name]) {
+        data.photo = photoCache[req.params.name];
+    }
+    
+    api('flickr.photos.search', {text: req.params.name, per_page:3, extras:'url_z'}, function (err, response) {
+        if(response.photos) {
+            photos = response.photos.photo;
+            data.photo = photos[1];
+            photoCache[req.params.name] = data.photo;
+        }else {
+            
+            photos = true;
+             photoCache[req.params.name] = true;
+        }
+        if(words && photos) {
+            render(res, data);
+        }
+    })
+    
+    
     wiki.getArticle(req.params.name).then(
         function(resp) {
             resp.content = '<p>' + resp.content + '</p>';
             resp.content = resp.content.replace(/\n/g, '</p><p>');
-            resp.birdId = birdId;
-            res.render('bird', resp);
-            resp.content = 'mom';
+            data.birdId = birdId;
+            data.words = resp;
+            words = true;
+            if(words && photos) {
+                render(res, data);
+            }
+            
             console.timeEnd('load bird');
         },
         function(err) {
-            res.end('error');
+            console.log(err);
+            res.end('Could not fetch wikipedia article, logging error and moving on :(');
+            fs.appendFile(__dirname + '/../errors.txt', req.params.name + ',');
         }
     );
     
