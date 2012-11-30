@@ -33,8 +33,8 @@ function getArticle(name) {
                   cache[name] = outData;
                   promise.resolve(Object.create(outData));
               }
-          })
-        );
+          });
+
         return promise;
     }
     

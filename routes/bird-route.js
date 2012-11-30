@@ -42,7 +42,7 @@ function birdPage(req, res, next) {
     }
     
     if(photoCache[req.params.name]) {
-
+        
         data.photo = photoCache[req.params.name];
         photos = data.photo;
         if(words && photos) {
