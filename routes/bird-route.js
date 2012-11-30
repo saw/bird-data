@@ -8,7 +8,12 @@ var Flickr = require('flickr-with-uploads').Flickr;
 
 var photoCache = {};
 
-function render(res, data) {
+function render(req, res, data) {
+    if(req.query.data == 1) {
+        res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+        res.end(JSON.stringify(data));
+        
+    }
     res.render('bird', data);
 }
 
@@ -19,7 +24,7 @@ function api(method_name, data, callback) {
 }
 
 function birdPage(req, res, next) {
-    
+
     var words = false, photos = false, data = {};
     
     console.time('load bird');
@@ -46,7 +51,7 @@ function birdPage(req, res, next) {
         data.photo = photoCache[req.params.name];
         photos = data.photo;
         if(words && photos) {
-            render(res, data);
+            render(req, res, data);
         }
         
     } else {
@@ -61,7 +66,7 @@ function birdPage(req, res, next) {
                  photoCache[req.params.name] = true;
             }
             if(words && photos) {
-                render(res, data);
+                render(req, res, data);
             }
         });
     }
@@ -74,10 +79,8 @@ function birdPage(req, res, next) {
             data.words = resp;
             words = true;
             if(words && photos) {
-                render(res, data);
+                render(req, res, data);
             }
-            
-            console.timeEnd('load bird');
         },
         function(err) {
             console.log(err);

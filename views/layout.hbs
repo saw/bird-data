@@ -4,13 +4,29 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Birds</title>
-	<style type="text/css">
-		img {
-			max-width: 100%;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/screen.css" media="all">
 </head>
 <body>
-	{{{body}}}
+	<div class="view">
+		{{{body}}}
+	</div>
 </body>
+<script type="text/javascript">
+	setTimeout(function(){
+		window.scrollTo(0,-1);
+		
+	},10);
+	
+	function $(selector) {
+		return document.querySelector(selector);
+	}
+	
+	function handleTouch(e){
+		e.preventDefault();
+	}
+	
+	$('body').addEventListener('touchstart', handleTouch);
+	$('body').addEventListener('touchmove', handleTouch);
+	$('body').addEventListener('touchend', handleTouch);
+</script>
 </html>
