@@ -24,7 +24,9 @@ function getArticle(name) {
           ["http://code.jquery.com/jquery.js"],
           function (errors, window) {
               if(errors) {
-                  console.log('errors', errors)
+                  console.log('errors', errors);
+                  promise.reject('No content');
+                  return;
               }
               var out = '';
               var text = window.$('#mw-content-text p').each(function(index, el){

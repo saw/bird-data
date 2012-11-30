@@ -42,24 +42,29 @@ function birdPage(req, res, next) {
     }
     
     if(photoCache[req.params.name]) {
+
         data.photo = photoCache[req.params.name];
-    }
-    
-    api('flickr.photos.search', {text: req.params.name, per_page:3, extras:'url_z'}, function (err, response) {
-        if(response.photos) {
-            photos = response.photos.photo;
-            data.photo = photos[1];
-            photoCache[req.params.name] = data.photo;
-        }else {
-            
-            photos = true;
-             photoCache[req.params.name] = true;
-        }
+        photos = data.photo;
         if(words && photos) {
             render(res, data);
         }
-    })
-    
+        
+    } else {
+        api('flickr.photos.search', {text: req.params.name, per_page:3, extras:'url_z'}, function (err, response) {
+            if(response.photos) {
+                photos = response.photos.photo;
+                data.photo = photos[1];
+                photoCache[req.params.name] = data.photo;
+            }else {
+
+                photos = true;
+                 photoCache[req.params.name] = true;
+            }
+            if(words && photos) {
+                render(res, data);
+            }
+        });
+    }
     
     wiki.getArticle(req.params.name).then(
         function(resp) {

@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-var birds = fs.readFileSync(__dirname + '/../birdlist.csv', 'UTF-8');
+var birds = fs.readFileSync(__dirname + '/../cleanlist.csv', 'UTF-8');
 
 var birdList = birds.split(/\n/);
 
