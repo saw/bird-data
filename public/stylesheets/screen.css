@@ -72,19 +72,19 @@ body {
   font-family: sans-serif;
 }
 
-/* line 12, sass/screen.scss */
+/* line 13, sass/screen.scss */
 img.hero {
   max-width: 100%;
 }
 
-/* line 16, sass/screen.scss */
+/* line 17, sass/screen.scss */
 .view {
   position: relative;
   width: 100%;
   text-align: center;
 }
 
-/* line 22, sass/screen.scss */
+/* line 23, sass/screen.scss */
 .bird-slide {
   width: 300px;
   height: 600px;
@@ -92,7 +92,7 @@ img.hero {
   margin: auto;
   text-align: left;
 }
-/* line 30, sass/screen.scss */
+/* line 31, sass/screen.scss */
 .bird-slide .bird-name {
   font-size: 18px;
   font-weight: bold;
