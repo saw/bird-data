@@ -81,23 +81,28 @@
     });
 	
 	function homePage(path) {
+	    if(birdView) {
+	        birdView.destroy();
+    	    birdView = null;
+	    }
+	    
 	    homeView.render();
 	}
 	
+	var birdView = false;
 	function birdPage(path) {
 	    var name = path.match(/bird\/(.+)/)[1];
 	    var bird = modelCache.get(name);
 	    if(!bird) {
-	        
 	        bird = new BirdModel({name:name});
 	        modelCache.set(name, bird);
 	    }
-	    var view = new BirdView({
+	    birdView = new BirdView({
 	        container: '.view',
 	        model: bird
 	    });
-	    view.init();
-	    view.render();
+	    birdView.init();
+	    birdView.render();
 	    bird.load();
 	}
 

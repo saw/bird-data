@@ -38,6 +38,8 @@
 		
 		this._listeners = {};
 		
+		this._handlers = {};
+				
 		this._eventsBound = false;
 		
 		if(config.init) {
@@ -104,7 +106,8 @@
 		
 		//bind the actuall event listeners
 		for(type in this._listeners) {
-			c.addEventListener(type, function(e){
+		    
+		    this._handlers[type] = function(e){
 				var type = e.type, i;
 				len = that._listeners[type].length;
 				
@@ -116,13 +119,28 @@
 					}	
 				}
 				
-			}, true);
+			};
+			c.addEventListener(type, this._handlers[type]);
 		
 		}
 		
 		this._eventsBound = true;
 		return c;
 		
+	};
+	
+	View.prototype.destroy = function() {
+	    var c, type;
+	    
+	    c = document.querySelector(this.container);
+	    
+	    for(type in this._handlers) {
+	        c.removeEventListener(type, this._handlers[type]);
+	    }
+	    
+	    this._handlers = null;
+	    this._listeners = null;
+	    
 	}
 	
 	View.prototype.hide = function() {

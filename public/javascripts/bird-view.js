@@ -9,6 +9,10 @@
                 click: function(e) {
                     e.preventDefault();
                     
+                },
+                
+                mouseover: function(e) {
+                    console.log('over');
                 }
             }
         }
@@ -22,6 +26,10 @@
 				that.render();
 			});
         }
+        
+    }
+    
+    BirdView.prototype.destroy = function(){
         
     }
     
