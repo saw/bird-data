@@ -8,7 +8,7 @@
             'a': {
                 click: function(e) {
                     e.preventDefault();
-                    console.log(e);
+                    
                 }
             }
         }
@@ -18,7 +18,7 @@
         this.init = function() {
             var that = this;	
 			this.model.on('change', function(){
-			    console.log('change');
+			    
 				that.render();
 			});
         }
