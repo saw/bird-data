@@ -12,5 +12,8 @@
     "express-hbs":"*",
     "flickr-with-uploads":"*",
     "rsvp":"*"
+  },
+  "devDependencies": {
+      "handlebar-rider":"*"
   }
 }

@@ -3,7 +3,7 @@
 	
 
 	function Model(data) {
-	
+
 		if(!data) {
 			this._data = {};
 		} else {

@@ -42,9 +42,10 @@
 		
 		if(config.init) {
 			this.init = config.init;
+			this.init();
 		}
 		
-		this.init();
+		
 		
 	}
 	
