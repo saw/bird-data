@@ -7,7 +7,10 @@
         this.events = {
             'a': {
                 click: function(e) {
-                    e.preventDefault();
+					if(router.handleRoute(e.target.href)){
+						e.preventDefault();
+					}
+                    
                     
                 },
                 

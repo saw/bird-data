@@ -163,6 +163,8 @@
 			container = this.getContainer();
 			container.innerHTML = this.template(tmplData);
 			this.containerNode = container;
+		} else {
+			this.containerNode = this.getContainer();
 		}
 		
 		window.scrollTo(0,1);
