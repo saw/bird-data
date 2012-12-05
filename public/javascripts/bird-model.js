@@ -16,7 +16,7 @@
 	
     function BirdModel(data) {
         Model.apply(this, arguments);
-    } 
+    }
 
     BirdModel.prototype = new Model();
 

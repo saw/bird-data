@@ -26,7 +26,7 @@ function api(method_name, data, callback) {
 
 function birdPage(req, res, next) {
 
-	var words = false, photos = false, data = {};
+	var words = false, photos = false, data = {id:req.params.name};
 	
 	console.time('load bird');
 	var birdId;
@@ -67,7 +67,6 @@ function birdPage(req, res, next) {
 				data.photo = photos[1];
 				photoCache[req.params.name] = data.photo;
 			}else {
-
 				photos = true;
 				 photoCache[req.params.name] = true;
 			}

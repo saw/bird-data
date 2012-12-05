@@ -1,5 +1,9 @@
 (function(){
 	
+	function $(selector) {
+		return document.querySelector(selector);
+	}
+	
 	//a simple LRU cache to store models
 	var modelCache = function() {
 		
@@ -56,107 +60,35 @@
 		
 	}();
 	
-	var currentViews = {};
+	var startSlide = $('.slide');
 	
-	router.addRoute(/^\/$/, homePage, homePage);
-	router.addRoute(/\/bird\/(.+)/, birdPage, birdPage);
+	startSlide.id = window.thisBird;
 	
-	var homeModel = new Model({birds:window.birdList});
+	startSlide.style.left = "0px";
+	startSlide.style.top = "0px";
+	startSlide.style.width = window.innerWidth + "px";
+	startSlide.style.height = window.innerHeight + "px";
+	// startSlide.style.left = '200px';
+	// startSlide.querySelector('.header').style.left = "200px";
 	
-	var homeView = new View({
-		model: homeModel,
-		template:Handlebars.templates.indexs,
-		container:'.view',
-		events:{
-			'a': {
-				click: function(e){
-					if(router.handleRoute(e.target.href)) {
-						e.preventDefault();
-					}
-				}
-			}
-		}
-	});
+	var nav = startSlide.querySelector('.header');
 	
-	var navModel = new Model({
-		birds:window.birdList,
-		currentBird:null,
-		nextBird:null,
-		prevBird:null
-	});
-	
-	navModel.setBird = function(name) {
-		var birds = this.get('birds');
-		var name = name.replace('_', ' ');
-		for (var i=0, len = birds.length; i < len; i++) {
-			if(birds[i].name == name) {
-				this.setData({
-					currentBird:birds[i],
-					prev:birds[i-1],
-					next:birds[i+1]
-				});
-			}
-		}
-	
-	}
-	
-	// var navView = new View({
-	// 	container:'#nav',
-	// 	model:navModel,
-	// 	events: {
-	// 		'.navlink' : {
-	// 			click: function(e){
-	// 				if(router.handleRoute(e.target.href)) {
-	// 					e.preventDefault();
-	// 				}
-	// 			}
-	// 		}
-	// 	},
-	// 	init:function(){
-	// 		var that = this;
-	// 		this.model.on('change', function(){
-	// 			that.render();
-	// 		});
-	// 	}
-	// });
-	// 
-	// navView.render = function() {
-	// 	var container = this.getContainer();
-	// 	var model = this.model;
-	// 	if(model.get('next')) {
-	// 		container.querySelector('.next').href = model.get('next').path;
-	// 	}
-	// }
-	
-	function homePage(path) {
-		if(birdView) {
-			birdView.destroy();
-			birdView = null;
+	function handleTouch(e) {
+		e.preventDefault();
+		
+		if(e.type == 'touchmove') {
+			startSlide.style.webkitTransform = "translate3d(" + e.touches[0].pageX + 'px,0,0)';
+			// startSlide.style.left = e.touches[0].pageX + 'px';
+			// nav.style.left = e.touches[0].pageX + 'px';
 		}
 		
-		homeView.render();
 	}
 	
-	var birdView = false;
-	function birdPage(path) {
-		if(birdView) {
-			birdView.destroy();
-		}
-		
-		var name = path.match(/bird\/(.+)/)[1];
-		navModel.setBird(name);
-		var bird = modelCache.get(name);
-		if(!bird) {
-			bird = new BirdModel({name:name});
-			modelCache.set(name, bird);
-		}
-		birdView = new BirdView({
-			container: '.view',
-			model: bird
-		});
-		birdView.init();
-		birdView.render();
-		bird.load();
-	}
+	document.addEventListener('touchstart', handleTouch);
+	document.addEventListener('touchmove', handleTouch);
+	document.addEventListener('touchend', handleTouch);
+	
+	
+	
 
 }());

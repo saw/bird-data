@@ -14,10 +14,10 @@
 		.slide {
 			position:absolute;
 			overflow: hidden;
-			top:0;
+/*			top:0;
 			left:0;
 			bottom:0;
-			right:0;
+			right:0;*/
 			margin:0;
 		}
 		
@@ -78,32 +78,14 @@
 {{#if list}}
 	var birdList = {{{list}}};
 {{/if}}
+{{#id}}
+	var thisBird = "{{.}}";
+{{/id}}
 </script>
 <script type="text/javascript" src="/javascripts/handlebars.js"></script>
 <script type="text/javascript" src="/javascripts/templates.js"></script>
 <script type="text/javascript" src="/javascripts/router.js"></script>
 <script type="text/javascript" src="/javascripts/model.js"></script>
-<script type="text/javascript" src="/javascripts/view.js"></script>
-<script type="text/javascript" src="/javascripts/bird-view.js"></script>
 <script type="text/javascript" src="/javascripts/bird-model.js"></script>
 <script type="text/javascript" src="/javascripts/app.js"></script>
-
-<script type="text/javascript">
-	setTimeout(function(){
-		window.scrollTo(0,-1);
-		
-	},10);
-	
-	function $(selector) {
-		return document.querySelector(selector);
-	}
-	
-	function handleTouch(e){
-		// e.preventDefault();
-	}
-	
-	$('body').addEventListener('touchstart', handleTouch);
-	$('body').addEventListener('touchmove', handleTouch);
-	$('body').addEventListener('touchend', handleTouch);
-</script>
 </html>
