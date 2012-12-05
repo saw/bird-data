@@ -67,6 +67,10 @@
 		
 		c = document.querySelector(this.container);
 		
+		if(!c) {
+			alert(this.container);
+		}
+		
 		//events are already bound, just renturn the node
 		if(this._eventsBound) {
 			return c;
@@ -161,7 +165,7 @@
 		
 		if (typeof this.template === 'function') {
 			container = this.getContainer();
-			container.innerHTML = this.template(tmplData);
+			container.innerHTML = this.template(tmplData) + 'foo';
 			this.containerNode = container;
 		} else {
 			this.containerNode = this.getContainer();

@@ -9,6 +9,7 @@ var Flickr = require('flickr-with-uploads').Flickr;
 var photoCache = {};
 
 function render(req, res, data) {
+	console.log(data);
 	if(req.query.data == 1) {
 		res.setHeader('Content-Type', 'text/plain; charset=utf-8');
 		res.end(JSON.stringify(data));

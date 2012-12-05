@@ -12,7 +12,7 @@ var express = require('express')
 var app = express();
 
 var birdList = require(__dirname + '/models/bird-list.js').birdList;
-
+app.locals.list = JSON.stringify(birdList);
 app.configure(function(){
   app.set('views', __dirname + '/views');
   app.engine('hbs', hbs.express3({defaultLayout:__dirname + '/views/layout.hbs', partialsDir: __dirname + '/views/partials'}));

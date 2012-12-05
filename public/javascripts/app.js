@@ -97,36 +97,36 @@
 				});
 			}
 		}
-
+	
 	}
 	
-	var navView = new View({
-		container:'#nav',
-		model:navModel,
-		events: {
-			'.navlink' : {
-				click: function(e){
-					if(router.handleRoute(e.target.href)) {
-						e.preventDefault();
-					}
-				}
-			}
-		},
-		init:function(){
-			var that = this;
-			this.model.on('change', function(){
-				that.render();
-			});
-		}
-	});
-	
-	navView.render = function() {
-		var container = this.getContainer();
-		var model = this.model;
-		if(model.get('next')) {
-			container.querySelector('.next').href = model.get('next').path;
-		}
-	}
+	// var navView = new View({
+	// 	container:'#nav',
+	// 	model:navModel,
+	// 	events: {
+	// 		'.navlink' : {
+	// 			click: function(e){
+	// 				if(router.handleRoute(e.target.href)) {
+	// 					e.preventDefault();
+	// 				}
+	// 			}
+	// 		}
+	// 	},
+	// 	init:function(){
+	// 		var that = this;
+	// 		this.model.on('change', function(){
+	// 			that.render();
+	// 		});
+	// 	}
+	// });
+	// 
+	// navView.render = function() {
+	// 	var container = this.getContainer();
+	// 	var model = this.model;
+	// 	if(model.get('next')) {
+	// 		container.querySelector('.next').href = model.get('next').path;
+	// 	}
+	// }
 	
 	function homePage(path) {
 		if(birdView) {
@@ -159,8 +159,4 @@
 		bird.load();
 	}
 
-	document.body.addEventListener('click', function(e){
-		
-
-	})
 }());
