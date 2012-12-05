@@ -1,16 +1,75 @@
 <!DOCTYPE HTML>
 <html lang="en-us">
 <head>
-	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Birds</title>
-	<link rel="stylesheet" type="text/css" href="/stylesheets/screen.css" media="all">
+	<title>Scroll</title>
+	<style type="text/css">
+		body {
+			font-family: sans-serif;
+			font-weight: normal;
+			margin: 50px 0 0;
+		}
+		
+		.slide {
+			position:absolute;
+			overflow: hidden;
+			top:0;
+			left:0;
+			bottom:0;
+			right:0;
+			margin:0;
+		}
+		
+		.hero {
+/*			height: 150px;*/
+
+			
+		}
+		.hero img {
+			max-width: 100%;
+		}
+		
+	 	.title {
+			border-top: 4px solid black;
+			color: black;
+			height:40px;
+			font-size:24px;
+			width: 100%;
+			margin:0;
+			text-align: left;
+		}
+		
+		.header {
+			height: 40%;
+			overflow: hidden;
+			width: 100%;
+			top:0;
+			left:0;
+			position: fixed;
+			border-bottom: 5px solid black;
+			background: #fff;
+			z-index:1;
+		}
+		
+		.bd {
+			box-sizing:border-box;
+			-moz-box-sizing:border-box;
+			position: absolute;
+			height:60%;
+			top: 40%;
+			width: 100%;
+			padding: 0px 20px;
+			z-index:0;
+/*			overflow: hidden;*/
+			overflow: scroll;
+			-webkit-overflow-scrolling: touch;
+			-moz-overflow-scrolling: touch;
+			border-bottom: 1px solid black;
+		}
+	</style>
 </head>
 <body>
-	<div id="nav">
-		<a class="next navlink" href="{{next}}">Next Bird</a>
-		<a class="prev navlink" href="{{prev}}">Last Bird</a>
-	</div>
 	<div class="view">
 		{{{body}}}
 	</div>
@@ -38,7 +97,7 @@
 	}
 	
 	function handleTouch(e){
-		e.preventDefault();
+		// e.preventDefault();
 	}
 	
 	$('body').addEventListener('touchstart', handleTouch);

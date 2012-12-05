@@ -1,9 +1,15 @@
-<div class="bird-slide">
-{{#photo}}
-<img class="hero" src="{{url_z}}" alt="">
-{{/photo}}
-{{#words}}
-<h1 class="bird-name">{{name}}</h1>
-{{{content}}}
-{{/words}}
+<div class="slide">
+	<div class="header">
+		{{#words}}
+		<h1 class="title">{{name}}</h1>
+		{{/words}}
+		<div class="hero">
+			{{#photo}}
+			<img class="hero" src="{{url_z}}" alt="">
+			{{/photo}}
+		</div>
+	</div>
+	<div class="bd">
+		{{{words.content}}}
+	</div>
 </div>
