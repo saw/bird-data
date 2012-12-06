@@ -60,14 +60,43 @@
 		
 	}();
 	
+	var birds = (function() {
+		
+		var nextBird, 
+			 currentBird,
+			 prevBird;
+			
+		currentBird = thisBird
+		
+		function thisBird() {
+			
+		}
+		
+		function 
+		
+		return {
+			nextBird:nextBird,
+			prevBird:prevBird,
+			thisBird:currentBird,
+			setBird:setBird
+		}
+		
+	});
+	
 	function Slide(id, data, selector) {
 		
 		this.id = id;
 		
 		this.data = data;
 		
+		this._listeners = [];
+		
 		this.selector = selector;
 		this._build();
+	}
+	
+	Slide.prototype.onMoveEnd = function(callback) {
+		this._listeners.push(callback);
 	}
 	
 	Slide.prototype._build = function(){
@@ -85,8 +114,15 @@
 		this.node.style.width = window.innerWidth + "px";
 		
 		var myNode = this.node;
+		var that = this;
 		this.node.addEventListener('webkitTransitionEnd', function(e){
 			myNode.style.webkitTransition = '';
+			
+			for (var i=0; i < that._listeners.length; i++) {
+				if(typeof that._listeners[i] == "function") {
+					that._listeners[i]();
+				}
+			};
 		});
 	}
 	
@@ -101,6 +137,10 @@
 	
 	Slide.prototype.cleanTransitions = function() {
 		this.node.style.webkitTransition = '';
+	}
+	
+	Slide.prototype.destroy = function() {
+		this.node.parentNode.removeChild(this.node);
 	}
 
 	
@@ -159,6 +199,16 @@
 				if(diff < -200) {
 					startSlide.moveTo(0 - window.innerWidth);
 					nextSlide.moveTo(0);
+					startSlide.onMoveEnd(function(){
+						console.log('move end');
+						startSlide.destroy();
+						startSlide = nextSlide;
+						nextSlide = new Slide('Black-billed_Magpie', nextBird.toJSON());
+						nextSlide.setLeft(window.innerWidth);
+					})
+				} else {
+					startSlide.moveTo(0);
+					nextSlide.moveTo(window.innerWidth);
 				}
 				break;
 		}
