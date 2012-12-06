@@ -60,27 +60,109 @@
 		
 	}();
 	
-	var startSlide = $('.slide');
+	function Slide(id, data, selector) {
+		
+		this.id = id;
+		
+		this.data = data;
+		
+		this.selector = selector;
+		this._build();
+	}
 	
-	startSlide.id = window.thisBird;
+	Slide.prototype._build = function(){
+		if(this.selector) {
+			this.node = $(this.selector);
+		} else {
+			var div = document.createElement('div');
+			div.innerHTML = Handlebars.templates.birds(this.data);
+			this.node = div.querySelector('.slide');
+			document.querySelector('.view').appendChild(this.node);
+		}
+		
+		this.node.id = this.id;
+		this.node.style.height = window.innerHeight + "px";
+		this.node.style.width = window.innerWidth + "px";
+		
+		var myNode = this.node;
+		this.node.addEventListener('webkitTransitionEnd', function(e){
+			myNode.style.webkitTransition = '';
+		});
+	}
 	
-	startSlide.style.left = "0px";
-	startSlide.style.top = "0px";
-	startSlide.style.width = window.innerWidth + "px";
-	startSlide.style.height = window.innerHeight + "px";
-	// startSlide.style.left = '200px';
-	// startSlide.querySelector('.header').style.left = "200px";
+	Slide.prototype.setLeft = function(left) {
+		this.node.style.webkitTransform = "translate3d(" + left + 'px,0,0)';
+	}
 	
-	var nav = startSlide.querySelector('.header');
+	Slide.prototype.moveTo = function(pos) {
+		this.node.style.webkitTransition = '-webkit-transform 1s ease-out';
+		this.node.style.webkitTransform = "translate3d("+pos+"px,0,0)";
+	}
+	
+	Slide.prototype.cleanTransitions = function() {
+		this.node.style.webkitTransition = '';
+	}
+
+	
+	var startSlide = new Slide(thisBird, {}, '.slide');
+	var nextSlide;
+	
+	var nextBird = new BirdModel({name:'Black-billed_Magpie'});
+	nextBird.on('change', function(){
+		nextSlide = new Slide('Black-billed_Magpie', nextBird.toJSON());
+		nextSlide.setLeft(window.innerWidth);
+	});
+	nextBird.load();
+	
+	var lastPos, startPoint;
+	
+	function isLink(element) {
+		if(!element.tagName) {
+			return false;
+		}
+		
+		if (element.tagName == 'A') {
+			return true;
+		} else if(element.tagName !== 'BODY'){
+			return isLink(element.parentNode);
+		} else {
+			return false
+		}
+	}
 	
 	function handleTouch(e) {
 		e.preventDefault();
+		var diff;
 		
-		if(e.type == 'touchmove') {
-			startSlide.style.webkitTransform = "translate3d(" + e.touches[0].pageX + 'px,0,0)';
-			// startSlide.style.left = e.touches[0].pageX + 'px';
-			// nav.style.left = e.touches[0].pageX + 'px';
+		switch (e.type) {
+			case 'touchstart':
+				startPoint = e.touches[0].pageX;
+				startSlide.cleanTransitions();
+				nextSlide.cleanTransitions();
+				lastPos = e.touches[0].pageX;
+				break;
+			case 'touchmove':
+				diff = e.touches[0].pageX - startPoint
+				startSlide.setLeft(diff);
+				nextSlide.setLeft(diff + window.innerWidth);
+				lastPos = e.touches[0].pageX;
+				break;
+			case 'touchcancel':
+			case 'touchend':
+				diff = lastPos - startPoint;
+				if(Math.abs(diff) < 5) {
+					if(isLink(e.target)) {
+						alert('link');
+					}
+				}
+				
+				if(diff < -200) {
+					startSlide.moveTo(0 - window.innerWidth);
+					nextSlide.moveTo(0);
+				}
+				break;
 		}
+
 		
 	}
 	
