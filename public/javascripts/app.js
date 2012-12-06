@@ -60,6 +60,10 @@
 		
 	}();
 	
+	function getBirdModel(birdid) {
+		
+	} 
+	
 	var birds = (function() {
 		var currentBird,
 		myBirdList,
