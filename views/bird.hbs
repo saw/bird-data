@@ -3,10 +3,19 @@
 		{{#words}}
 		<h1 class="title">{{name}}</h1>
 		{{/words}}
-		<div class="hero">
-			<div class="navigation"><a href="{{prev}}" class="prev-link arrow">◀</a><a href="{{next}}" class="next-link arrow">▶</a></div>
+		<div class="hero">{{#if next}}
+			<div class="navigation">
+				<a href="{{prev.path}}" title="{{prev.name}}" 
+					class="prev-link arrow">
+					<span>◀</span>
+				</a>
+				<a href="{{next.path}}" title="{{next.name}}"  
+					class="next-link arrow">
+					<span>▶</span>
+				</a></div>
+			{{/if}}
 			{{#photo}}
-			<img class="hero" src="{{url_z}}" alt="">
+			<img class="hero-img" src="{{url_z}}" alt="">
 			{{/photo}}
 		</div>
 	

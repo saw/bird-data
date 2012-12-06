@@ -9,7 +9,7 @@ var Flickr = require('flickr-with-uploads').Flickr;
 var photoCache = {};
 
 function render(req, res, data) {
-	console.log(data);
+	
 	if(req.query.data == 1) {
 		res.setHeader('Content-Type', 'text/plain; charset=utf-8');
 		res.end(JSON.stringify(data));
@@ -43,18 +43,18 @@ function birdPage(req, res, next) {
 	console.timeEnd('getid');
 	console.log('this', req.params.name);
 	var next = req.birdList[birdId + 1], prev = req.birdList[birdId -1];
-	console.log('next',req.birdList[birdId+1].name);
-	
+
 	if(!birdId) {
 		next();
 		return;
 	}
+	data.next = next;
+	data.prev = prev;
 	
 	if(photoCache[req.params.name]) {
 		
 		data.photo = photoCache[req.params.name];
-		data.next = next.path;
-		data.prev = prev.path;
+		
 		photos = data.photo;
 		if(words && photos) {
 			render(req, res, data);
