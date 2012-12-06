@@ -4,10 +4,12 @@
 		<h1 class="title">{{name}}</h1>
 		{{/words}}
 		<div class="hero">
+			<div class="navigation"><a href="{{prev}}" class="prev-link arrow">◀</a><a href="{{next}}" class="next-link arrow">▶</a></div>
 			{{#photo}}
 			<img class="hero" src="{{url_z}}" alt="">
 			{{/photo}}
 		</div>
+	
 	</div>
 	<div class="bd">
 		{{{words.content}}}
