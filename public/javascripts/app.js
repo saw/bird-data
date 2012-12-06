@@ -61,27 +61,70 @@
 	}();
 	
 	var birds = (function() {
-		
-		var nextBird, 
-			 currentBird,
-			 prevBird;
+		var currentBird,
+		myBirdList,
 			
-		currentBird = thisBird
+		currentBird,
+		myBirdList = birdList;
 		
-		function thisBird() {
+		var birdMap = {};
+		
+
+		function init() {
+			for (var i=0, len = myBirdList.length; i < len; i++) {
+				birdMap[myBirdList[i].name] = i;
+			}
 			
+			setBird(thisBird);
 		}
 		
-		function 
+		
+		
+		function nextBird() {
+			console.log('next id', currentBird + 1);
+			return myBirdList[currentBird + 1];
+		}
+		
+		function getThisBird() {
+			return myBirdList[currentBird];
+		}
+		
+		function prevBird() {
+			return myBirdList[currentBird - 1];
+		}
+		
+		function setBird(birdname) {
+			
+			//if it is a path or underscore version
+			if(birdname.indexOf('_') !== -1) {
+				//sometimes it might have the /bird/ in front of it
+				//but this thing won't car/
+				matches = birdname.match(/(?:\/bird\/)?(.+)/);
+				birdname = matches[1].replace('_', ' ');
+			}
+			
+			currentBird = birdMap[birdname];
+		}
+		
 		
 		return {
+			init:init,
 			nextBird:nextBird,
 			prevBird:prevBird,
-			thisBird:currentBird,
+			thisBird:getThisBird,
+			advance:function() {
+				if(myBirdList[currentBird + 1]) {
+					currentBird++;
+				}
+			},
 			setBird:setBird
 		}
 		
-	});
+	}());
+	
+	birds.init();
+
+	
 	
 	function Slide(id, data, selector) {
 		
@@ -143,16 +186,22 @@
 		this.node.parentNode.removeChild(this.node);
 	}
 
+	var startSlide, nextSlide, lastSlide;
 	
-	var startSlide = new Slide(thisBird, {}, '.slide');
-	var nextSlide;
+	var nextBird;
 	
-	var nextBird = new BirdModel({name:'Black-billed_Magpie'});
-	nextBird.on('change', function(){
-		nextSlide = new Slide('Black-billed_Magpie', nextBird.toJSON());
-		nextSlide.setLeft(window.innerWidth);
-	});
-	nextBird.load();
+
+		var startSlide = new Slide(thisBird, {}, '.slide');
+		var nextSlide;
+
+		nextBird = new BirdModel({name:birds.nextBird().name.replace(' ', '_')});
+		nextBird.on('change', function(){
+			nextSlide = new Slide('Black-billed_Magpie', nextBird.toJSON());
+			nextSlide.setLeft(window.innerWidth);
+		});
+		nextBird.load();
+
+
 	
 	var lastPos, startPoint;
 	
@@ -200,11 +249,17 @@
 					startSlide.moveTo(0 - window.innerWidth);
 					nextSlide.moveTo(0);
 					startSlide.onMoveEnd(function(){
-						console.log('move end');
+						
 						startSlide.destroy();
 						startSlide = nextSlide;
-						nextSlide = new Slide('Black-billed_Magpie', nextBird.toJSON());
-						nextSlide.setLeft(window.innerWidth);
+						birds.advance();
+						nextBird = new BirdModel({name:birds.nextBird().name.replace(' ', '_')});
+						nextBird.on('change', function(){
+							nextSlide = new Slide(nextBird.get('id'), nextBird.toJSON());
+							nextSlide.setLeft(window.innerWidth);
+						});
+						nextBird.load();
+						
 					})
 				} else {
 					startSlide.moveTo(0);
