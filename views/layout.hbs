@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+{{^frag}}<!DOCTYPE HTML>
 <html lang="en-us">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div class="view">
-		{{{body}}}
+		{{/frag}}{{{body}}}{{^frag}}
 	</div>
 </body>
 <script type="text/javascript">
@@ -28,3 +28,4 @@
 <script type="text/javascript" src="/javascripts/bird-model.js"></script>
 <script type="text/javascript" src="/javascripts/app.js"></script>
 </html>
+{{/frag}}

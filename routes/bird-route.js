@@ -15,6 +15,10 @@ function render(req, res, data) {
 		res.end(JSON.stringify(data));
 		return;
 	}
+	
+	if(req.query.frag == 1) {
+		data.frag = true;
+	}
 	res.render('bird', data);
 }
 
@@ -24,10 +28,10 @@ function api(method_name, data, callback) {
   return client.createRequest(method_name, data, true, callback).send();
 }
 
-function birdPage(req, res, next) {
-
+function birdPage(req, res, nextr) {
+	console.log('birdpage');
 	var words = false, photos = false, data = {id:req.params.name};
-	
+	console.log(req.params);
 	console.time('load bird');
 	var birdId;
 	console.time('getid');
@@ -45,7 +49,7 @@ function birdPage(req, res, next) {
 	var next = req.birdList[birdId + 1], prev = req.birdList[birdId -1];
 
 	if(!birdId) {
-		next();
+		nextr();
 		return;
 	}
 	data.next = next;
@@ -98,7 +102,10 @@ function birdPage(req, res, next) {
 
 module.exports = function(thisapp) {
 	app = thisapp;
-	
+	app.get(/\/bird\/([^.]+)_frag/, function(req, res, next){
+		req.params.name = req.params[0];
+	}, birdPage);
 	app.get('/bird/:name', birdPage);
+
 	
 }
