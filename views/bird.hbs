@@ -14,9 +14,11 @@
 					<span>▶</span>
 				</a></div>
 			{{/if}}
-			{{#photo}}
-			<img class="hero-img" src="{{url_z}}" alt="">
-			{{/photo}}
+			{{#if photo}}
+			<img class="hero-img" src="{{photo.url_z}}" alt="">
+			{{else}}
+			<img class="hero-img" src="/images/chicken.jpg">
+			{{/if}}
 		</div>
 	
 	</div>

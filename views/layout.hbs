@@ -4,9 +4,11 @@
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Scroll</title>
+	{{#if fixed}}
+	<link rel="stylesheet" type="text/css" href="/stylesheets/fixed.css" media="all">
+	{{else}}
 	<link rel="stylesheet" type="text/css" href="/stylesheets/screen.css" media="all">
-	<style type="text/css">
-	</style>
+	{{/if}}
 </head>
 <body>
 	<div class="view">
@@ -21,11 +23,13 @@
 	var thisBird = "{{.}}";
 {{/id}}
 </script>
+{{^fixed}}
 <script type="text/javascript" src="/javascripts/handlebars.js"></script>
 <script type="text/javascript" src="/javascripts/templates.js"></script>
 <script type="text/javascript" src="/javascripts/router.js"></script>
 <script type="text/javascript" src="/javascripts/model.js"></script>
 <script type="text/javascript" src="/javascripts/bird-model.js"></script>
 <script type="text/javascript" src="/javascripts/app.js"></script>
+{{/fixed}}
 </html>
 {{/frag}}

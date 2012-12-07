@@ -30,21 +30,32 @@
 				
 				//index is where to find the meta in the array
 				index = meta.push({key:key, lu:Date.now()});
-
 				//cache stores a reference to the meta
-				cache[key] = {val:value, i:index};
+				if(!cache[key]) {
+					cache[key] = {val:value, i:index};
+				} else {
+					return;
+				}
 				meta.sort(sorter);
 				
 				//evict old values
 				while(meta.length > 10) {
 					toPurge = meta.shift();
+
 					delete cache[toPurge.key];
 				}
 				
 				var len = meta.length;
-				
+				console.log('len', len);
 				for (var i=0; i < len; i++) {
-					cache[meta[i].key].i = i;
+					console.log('reindex', meta[i].key);
+					try {
+ 						cache[meta[i].key].i = i;
+					} catch(e) {
+						
+						console.log(e);
+						console.log('cache', cache);
+					}
 				};
 
 			},
@@ -60,6 +71,76 @@
 		
 	}();
 	
+	var birds = (function() {
+		var currentBird,
+		myBirdList,
+			
+		currentBird,
+		myBirdList = birdList;
+		
+		var birdMap = {};
+		
+
+		function init() {
+			for (var i=0, len = myBirdList.length; i < len; i++) {
+				birdMap[myBirdList[i].name] = i;
+			}
+			
+			setBird(thisBird);
+		}
+		
+		function getInfo(id) {
+			return myBirdList[id];
+		}
+		
+		function nextBird() {
+			return myBirdList[currentBird + 1];
+		}
+		
+		function birdAtOffset(offset) {
+			return myBirdList[currentBird + offset];
+		}
+		
+		function getThisBird() {
+			return myBirdList[currentBird];
+		}
+		
+		function prevBird() {
+			return myBirdList[currentBird - 1];
+		}
+		
+		function setBird(birdname) {
+			
+			//if it is a path or underscore version
+			if(birdname.indexOf('_') !== -1) {
+				//sometimes it might have the /bird/ in front of it
+				//but this thing won't car/
+				matches = birdname.match(/(?:\/bird\/)?(.+)/);
+				birdname = matches[1].replace('_', ' ');
+			}
+			
+			currentBird = birdMap[birdname];
+		}
+		
+		
+		return {
+			init:init,
+			nextBird:nextBird,
+			prevBird:prevBird,
+			thisBird:getThisBird,
+			birdAtOffset:birdAtOffset,
+			advance:function() {
+				if(myBirdList[currentBird + 1]) {
+					currentBird++;
+				}
+			},
+			setBird:setBird
+		}
+		
+	}());
+	
+	birds.init();
+	
 	 function makeRequest(url, callback, scope) {
 		
 		var xhr = new XMLHttpRequest();
@@ -72,6 +153,22 @@
 			}
 		}
 		xhr.send();
+	}
+	
+	function getBirdData(path, callback) {
+		
+		var data = modelCache.get(path);
+		
+		if(data) {
+			window.setTimeout(function(){
+				callback && callback(data);
+			}, 1);
+		}
+		
+		makeRequest(path, function(xhr) {
+			modelCache.set(path, xhr.responseText);
+			callback && callback(xhr.responseText);
+		})
 	}
 
 	function Slide(id, content, selector) {
@@ -121,6 +218,7 @@
 	}
 	
 	Slide.prototype.setLeft = function(left) {
+		
 		this.node.style.webkitTransform = "translate3d(" + left + 'px,0,0)';
 	}
 	
@@ -142,18 +240,39 @@
 	var nextBird;
 	
 
-	var startSlide = new Slide(thisBird, {}, '.slide');
+	var startSlide = new Slide(thisBird, false, '.slide');
 	var nextSlide;
 	
-	makeRequest('/');
 
-	nextBird = new BirdModel({name:birds.nextBird().name.replace(' ', '_')});
-	nextBird.on('change', function(){
-		nextSlide = new Slide('Black-billed_Magpie', nextBird.toJSON());
+	
+	
+	getBirdData(birds.nextBird().path, function(resp) {
+		nextSlide = new Slide(birds.nextBird().name, resp);
 		nextSlide.setLeft(window.innerWidth);
 	});
-	nextBird.load();
+	
+	getBirdData(birds.birdAtOffset(2).path);
+	getBirdData(birds.birdAtOffset(3).path);
+	
+	
 
+	function goTo(direction) {
+		startSlide.moveTo(0 - window.innerWidth);
+		nextSlide.moveTo(0);
+		startSlide.onMoveEnd(function(){
+			startSlide.destroy();
+			startSlide = nextSlide;
+			birds.advance();
+			
+			getBirdData(birds.nextBird().path , function(resp) {
+				nextSlide = new Slide(birds.nextBird().name, resp);
+				nextSlide.setLeft(window.innerWidth);
+				getBirdData(birds.birdAtOffset(2).path);
+				getBirdData(birds.birdAtOffset(3).path);
+			});
+			
+		})
+	}
 
 	
 	var lastPos, startPoint;
@@ -199,14 +318,7 @@
 				}
 				
 				if(diff < -200) {
-					startSlide.moveTo(0 - window.innerWidth);
-					nextSlide.moveTo(0);
-					startSlide.onMoveEnd(function(){
-						
-						startSlide.destroy();
-						startSlide = nextSlide;
-						
-					})
+					goTo(1);
 				} else {
 					startSlide.moveTo(0);
 					nextSlide.moveTo(window.innerWidth);

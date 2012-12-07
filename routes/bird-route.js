@@ -55,30 +55,30 @@ function birdPage(req, res, nextr) {
 	data.next = next;
 	data.prev = prev;
 	
-	if(photoCache[req.params.name]) {
-		
-		data.photo = photoCache[req.params.name];
-		
-		photos = data.photo;
-		if(words && photos) {
-			render(req, res, data);
-		}
-		
-	} else {
-		api('flickr.photos.search', {text: req.params.name, per_page:3, extras:'url_z'}, function (err, response) {
-			if(response.photos) {
-				photos = response.photos.photo;
-				data.photo = photos[1];
-				photoCache[req.params.name] = data.photo;
-			}else {
-				photos = true;
-				 photoCache[req.params.name] = true;
-			}
-			if(words && photos) {
-				render(req, res, data);
-			}
-		});
-	}
+	// if(photoCache[req.params.name]) {
+	// 	
+	// 	data.photo = photoCache[req.params.name];
+	// 	
+	// 	photos = data.photo;
+	// 	if(words && photos) {
+	// 		render(req, res, data);
+	// 	}
+	// 	
+	// } else {
+	// 	api('flickr.photos.search', {text: req.params.name, per_page:3, extras:'url_z'}, function (err, response) {
+	// 		if(response.photos) {
+	// 			photos = response.photos.photo;
+	// 			data.photo = photos[1];
+	// 			photoCache[req.params.name] = data.photo;
+	// 		}else {
+	// 			photos = true;
+	// 			 photoCache[req.params.name] = true;
+	// 		}
+	// 		if(words && photos) {
+	// 			render(req, res, data);
+	// 		}
+	// 	});
+	// }
 	
 	wiki.getArticle(req.params.name).then(
 		function(resp) {
@@ -87,7 +87,7 @@ function birdPage(req, res, nextr) {
 			data.birdId = birdId;
 			data.words = resp;
 			words = true;
-			if(words && photos) {
+			if(words) {
 				render(req, res, data);
 			}
 		},

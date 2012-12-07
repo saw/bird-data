@@ -23,8 +23,11 @@ app.configure(function(){
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(function(req, res, next) {
-      
       req.birdList = birdList;
+		if(req.query.fixed) {
+			app.locals.fixed = true;
+		}
+		
       next();
   });
   app.use(app.router);
