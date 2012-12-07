@@ -102,9 +102,6 @@ function birdPage(req, res, nextr) {
 
 module.exports = function(thisapp) {
 	app = thisapp;
-	app.get(/\/bird\/([^.]+)_frag/, function(req, res, next){
-		req.params.name = req.params[0];
-	}, birdPage);
 	app.get('/bird/:name', birdPage);
 
 	

@@ -60,81 +60,25 @@
 		
 	}();
 	
-	function getBirdModel(birdid) {
+	 function makeRequest(url, callback, scope) {
 		
-	} 
-	
-	var birds = (function() {
-		var currentBird,
-		myBirdList,
-			
-		currentBird,
-		myBirdList = birdList;
+		var xhr = new XMLHttpRequest();
+		var cb = callback, sc = scope;
+		xhr.open('get', url, true);
 		
-		var birdMap = {};
-		
-
-		function init() {
-			for (var i=0, len = myBirdList.length; i < len; i++) {
-				birdMap[myBirdList[i].name] = i;
+		xhr.onreadystatechange = function() {
+			if (this.readyState == 4 ) {
+				cb.apply(sc, [this]);
 			}
-			
-			setBird(thisBird);
 		}
-		
-		
-		
-		function nextBird() {
-			console.log('next id', currentBird + 1);
-			return myBirdList[currentBird + 1];
-		}
-		
-		function getThisBird() {
-			return myBirdList[currentBird];
-		}
-		
-		function prevBird() {
-			return myBirdList[currentBird - 1];
-		}
-		
-		function setBird(birdname) {
-			
-			//if it is a path or underscore version
-			if(birdname.indexOf('_') !== -1) {
-				//sometimes it might have the /bird/ in front of it
-				//but this thing won't car/
-				matches = birdname.match(/(?:\/bird\/)?(.+)/);
-				birdname = matches[1].replace('_', ' ');
-			}
-			
-			currentBird = birdMap[birdname];
-		}
-		
-		
-		return {
-			init:init,
-			nextBird:nextBird,
-			prevBird:prevBird,
-			thisBird:getThisBird,
-			advance:function() {
-				if(myBirdList[currentBird + 1]) {
-					currentBird++;
-				}
-			},
-			setBird:setBird
-		}
-		
-	}());
-	
-	birds.init();
+		xhr.send();
+	}
 
-	
-	
-	function Slide(id, data, selector) {
+	function Slide(id, content, selector) {
 		
 		this.id = id;
 		
-		this.data = data;
+		this.content = content;
 		
 		this._listeners = [];
 		
@@ -148,10 +92,13 @@
 	
 	Slide.prototype._build = function(){
 		if(this.selector) {
+			
 			this.node = $(this.selector);
+			
 		} else {
+			
 			var div = document.createElement('div');
-			div.innerHTML = Handlebars.templates.birds(this.data);
+			div.innerHTML = this.content;
 			this.node = div.querySelector('.slide');
 			document.querySelector('.view').appendChild(this.node);
 		}
@@ -195,15 +142,17 @@
 	var nextBird;
 	
 
-		var startSlide = new Slide(thisBird, {}, '.slide');
-		var nextSlide;
+	var startSlide = new Slide(thisBird, {}, '.slide');
+	var nextSlide;
+	
+	makeRequest('/');
 
-		nextBird = new BirdModel({name:birds.nextBird().name.replace(' ', '_')});
-		nextBird.on('change', function(){
-			nextSlide = new Slide('Black-billed_Magpie', nextBird.toJSON());
-			nextSlide.setLeft(window.innerWidth);
-		});
-		nextBird.load();
+	nextBird = new BirdModel({name:birds.nextBird().name.replace(' ', '_')});
+	nextBird.on('change', function(){
+		nextSlide = new Slide('Black-billed_Magpie', nextBird.toJSON());
+		nextSlide.setLeft(window.innerWidth);
+	});
+	nextBird.load();
 
 
 	
@@ -256,13 +205,6 @@
 						
 						startSlide.destroy();
 						startSlide = nextSlide;
-						birds.advance();
-						nextBird = new BirdModel({name:birds.nextBird().name.replace(' ', '_')});
-						nextBird.on('change', function(){
-							nextSlide = new Slide(nextBird.get('id'), nextBird.toJSON());
-							nextSlide.setLeft(window.innerWidth);
-						});
-						nextBird.load();
 						
 					})
 				} else {
