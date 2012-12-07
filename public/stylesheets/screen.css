@@ -1,15 +1,13 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 body * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 body {
   font-family: sans-serif;
-  font-weight: normal;
-  margin: 50px 0 0;
+  width: 100%;
+  color: green;
 }
 
 .slide {
@@ -17,11 +15,13 @@ body {
   overflow: hidden;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   margin: 0;
 }
 
 .header {
-  height: 40%;
+  height: 50%;
   overflow: hidden;
   width: 100%;
   top: 0;
@@ -29,18 +29,16 @@ body {
   position: absolute;
   border-bottom: 5px solid black;
   background: #fff;
-  z-index: 1;
 }
 
 .hero {
-  z-index: 1;
   display: block;
   position: relative;
-  height: 85%;
-  text-align: center;
+  height: 100%;
   width: 100%;
-  background: #000;
   padding-top: 5px;
+  text-align: center;
+  background: #000;
 }
 
 .navigation {
@@ -51,11 +49,9 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  z-index: 2;
 }
 .navigation .arrow {
   color: #fff;
-  margin: 0;
   text-decoration: none;
   position: absolute;
   height: 100%;
@@ -92,15 +88,38 @@ body {
 }
 
 .bd {
-  position: absolute;
-  height: 60%;
-  top: 40%;
   width: 100%;
-  padding: 0px 20px;
-  z-index: 0;
-  /*	overflow: hidden;*/
-  overflow: scroll;
+  height: 50%;
+  position: absolute;
+  overflow: auto;
   -webkit-overflow-scrolling: touch;
-  -moz-overflow-scrolling: touch;
-  border-bottom: 1px solid black;
+  top: 50%;
+  padding: 0px 20px;
+}
+
+@media screen and (orientation: landscape) {
+  .header {
+    width: 33%;
+    height: 110px;
+    border-bottom: 2px solid black;
+  }
+  .header .hero {
+    background: transparent;
+  }
+  .header .title {
+    height: 34px;
+    font-size: 14px;
+  }
+  .header .arrow span {
+    top: 10px;
+  }
+
+  .bd {
+    width: auto;
+    height: 100%;
+    top: 0;
+    margin: 0 10px 0 34%;
+    padding: 0px;
+    font-size: 12px;
+  }
 }

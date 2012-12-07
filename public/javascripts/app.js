@@ -46,15 +46,10 @@
 				}
 				
 				var len = meta.length;
-				console.log('len', len);
+
 				for (var i=0; i < len; i++) {
-					console.log('reindex', meta[i].key);
-					try {
- 						cache[meta[i].key].i = i;
-					} catch(e) {
-						
-						console.log(e);
-						console.log('cache', cache);
+					if(cache[meta[i].key]) {
+						cache[meta[i].key].i = i;
 					}
 				};
 
@@ -156,7 +151,7 @@
 	}
 	
 	function getBirdData(path, callback) {
-		
+		path = path.replace('/bird/', '/fragments/');
 		var data = modelCache.get(path);
 		
 		if(data) {
@@ -201,14 +196,14 @@
 		}
 		
 		this.node.id = this.id;
-		this.node.style.height = window.innerHeight + "px";
-		this.node.style.width = window.innerWidth + "px";
+		// this.node.style.height = window.innerHeight + "px";
+		// this.node.style.width = window.innerWidth + "px";
 		
 		var myNode = this.node;
 		var that = this;
 		this.node.addEventListener('webkitTransitionEnd', function(e){
 			myNode.style.webkitTransition = '';
-			
+			moving = false;
 			for (var i=0; i < that._listeners.length; i++) {
 				if(typeof that._listeners[i] == "function") {
 					that._listeners[i]();
@@ -223,12 +218,20 @@
 	}
 	
 	Slide.prototype.moveTo = function(pos) {
-		this.node.style.webkitTransition = '-webkit-transform 1s ease-out';
+		this.node.style.webkitTransition = '-webkit-transform .2s ease-out';
 		this.node.style.webkitTransform = "translate3d("+pos+"px,0,0)";
 	}
 	
 	Slide.prototype.cleanTransitions = function() {
 		this.node.style.webkitTransition = '';
+	}
+	
+	Slide.prototype.hide = function() {
+		this.node.style.display = 'none';
+	}
+	
+	Slide.prototype.show = function() {
+		this.node.style.display = 'block';
 	}
 	
 	Slide.prototype.destroy = function() {
@@ -238,16 +241,14 @@
 	var startSlide, nextSlide, lastSlide;
 	
 	var nextBird;
-	
+	var moving = false;
 
 	var startSlide = new Slide(thisBird, false, '.slide');
 	var nextSlide;
 	
-
-	
-	
 	getBirdData(birds.nextBird().path, function(resp) {
 		nextSlide = new Slide(birds.nextBird().name, resp);
+		nextSlide.hide();
 		nextSlide.setLeft(window.innerWidth);
 	});
 	
@@ -257,6 +258,7 @@
 	
 
 	function goTo(direction) {
+		moving = true;
 		startSlide.moveTo(0 - window.innerWidth);
 		nextSlide.moveTo(0);
 		startSlide.onMoveEnd(function(){
@@ -265,45 +267,63 @@
 			birds.advance();
 			
 			getBirdData(birds.nextBird().path , function(resp) {
+				
 				nextSlide = new Slide(birds.nextBird().name, resp);
+				nextSlide.hide();
 				nextSlide.setLeft(window.innerWidth);
 				getBirdData(birds.birdAtOffset(2).path);
 				getBirdData(birds.birdAtOffset(3).path);
+				
 			});
 			
 		})
 	}
 
 	
-	var lastPos, startPoint;
+	
 	
 	function isLink(element) {
-		if(!element.tagName) {
+		return getAncestor(element, 'A');
+	}
+	
+	function getAncestor(element, tag) {
+		if(!element.tagName || !tag) {
 			return false;
 		}
-		
-		if (element.tagName == 'A') {
-			return true;
+		if (element.tagName == tag) {
+			return element;
 		} else if(element.tagName !== 'BODY'){
-			return isLink(element.parentNode);
+			return getAncestor(element.parentNode, tag);
 		} else {
 			return false
 		}
 	}
 	
+	var lastPos, startPoint, startY;
 	function handleTouch(e) {
-		e.preventDefault();
-		var diff;
+		var diff, anchor, diffY;
+		if(moving) {
+			return;
+		}
+		if(getAncestor(e.target, 'DIV').className == 'bd') {
+			nextSlide.hide();
+			return;
+		} else {
+			e.preventDefault();
+		}
 		
 		switch (e.type) {
 			case 'touchstart':
 				startPoint = e.touches[0].pageX;
+				startY = e.touches[0].pageY;
 				startSlide.cleanTransitions();
 				nextSlide.cleanTransitions();
+				nextSlide.show();
 				lastPos = e.touches[0].pageX;
 				break;
 			case 'touchmove':
-				diff = e.touches[0].pageX - startPoint
+				diff = e.touches[0].pageX - startPoint;
+				e.preventDefault();
 				startSlide.setLeft(diff);
 				nextSlide.setLeft(diff + window.innerWidth);
 				lastPos = e.touches[0].pageX;
@@ -312,13 +332,16 @@
 			case 'touchend':
 				diff = lastPos - startPoint;
 				if(Math.abs(diff) < 5) {
+					anchor = isLink(e.target);
 					if(isLink(e.target)) {
-						alert('link');
+						window.location = anchor.href;
 					}
 				}
 				
 				if(diff < -200) {
 					goTo(1);
+				}else if (diff > 200) {
+					goTo(-1);
 				} else {
 					startSlide.moveTo(0);
 					nextSlide.moveTo(window.innerWidth);
@@ -329,6 +352,7 @@
 		
 	}
 	
+	var header = document.querySelector('.header');
 	document.addEventListener('touchstart', handleTouch);
 	document.addEventListener('touchmove', handleTouch);
 	document.addEventListener('touchend', handleTouch);
