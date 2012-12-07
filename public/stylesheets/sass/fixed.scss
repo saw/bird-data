@@ -1,16 +1,12 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
 body * {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 }
 
 body {
 	font-family: sans-serif;
-	font-weight: normal;
-	margin: 50px 0 0;
+	width: 100%;
 }
 
 .slide {
@@ -23,26 +19,24 @@ body {
 
 
 .header {
-	height: 40%;
+	height: 178px;
 	overflow: hidden;
 	width: 100%;
 	top:0;
 	left:0;
-	position: absolute;
+	position: fixed;
 	border-bottom: 5px solid black;
 	background: #fff;
-	z-index:1;
 }
 
 .hero {
-	z-index: 1;
 	display: block;
 	position: relative;
 	height: 85%;
-	text-align: center;
 	width: 100%;
-	background: #000;
 	padding-top: 5px;
+	text-align: center;
+	background: #000;
 }
 
 .navigation {
@@ -53,16 +47,13 @@ body {
 	height: 100%;
 	padding:0;
 	margin:0;
-	z-index:2;
 	
 	.arrow {
 		color: #fff;
-		margin:0;
 		text-decoration: none;
 		position: absolute;
 		height:100%;
 		width: 50%;
-		
 		span {
 			display: block;
 			position: absolute;
@@ -79,9 +70,6 @@ body {
 		}
 	}
 }
-
-
-
 .hero-img {
 	display: inline;
 	max-height: 100%;
@@ -99,8 +87,39 @@ body {
 }
 
 .bd {
-	margin-top: 40%;
 	width: 100%;
+	margin-top: 210px;
 	padding: 0px 20px;
 
+}
+
+@media screen and (orientation:landscape) {
+
+	.header { 
+		width:33%;
+		height: 110px;
+		border-bottom: 2px solid black;
+		
+		.hero {
+			background: transparent;
+		}
+		
+		.title {
+			height:34px;
+			font-size:14px;
+		}
+		
+		.arrow {
+			span {
+				top: 10px;
+			}
+		}
+	}
+	
+	.bd {
+		width: auto;
+		margin: 0 10px 0 34%;
+		padding: 0px;
+		font-size: 12px;
+	}
 }

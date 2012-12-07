@@ -6,6 +6,11 @@ var jsdom = require("jsdom");
 function getArticle(name) {
     var promise = new Promise();
 
+		fs.readFile(__dirname + '/../articles/ipsum', 'UTF-8', function(err, data) {
+			promise.resolve({name:'Domestic Chicken', content:data});
+		});
+	
+	 return promise;
     if(cache[name]) {
         if(cache[name] == 'fail'){
             process.nextTick(function(){

@@ -1,20 +1,14 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 6, sass/fixed.scss */
 body * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 10, sass/fixed.scss */
 body {
   font-family: sans-serif;
-  font-weight: normal;
-  margin: 50px 0 0;
+  width: 100%;
 }
 
-/* line 16, sass/fixed.scss */
 .slide {
   position: absolute;
   overflow: hidden;
@@ -23,32 +17,27 @@ body {
   margin: 0;
 }
 
-/* line 25, sass/fixed.scss */
 .header {
-  height: 40%;
+  height: 178px;
   overflow: hidden;
   width: 100%;
   top: 0;
   left: 0;
-  position: absolute;
+  position: fixed;
   border-bottom: 5px solid black;
   background: #fff;
-  z-index: 1;
 }
 
-/* line 37, sass/fixed.scss */
 .hero {
-  z-index: 1;
   display: block;
   position: relative;
   height: 85%;
-  text-align: center;
   width: 100%;
-  background: #000;
   padding-top: 5px;
+  text-align: center;
+  background: #000;
 }
 
-/* line 48, sass/fixed.scss */
 .navigation {
   position: absolute;
   top: 0px;
@@ -57,42 +46,34 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  z-index: 2;
 }
-/* line 58, sass/fixed.scss */
 .navigation .arrow {
   color: #fff;
-  margin: 0;
   text-decoration: none;
   position: absolute;
   height: 100%;
   width: 50%;
 }
-/* line 66, sass/fixed.scss */
 .navigation .arrow span {
   display: block;
   position: absolute;
   top: 40%;
   left: 5px;
 }
-/* line 74, sass/fixed.scss */
 .navigation .next-link {
   left: 50%;
 }
-/* line 76, sass/fixed.scss */
 .navigation .next-link span {
   left: auto;
   right: 5px;
 }
 
-/* line 85, sass/fixed.scss */
 .hero-img {
   display: inline;
   max-height: 100%;
   max-width: 100%;
 }
 
-/* line 91, sass/fixed.scss */
 .title {
   border-top: 4px solid black;
   color: black;
@@ -103,9 +84,33 @@ body {
   text-align: left;
 }
 
-/* line 101, sass/fixed.scss */
 .bd {
-  margin-top: 40%;
   width: 100%;
+  margin-top: 210px;
   padding: 0px 20px;
+}
+
+@media screen and (orientation: landscape) {
+  .header {
+    width: 33%;
+    height: 110px;
+    border-bottom: 2px solid black;
+  }
+  .header .hero {
+    background: transparent;
+  }
+  .header .title {
+    height: 34px;
+    font-size: 14px;
+  }
+  .header .arrow span {
+    top: 10px;
+  }
+
+  .bd {
+    width: auto;
+    margin: 0 10px 0 34%;
+    padding: 0px;
+    font-size: 12px;
+  }
 }

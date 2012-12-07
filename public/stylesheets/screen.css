@@ -2,19 +2,16 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 6, sass/screen.scss */
 body * {
   box-sizing: border-box;
 }
 
-/* line 10, sass/screen.scss */
 body {
   font-family: sans-serif;
   font-weight: normal;
   margin: 50px 0 0;
 }
 
-/* line 16, sass/screen.scss */
 .slide {
   position: absolute;
   overflow: hidden;
@@ -23,7 +20,6 @@ body {
   margin: 0;
 }
 
-/* line 25, sass/screen.scss */
 .header {
   height: 40%;
   overflow: hidden;
@@ -36,7 +32,6 @@ body {
   z-index: 1;
 }
 
-/* line 37, sass/screen.scss */
 .hero {
   z-index: 1;
   display: block;
@@ -48,7 +43,6 @@ body {
   padding-top: 5px;
 }
 
-/* line 48, sass/screen.scss */
 .navigation {
   position: absolute;
   top: 0px;
@@ -59,7 +53,6 @@ body {
   margin: 0;
   z-index: 2;
 }
-/* line 58, sass/screen.scss */
 .navigation .arrow {
   color: #fff;
   margin: 0;
@@ -68,31 +61,26 @@ body {
   height: 100%;
   width: 50%;
 }
-/* line 66, sass/screen.scss */
 .navigation .arrow span {
   display: block;
   position: absolute;
   top: 40%;
   left: 5px;
 }
-/* line 74, sass/screen.scss */
 .navigation .next-link {
   left: 50%;
 }
-/* line 76, sass/screen.scss */
 .navigation .next-link span {
   left: auto;
   right: 5px;
 }
 
-/* line 85, sass/screen.scss */
 .hero-img {
   display: inline;
   max-height: 100%;
   max-width: 100%;
 }
 
-/* line 91, sass/screen.scss */
 .title {
   border-top: 4px solid black;
   color: black;
@@ -103,7 +91,6 @@ body {
   text-align: left;
 }
 
-/* line 101, sass/screen.scss */
 .bd {
   position: absolute;
   height: 60%;

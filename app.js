@@ -10,7 +10,7 @@ var express = require('express')
 
 
 var app = express();
-
+app.locals.fixed = true;
 var birdList = require(__dirname + '/models/bird-list.js').birdList;
 app.locals.list = JSON.stringify(birdList);
 app.configure(function(){
@@ -24,10 +24,6 @@ app.configure(function(){
   app.use(express.methodOverride());
   app.use(function(req, res, next) {
       req.birdList = birdList;
-		if(req.query.fixed) {
-			app.locals.fixed = true;
-		}
-		
       next();
   });
   app.use(app.router);
