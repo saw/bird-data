@@ -15,10 +15,7 @@ function render(req, res, data) {
 		res.end(JSON.stringify(data));
 		return;
 	}
-	
-	if(req.query.frag == 1) {
-		data.frag = true;
-	}
+
 	res.render('bird', data);
 }
 
@@ -103,6 +100,8 @@ function birdPage(req, res, nextr) {
 module.exports = function(thisapp) {
 	app = thisapp;
 	app.get('/bird/:name', birdPage);
-
-	
+	app.get('/fragments/:name', function(req, res, next) {
+		res.locals.frag = 1;
+		next();
+	}, birdPage);
 }
