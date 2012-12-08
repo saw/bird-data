@@ -12,7 +12,7 @@ function render(req, res, data) {
 	
 	if(req.query.data == 1) {
 		res.setHeader('Content-Type', 'text/plain; charset=utf-8');
-		res.end(JSON.stringify(data));
+		res.end(JSON.stringify(req.birdList, null, '\t'));
 		return;
 	}
 

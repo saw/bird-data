@@ -1,0 +1,4082 @@
+[
+	{
+		"latin": "Melozone aberti",
+		"path": "/bird/Abert's_Towhee",
+		"name": "Abert's Towhee"
+	},
+	{
+		"latin": "Empidonax virescens",
+		"path": "/bird/Acadian_Flycatcher",
+		"name": "Acadian Flycatcher"
+	},
+	{
+		"latin": "Melanerpes formicivorus",
+		"path": "/bird/Acorn_Woodpecker",
+		"name": "Acorn Woodpecker"
+	},
+	{
+		"latin": "Agamia agami",
+		"path": "/bird/Agami_Heron",
+		"name": "Agami Heron"
+	},
+	{
+		"latin": "Empidonax alnorum",
+		"path": "/bird/Alder_Flycatcher",
+		"name": "Alder Flycatcher"
+	},
+	{
+		"latin": "Sterna aleutica",
+		"path": "/bird/Aleutian_Tern",
+		"name": "Aleutian Tern"
+	},
+	{
+		"latin": "Chloroceryle amazona",
+		"path": "/bird/Amazon_Kingfisher",
+		"name": "Amazon Kingfisher"
+	},
+	{
+		"latin": "Recurvirostra americana",
+		"path": "/bird/American_Avocet",
+		"name": "American Avocet"
+	},
+	{
+		"latin": "Botaurus lentiginosus",
+		"path": "/bird/American_Bittern",
+		"name": "American Bittern"
+	},
+	{
+		"latin": "Fulica americana",
+		"path": "/bird/American_Coot",
+		"name": "American Coot"
+	},
+	{
+		"latin": "Corvus brachyrhynchos",
+		"path": "/bird/American_Crow",
+		"name": "American Crow"
+	},
+	{
+		"latin": "Cinclus mexicanus",
+		"path": "/bird/American_Dipper",
+		"name": "American Dipper"
+	},
+	{
+		"latin": "Carduelis tristis",
+		"path": "/bird/American_Goldfinch",
+		"name": "American Goldfinch"
+	},
+	{
+		"latin": "Falco sparverius",
+		"path": "/bird/American_Kestrel",
+		"name": "American Kestrel"
+	},
+	{
+		"latin": "Haematopus palliatus",
+		"path": "/bird/American_Oystercatcher",
+		"name": "American Oystercatcher"
+	},
+	{
+		"latin": "Turdus migratorius",
+		"path": "/bird/American_Robin",
+		"name": "American Robin"
+	},
+	{
+		"latin": "Anas americana",
+		"path": "/bird/American_Wigeon",
+		"name": "American Wigeon"
+	},
+	{
+		"latin": "Scolopax minor",
+		"path": "/bird/American_Woodcock",
+		"name": "American Woodcock"
+	},
+	{
+		"latin": "Synthliboramphus antiquus",
+		"path": "/bird/Ancient_Murrelet",
+		"name": "Ancient Murrelet"
+	},
+	{
+		"latin": "Calypte anna",
+		"path": "/bird/Anna's_Hummingbird",
+		"name": "Anna's Hummingbird"
+	},
+	{
+		"latin": "Chordeiles gundlachii",
+		"path": "/bird/Antillean_Nighthawk",
+		"name": "Antillean Nighthawk"
+	},
+	{
+		"latin": "Falco femoralis",
+		"path": "/bird/Aplomado_Falcon",
+		"name": "Aplomado Falcon"
+	},
+	{
+		"latin": "Gavia arctica",
+		"path": "/bird/Arctic_Loon",
+		"name": "Arctic Loon"
+	},
+	{
+		"latin": "Sterna paradisaea",
+		"path": "/bird/Arctic_Tern",
+		"name": "Arctic Tern"
+	},
+	{
+		"latin": "Phylloscopus borealis",
+		"path": "/bird/Arctic_Warbler",
+		"name": "Arctic Warbler"
+	},
+	{
+		"latin": "Myiarchus cinerascens",
+		"path": "/bird/Ash-throated_Flycatcher",
+		"name": "Ash-throated Flycatcher"
+	},
+	{
+		"latin": "Oceanodroma homochroa",
+		"path": "/bird/Ashy_Storm-petrel",
+		"name": "Ashy Storm-petrel"
+	},
+	{
+		"latin": "Fratercula arctica",
+		"path": "/bird/Atlantic_Puffin",
+		"name": "Atlantic Puffin"
+	},
+	{
+		"latin": "Puffinus lherminieri",
+		"path": "/bird/Audubon's_Shearwater",
+		"name": "Audubon's Shearwater"
+	},
+	{
+		"latin": "Zoothera pinicola",
+		"path": "/bird/Aztec_Thrush",
+		"name": "Aztec Thrush"
+	},
+	{
+		"latin": "Porphyrio flavirostris",
+		"path": "/bird/Azure_Gallinule",
+		"name": "Azure Gallinule"
+	},
+	{
+		"latin": "Amazilia cyanocephala",
+		"path": "/bird/Azure-crowned_Hummingbird",
+		"name": "Azure-crowned Hummingbird"
+	},
+	{
+		"latin": "Cyanolyca cucullata",
+		"path": "/bird/Azure-hooded_Jay",
+		"name": "Azure-hooded Jay"
+	},
+	{
+		"latin": "Peucaea aestivalis",
+		"path": "/bird/Bachman's_Sparrow",
+		"name": "Bachman's Sparrow"
+	},
+	{
+		"latin": "Vermivora bachmanii",
+		"path": "/bird/Bachman's_Warbler",
+		"name": "Bachman's Warbler"
+	},
+	{
+		"latin": "Mimus gundlachii",
+		"path": "/bird/Bahama_Mockingbird",
+		"name": "Bahama Mockingbird"
+	},
+	{
+		"latin": "Tachycineta cyaneoviridis",
+		"path": "/bird/Bahama_Swallow",
+		"name": "Bahama Swallow"
+	},
+	{
+		"latin": "Calliphlox evelynae",
+		"path": "/bird/Bahama_Woodstar",
+		"name": "Bahama Woodstar"
+	},
+	{
+		"latin": "Calidris bairdii",
+		"path": "/bird/Baird's_Sandpiper",
+		"name": "Baird's Sandpiper"
+	},
+	{
+		"latin": "Ammodramus bairdii",
+		"path": "/bird/Baird's_Sparrow",
+		"name": "Baird's Sparrow"
+	},
+	{
+		"latin": "Haliaeetus leucocephalus",
+		"path": "/bird/Bald_Eagle",
+		"name": "Bald Eagle"
+	},
+	{
+		"latin": "Campylorhynchus zonatus",
+		"path": "/bird/Band-backed_Wren",
+		"name": "Band-backed Wren"
+	},
+	{
+		"latin": "Patagioenas fasciata",
+		"path": "/bird/Band-tailed_Pigeon",
+		"name": "Band-tailed Pigeon"
+	},
+	{
+		"latin": "Philortyx fasciatus",
+		"path": "/bird/Banded_Quail",
+		"name": "Banded Quail"
+	},
+	{
+		"latin": "Thryothorus pleurostictus",
+		"path": "/bird/Banded_Wren",
+		"name": "Banded Wren"
+	},
+	{
+		"latin": "Limosa lapponica",
+		"path": "/bird/Bar-tailed_Godwit",
+		"name": "Bar-tailed Godwit"
+	},
+	{
+		"latin": "Tyto alba",
+		"path": "/bird/Barn_Owl",
+		"name": "Barn Owl"
+	},
+	{
+		"latin": "Hirundo rustica",
+		"path": "/bird/Barn_Swallow",
+		"name": "Barn Swallow"
+	},
+	{
+		"latin": "Thamnophilus doliatus",
+		"path": "/bird/Barred_Antshrike",
+		"name": "Barred Antshrike"
+	},
+	{
+		"latin": "Strix varia",
+		"path": "/bird/Barred_Owl",
+		"name": "Barred Owl"
+	},
+	{
+		"latin": "Bolborhynchus lineola",
+		"path": "/bird/Barred_Parakeet",
+		"name": "Barred Parakeet"
+	},
+	{
+		"latin": "Bucephala islandica",
+		"path": "/bird/Barrow's_Goldeneye",
+		"name": "Barrow's Goldeneye"
+	},
+	{
+		"latin": "Anser fabalis",
+		"path": "/bird/Bean_Goose",
+		"name": "Bean Goose"
+	},
+	{
+		"latin": "Dendrortyx barbatus",
+		"path": "/bird/Bearded_Wood-partridge",
+		"name": "Bearded Wood-partridge"
+	},
+	{
+		"latin": "Vireo bellii",
+		"path": "/bird/Bell's_Vireo",
+		"name": "Bell's Vireo"
+	},
+	{
+		"latin": "Xenotriccus callizonus",
+		"path": "/bird/Belted_Flycatcher",
+		"name": "Belted Flycatcher"
+	},
+	{
+		"latin": "Megaceryle alcyon",
+		"path": "/bird/Belted_Kingfisher",
+		"name": "Belted Kingfisher"
+	},
+	{
+		"latin": "Toxostoma bendirei",
+		"path": "/bird/Bendire's_Thrasher",
+		"name": "Bendire's Thrasher"
+	},
+	{
+		"latin": "Pterodroma cahow",
+		"path": "/bird/Bermuda_Petrel",
+		"name": "Bermuda Petrel"
+	},
+	{
+		"latin": "Amazilia beryllina",
+		"path": "/bird/Berylline_Hummingbird",
+		"name": "Berylline Hummingbird"
+	},
+	{
+		"latin": "Thryomanes bewickii",
+		"path": "/bird/Bewick's_Wren",
+		"name": "Bewick's Wren"
+	},
+	{
+		"latin": "Accipiter bicolor",
+		"path": "/bird/Bicoloured_Hawk",
+		"name": "Bicoloured Hawk"
+	},
+	{
+		"latin": "Cepphus grylle",
+		"path": "/bird/Black_Guillemot",
+		"name": "Black Guillemot"
+	},
+	{
+		"latin": "Spizaetus tyrannus",
+		"path": "/bird/Black_Hawk-eagle",
+		"name": "Black Hawk-eagle"
+	},
+	{
+		"latin": "Anous minutus",
+		"path": "/bird/Black_Noddy",
+		"name": "Black Noddy"
+	},
+	{
+		"latin": "Haematopus bachmani",
+		"path": "/bird/Black_Oystercatcher",
+		"name": "Black Oystercatcher"
+	},
+	{
+		"latin": "Sayornis nigricans",
+		"path": "/bird/Black_Phoebe",
+		"name": "Black Phoebe"
+	},
+	{
+		"latin": "Laterallus jamaicensis",
+		"path": "/bird/Black_Rail",
+		"name": "Black Rail"
+	},
+	{
+		"latin": "Rynchops niger",
+		"path": "/bird/Black_Skimmer",
+		"name": "Black Skimmer"
+	},
+	{
+		"latin": "Oceanodroma melania",
+		"path": "/bird/Black_Storm-petrel",
+		"name": "Black Storm-petrel"
+	},
+	{
+		"latin": "Chlidonias niger",
+		"path": "/bird/Black_Tern",
+		"name": "Black Tern"
+	},
+	{
+		"latin": "Arenaria melanocephala",
+		"path": "/bird/Black_Turnstone",
+		"name": "Black Turnstone"
+	},
+	{
+		"latin": "Coragyps atratus",
+		"path": "/bird/Black_Vulture",
+		"name": "Black Vulture"
+	},
+	{
+		"latin": "Spizaetus melanoleucus",
+		"path": "/bird/Black-and-white_Hawk-eagle",
+		"name": "Black-and-white Hawk-eagle"
+	},
+	{
+		"latin": "Strix nigrolineata",
+		"path": "/bird/Black-and-white_Owl",
+		"name": "Black-and-white Owl"
+	},
+	{
+		"latin": "Picoides arcticus",
+		"path": "/bird/Black-backed_Woodpecker",
+		"name": "Black-backed Woodpecker"
+	},
+	{
+		"latin": "Dendrocolaptes picumnus",
+		"path": "/bird/Black-banded_Woodcreeper",
+		"name": "Black-banded Woodcreeper"
+	},
+	{
+		"latin": "Coccyzus erythropthalmus",
+		"path": "/bird/Black-billed_Cuckoo",
+		"name": "Black-billed Cuckoo"
+	},
+	{
+		"latin": "Pica pica",
+		"path": "/bird/Black-billed_Magpie",
+		"name": "Black-billed Magpie"
+	},
+	{
+		"latin": "Parus atricapillus",
+		"path": "/bird/Black-capped_Chickadee",
+		"name": "Black-capped Chickadee"
+	},
+	{
+		"latin": "Pterodroma hasitata",
+		"path": "/bird/Black-capped_Petrel",
+		"name": "Black-capped Petrel"
+	},
+	{
+		"latin": "Carduelis atriceps",
+		"path": "/bird/Black-capped_Siskin",
+		"name": "Black-capped Siskin"
+	},
+	{
+		"latin": "Notiochelidon pileata",
+		"path": "/bird/Black-capped_Swallow",
+		"name": "Black-capped Swallow"
+	},
+	{
+		"latin": "Vireo atricapilla",
+		"path": "/bird/Black-capped_Vireo",
+		"name": "Black-capped Vireo"
+	},
+	{
+		"latin": "Melanerpes pucherani",
+		"path": "/bird/Black-cheeked_Woodpecker",
+		"name": "Black-cheeked Woodpecker"
+	},
+	{
+		"latin": "Peucaea humeralis",
+		"path": "/bird/Black-chested_Sparrow",
+		"name": "Black-chested Sparrow"
+	},
+	{
+		"latin": "Archilochus alexandri",
+		"path": "/bird/Black-chinned_Hummingbird",
+		"name": "Black-chinned Hummingbird"
+	},
+	{
+		"latin": "Busarellus nigricollis",
+		"path": "/bird/Black-collared_Hawk",
+		"name": "Black-collared Hawk"
+	},
+	{
+		"latin": "Baeolophus atricristatus",
+		"path": "/bird/Black-crested_Titmouse",
+		"name": "Black-crested Titmouse"
+	},
+	{
+		"latin": "Tityra inquisitor",
+		"path": "/bird/Black-crowned_Tityra",
+		"name": "Black-crowned Tityra"
+	},
+	{
+		"latin": "Formicarius analis",
+		"path": "/bird/Black-faced_Antthrush",
+		"name": "Black-faced Antthrush"
+	},
+	{
+		"latin": "Phoebastria nigripes",
+		"path": "/bird/Black-footed_Albatross",
+		"name": "Black-footed Albatross"
+	},
+	{
+		"latin": "Larus ridibundus",
+		"path": "/bird/Black-headed_Gull",
+		"name": "Black-headed Gull"
+	},
+	{
+		"latin": "Catharus mexicanus",
+		"path": "/bird/Black-headed_Nightingale-thrush",
+		"name": "Black-headed Nightingale-thrush"
+	},
+	{
+		"latin": "Carduelis notata",
+		"path": "/bird/Black-headed_Siskin",
+		"name": "Black-headed Siskin"
+	},
+	{
+		"latin": "Trogon melanocephalus",
+		"path": "/bird/Black-headed_Trogon",
+		"name": "Black-headed Trogon"
+	},
+	{
+		"latin": "Rissa tridactyla",
+		"path": "/bird/Black-legged_Kittiwake",
+		"name": "Black-legged Kittiwake"
+	},
+	{
+		"latin": "Podiceps nigricollis",
+		"path": "/bird/Black-necked_Grebe",
+		"name": "Black-necked Grebe"
+	},
+	{
+		"latin": "Estrilda troglodytes",
+		"path": "/bird/Black-rumped_Waxbill",
+		"name": "Black-rumped Waxbill"
+	},
+	{
+		"latin": "Polioptila melanura",
+		"path": "/bird/Black-tailed_Gnatcatcher",
+		"name": "Black-tailed Gnatcatcher"
+	},
+	{
+		"latin": "Cyanolyca pumilo",
+		"path": "/bird/Black-throated_Jay",
+		"name": "Black-throated Jay"
+	},
+	{
+		"latin": "Calocitta colliei",
+		"path": "/bird/Black-throated_Magpie-jay",
+		"name": "Black-throated Magpie-jay"
+	},
+	{
+		"latin": "Puffinus opisthomelas",
+		"path": "/bird/Black-vented_Shearwater",
+		"name": "Black-vented Shearwater"
+	},
+	{
+		"latin": "Vireo altiloquus",
+		"path": "/bird/Black-whiskered_Vireo",
+		"name": "Black-whiskered Vireo"
+	},
+	{
+		"latin": "Dendroica fusca",
+		"path": "/bird/Blackburnian_Warbler",
+		"name": "Blackburnian Warbler"
+	},
+	{
+		"latin": "Cyanocitta cristata",
+		"path": "/bird/Blue_Jay",
+		"name": "Blue Jay"
+	},
+	{
+		"latin": "Melanotis hypoleucus",
+		"path": "/bird/Blue-and-white_Mockingbird",
+		"name": "Blue-and-white Mockingbird"
+	},
+	{
+		"latin": "Eupherusa cyanophrys",
+		"path": "/bird/Blue-capped_Hummingbird",
+		"name": "Blue-capped Hummingbird"
+	},
+	{
+		"latin": "Thalurania colombica",
+		"path": "/bird/Blue-crowned_Woodnymph",
+		"name": "Blue-crowned Woodnymph"
+	},
+	{
+		"latin": "Sula nebouxii",
+		"path": "/bird/Blue-footed_Booby",
+		"name": "Blue-footed Booby"
+	},
+	{
+		"latin": "Vireo solitarius",
+		"path": "/bird/Blue-headed_Vireo",
+		"name": "Blue-headed Vireo"
+	},
+	{
+		"latin": "Amazilia cyanura",
+		"path": "/bird/Blue-tailed_Hummingbird",
+		"name": "Blue-tailed Hummingbird"
+	},
+	{
+		"latin": "Lampornis clemenciae",
+		"path": "/bird/Blue-throated_Hummingbird",
+		"name": "Blue-throated Hummingbird"
+	},
+	{
+		"latin": "Anas discors",
+		"path": "/bird/Blue-winged_Teal",
+		"name": "Blue-winged Teal"
+	},
+	{
+		"latin": "Vermivora cyanoptera",
+		"path": "/bird/Blue-winged_Warbler",
+		"name": "Blue-winged Warbler"
+	},
+	{
+		"latin": "Cochlearius cochlearius",
+		"path": "/bird/Boat-billed_Heron",
+		"name": "Boat-billed Heron"
+	},
+	{
+		"latin": "Larus philadelphia",
+		"path": "/bird/Bonaparte's_Gull",
+		"name": "Bonaparte's Gull"
+	},
+	{
+		"latin": "Pterodroma hypoleuca",
+		"path": "/bird/Bonin_Petrel",
+		"name": "Bonin Petrel"
+	},
+	{
+		"latin": "Parus hudsonicus",
+		"path": "/bird/Boreal_Chickadee",
+		"name": "Boreal Chickadee"
+	},
+	{
+		"latin": "Peucaea botterii",
+		"path": "/bird/Botteri's_Sparrow",
+		"name": "Botteri's Sparrow"
+	},
+	{
+		"latin": "Campylorhynchus jocosus",
+		"path": "/bird/Boucard's_Wren",
+		"name": "Boucard's Wren"
+	},
+	{
+		"latin": "Branta bernicla",
+		"path": "/bird/Brent_Goose",
+		"name": "Brent Goose"
+	},
+	{
+		"latin": "Peucaea mystacalis",
+		"path": "/bird/Bridled_Sparrow",
+		"name": "Bridled Sparrow"
+	},
+	{
+		"latin": "Sterna anaethetus",
+		"path": "/bird/Bridled_Tern",
+		"name": "Bridled Tern"
+	},
+	{
+		"latin": "Attila spadiceus",
+		"path": "/bird/Bright-rumped_Attila",
+		"name": "Bright-rumped Attila"
+	},
+	{
+		"latin": "Cynanthus latirostris",
+		"path": "/bird/Broad-billed_Hummingbird",
+		"name": "Broad-billed Hummingbird"
+	},
+	{
+		"latin": "Selasphorus platycercus",
+		"path": "/bird/Broad-tailed_Hummingbird",
+		"name": "Broad-tailed Hummingbird"
+	},
+	{
+		"latin": "Buteo platypterus",
+		"path": "/bird/Broad-winged_Hawk",
+		"name": "Broad-winged Hawk"
+	},
+	{
+		"latin": "Sula leucogaster",
+		"path": "/bird/Brown_Booby",
+		"name": "Brown Booby"
+	},
+	{
+		"latin": "Psilorhinus morio",
+		"path": "/bird/Brown_Jay",
+		"name": "Brown Jay"
+	},
+	{
+		"latin": "Anous stolidus",
+		"path": "/bird/Brown_Noddy",
+		"name": "Brown Noddy"
+	},
+	{
+		"latin": "Toxostoma rufum",
+		"path": "/bird/Brown_Thrasher",
+		"name": "Brown Thrasher"
+	},
+	{
+		"latin": "Myadestes occidentalis",
+		"path": "/bird/Brown-backed_Solitaire",
+		"name": "Brown-backed Solitaire"
+	},
+	{
+		"latin": "Progne tapera",
+		"path": "/bird/Brown-chested_Martin",
+		"name": "Brown-chested Martin"
+	},
+	{
+		"latin": "Myiarchus tyrannulus",
+		"path": "/bird/Brown-crested_Flycatcher",
+		"name": "Brown-crested Flycatcher"
+	},
+	{
+		"latin": "Sitta pusilla",
+		"path": "/bird/Brown-headed_Nuthatch",
+		"name": "Brown-headed Nuthatch"
+	},
+	{
+		"latin": "Pyrilia haematotis",
+		"path": "/bird/Brown-hooded_Parrot",
+		"name": "Brown-hooded Parrot"
+	},
+	{
+		"latin": "Amazilia yucatanensis",
+		"path": "/bird/Buff-bellied_Hummingbird",
+		"name": "Buff-bellied Hummingbird"
+	},
+	{
+		"latin": "Empidonax fulvifrons",
+		"path": "/bird/Buff-breasted_Flycatcher",
+		"name": "Buff-breasted Flycatcher"
+	},
+	{
+		"latin": "Tryngites subruficollis",
+		"path": "/bird/Buff-breasted_Sandpiper",
+		"name": "Buff-breasted Sandpiper"
+	},
+	{
+		"latin": "Caprimulgus ridgwayi",
+		"path": "/bird/Buff-collared_Nightjar",
+		"name": "Buff-collared Nightjar"
+	},
+	{
+		"latin": "Dendrortyx leucophrys",
+		"path": "/bird/Buffy-crowned_Wood-partridge",
+		"name": "Buffy-crowned Wood-partridge"
+	},
+	{
+		"latin": "Bulweria bulwerii",
+		"path": "/bird/Bulwer's_Petrel",
+		"name": "Bulwer's Petrel"
+	},
+	{
+		"latin": "Athene cunicularia",
+		"path": "/bird/Burrowing_Owl",
+		"name": "Burrowing Owl"
+	},
+	{
+		"latin": "Campylorhynchus brunneicapillus",
+		"path": "/bird/Cactus_Wren",
+		"name": "Cactus Wren"
+	},
+	{
+		"latin": "Gymnogyps californianus",
+		"path": "/bird/California_Condor",
+		"name": "California Condor"
+	},
+	{
+		"latin": "Polioptila californica",
+		"path": "/bird/California_Gnatcatcher",
+		"name": "California Gnatcatcher"
+	},
+	{
+		"latin": "Larus californicus",
+		"path": "/bird/California_Gull",
+		"name": "California Gull"
+	},
+	{
+		"latin": "Callipepla californica",
+		"path": "/bird/California_Quail",
+		"name": "California Quail"
+	},
+	{
+		"latin": "Toxostoma redivivum",
+		"path": "/bird/California_Thrasher",
+		"name": "California Thrasher"
+	},
+	{
+		"latin": "Melozone crissalis",
+		"path": "/bird/California_Towhee",
+		"name": "California Towhee"
+	},
+	{
+		"latin": "Stellula calliope",
+		"path": "/bird/Calliope_Hummingbird",
+		"name": "Calliope Hummingbird"
+	},
+	{
+		"latin": "Branta canadensis",
+		"path": "/bird/Canada_Goose",
+		"name": "Canada Goose"
+	},
+	{
+		"latin": "Melozone fuscus",
+		"path": "/bird/Canyon_Towhee",
+		"name": "Canyon Towhee"
+	},
+	{
+		"latin": "Catherpes mexicanus",
+		"path": "/bird/Canyon_Wren",
+		"name": "Canyon Wren"
+	},
+	{
+		"latin": "Leptotila jamaicensis",
+		"path": "/bird/Caribbean_Dove",
+		"name": "Caribbean Dove"
+	},
+	{
+		"latin": "Parus carolinensis",
+		"path": "/bird/Carolina_Chickadee",
+		"name": "Carolina Chickadee"
+	},
+	{
+		"latin": "Conuropsis carolinensis",
+		"path": "/bird/Carolina_Parakeet",
+		"name": "Carolina Parakeet"
+	},
+	{
+		"latin": "Thryothorus ludovicianus",
+		"path": "/bird/Carolina_Wren",
+		"name": "Carolina Wren"
+	},
+	{
+		"latin": "Sterna caspia",
+		"path": "/bird/Caspian_Tern",
+		"name": "Caspian Tern"
+	},
+	{
+		"latin": "Ptychoramphus aleuticus",
+		"path": "/bird/Cassin's_Auklet",
+		"name": "Cassin's Auklet"
+	},
+	{
+		"latin": "Carpodacus cassinii",
+		"path": "/bird/Cassin's_Finch",
+		"name": "Cassin's Finch"
+	},
+	{
+		"latin": "Tyrannus vociferans",
+		"path": "/bird/Cassin's_Kingbird",
+		"name": "Cassin's Kingbird"
+	},
+	{
+		"latin": "Peucaea cassinii",
+		"path": "/bird/Cassin's_Sparrow",
+		"name": "Cassin's Sparrow"
+	},
+	{
+		"latin": "Vireo cassinii",
+		"path": "/bird/Cassin's_Vireo",
+		"name": "Cassin's Vireo"
+	},
+	{
+		"latin": "Bubulcus ibis",
+		"path": "/bird/Cattle_Egret",
+		"name": "Cattle Egret"
+	},
+	{
+		"latin": "Petrochelidon fulva",
+		"path": "/bird/Cave_Swallow",
+		"name": "Cave Swallow"
+	},
+	{
+		"latin": "Bombycilla cedrorum",
+		"path": "/bird/Cedar_Waxwing",
+		"name": "Cedar Waxwing"
+	},
+	{
+		"latin": "Parus rufescens",
+		"path": "/bird/Chestnut-backed_Chickadee",
+		"name": "Chestnut-backed Chickadee"
+	},
+	{
+		"latin": "Arremon brunneinucha",
+		"path": "/bird/Chestnut-capped_Brush-finch",
+		"name": "Chestnut-capped Brush-finch"
+	},
+	{
+		"latin": "Calcarius ornatus",
+		"path": "/bird/Chestnut-collared_Longspur",
+		"name": "Chestnut-collared Longspur"
+	},
+	{
+		"latin": "Celeus castaneus",
+		"path": "/bird/Chestnut-coloured_Woodpecker",
+		"name": "Chestnut-coloured Woodpecker"
+	},
+	{
+		"latin": "Dendroica pensylvanica",
+		"path": "/bird/Chestnut-sided_Warbler",
+		"name": "Chestnut-sided Warbler"
+	},
+	{
+		"latin": "Corvus cryptoleucus",
+		"path": "/bird/Chihuahuan_Raven",
+		"name": "Chihuahuan Raven"
+	},
+	{
+		"latin": "Chaetura pelagica",
+		"path": "/bird/Chimney_Swift",
+		"name": "Chimney Swift"
+	},
+	{
+		"latin": "Spizella passerina",
+		"path": "/bird/Chipping_Sparrow",
+		"name": "Chipping Sparrow"
+	},
+	{
+		"latin": "Pachyramphus cinnamomeus",
+		"path": "/bird/Cinnamon_Becard",
+		"name": "Cinnamon Becard"
+	},
+	{
+		"latin": "Amazilia rutila",
+		"path": "/bird/Cinnamon_Hummingbird",
+		"name": "Cinnamon Hummingbird"
+	},
+	{
+		"latin": "Anas cyanoptera",
+		"path": "/bird/Cinnamon_Teal",
+		"name": "Cinnamon Teal"
+	},
+	{
+		"latin": "Peucaea sumichrasti",
+		"path": "/bird/Cinnamon-tailed_Sparrow",
+		"name": "Cinnamon-tailed Sparrow"
+	},
+	{
+		"latin": "Trogon citreolus",
+		"path": "/bird/Citreoline_Trogon",
+		"name": "Citreoline Trogon"
+	},
+	{
+		"latin": "Motacilla citreola",
+		"path": "/bird/Citrine_Wagtail",
+		"name": "Citrine Wagtail"
+	},
+	{
+		"latin": "Rallus longirostris",
+		"path": "/bird/Clapper_Rail",
+		"name": "Clapper Rail"
+	},
+	{
+		"latin": "Nucifraga columbiana",
+		"path": "/bird/Clark's_Nutcracker",
+		"name": "Clark's Nutcracker"
+	},
+	{
+		"latin": "Spizella pallida",
+		"path": "/bird/Clay-coloured_Sparrow",
+		"name": "Clay-coloured Sparrow"
+	},
+	{
+		"latin": "Petrochelidon pyrrhonota",
+		"path": "/bird/Cliff_Swallow",
+		"name": "Cliff Swallow"
+	},
+	{
+		"latin": "Charadrius collaris",
+		"path": "/bird/Collared_Plover",
+		"name": "Collared Plover"
+	},
+	{
+		"latin": "Trogon collaris",
+		"path": "/bird/Collared_Trogon",
+		"name": "Collared Trogon"
+	},
+	{
+		"latin": "Grus grus",
+		"path": "/bird/Common_Crane",
+		"name": "Common Crane"
+	},
+	{
+		"latin": "Somateria mollissima",
+		"path": "/bird/Common_Eider",
+		"name": "Common Eider"
+	},
+	{
+		"latin": "Bucephala clangula",
+		"path": "/bird/Common_Goldeneye",
+		"name": "Common Goldeneye"
+	},
+	{
+		"latin": "Tringa nebularia",
+		"path": "/bird/Common_Greenshank",
+		"name": "Common Greenshank"
+	},
+	{
+		"latin": "Uria aalge",
+		"path": "/bird/Common_Guillemot",
+		"name": "Common Guillemot"
+	},
+	{
+		"latin": "Gavia immer",
+		"path": "/bird/Common_Loon",
+		"name": "Common Loon"
+	},
+	{
+		"latin": "Mergus merganser",
+		"path": "/bird/Common_Merganser",
+		"name": "Common Merganser"
+	},
+	{
+		"latin": "Gallinula chloropus",
+		"path": "/bird/Common_Moorhen",
+		"name": "Common Moorhen"
+	},
+	{
+		"latin": "Chordeiles minor",
+		"path": "/bird/Common_Nighthawk",
+		"name": "Common Nighthawk"
+	},
+	{
+		"latin": "Phalaenoptilus nuttallii",
+		"path": "/bird/Common_Poorwill",
+		"name": "Common Poorwill"
+	},
+	{
+		"latin": "Corvus corax",
+		"path": "/bird/Common_Raven",
+		"name": "Common Raven"
+	},
+	{
+		"latin": "Carpodacus erythrinus",
+		"path": "/bird/Common_Rosefinch",
+		"name": "Common Rosefinch"
+	},
+	{
+		"latin": "Sturnus vulgaris",
+		"path": "/bird/Common_Starling",
+		"name": "Common Starling"
+	},
+	{
+		"latin": "Saxicola torquatus",
+		"path": "/bird/Common_Stonechat",
+		"name": "Common Stonechat"
+	},
+	{
+		"latin": "Sterna hirundo",
+		"path": "/bird/Common_Tern",
+		"name": "Common Tern"
+	},
+	{
+		"latin": "Pterodroma cookii",
+		"path": "/bird/Cook's_Petrel",
+		"name": "Cook's Petrel"
+	},
+	{
+		"latin": "Accipiter cooperii",
+		"path": "/bird/Cooper's_Hawk",
+		"name": "Cooper's Hawk"
+	},
+	{
+		"latin": "Empidonax occidentalis",
+		"path": "/bird/Cordilleran_Flycatcher",
+		"name": "Cordilleran Flycatcher"
+	},
+	{
+		"latin": "Calonectris diomedea",
+		"path": "/bird/Cory's_Shearwater",
+		"name": "Cory's Shearwater"
+	},
+	{
+		"latin": "Calypte costae",
+		"path": "/bird/Costa's_Hummingbird",
+		"name": "Costa's Hummingbird"
+	},
+	{
+		"latin": "Vireo bairdi",
+		"path": "/bird/Cozumel_Vireo",
+		"name": "Cozumel Vireo"
+	},
+	{
+		"latin": "Geranospiza caerulescens",
+		"path": "/bird/Crane_Hawk",
+		"name": "Crane Hawk"
+	},
+	{
+		"latin": "Synthliboramphus craveri",
+		"path": "/bird/Craveri's_Murrelet",
+		"name": "Craveri's Murrelet"
+	},
+	{
+		"latin": "Aethia cristatella",
+		"path": "/bird/Crested_Auklet",
+		"name": "Crested Auklet"
+	},
+	{
+		"latin": "Caracara cheriway",
+		"path": "/bird/Crested_Caracara",
+		"name": "Crested Caracara"
+	},
+	{
+		"latin": "Morphnus guianensis",
+		"path": "/bird/Crested_Eagle",
+		"name": "Crested Eagle"
+	},
+	{
+		"latin": "Penelope purpurascens",
+		"path": "/bird/Crested_Guan",
+		"name": "Crested Guan"
+	},
+	{
+		"latin": "Lophostrix cristata",
+		"path": "/bird/Crested_Owl",
+		"name": "Crested Owl"
+	},
+	{
+		"latin": "Toxostoma crissale",
+		"path": "/bird/Crissal_Thrasher",
+		"name": "Crissal Thrasher"
+	},
+	{
+		"latin": "Toxostoma curvirostre",
+		"path": "/bird/Curve-billed_Thrasher",
+		"name": "Curve-billed Thrasher"
+	},
+	{
+		"latin": "Muscicapa sibirica",
+		"path": "/bird/Dark-sided_Flycatcher",
+		"name": "Dark-sided Flycatcher"
+	},
+	{
+		"latin": "Microrhopias quixensis",
+		"path": "/bird/Dot-winged_Antwren",
+		"name": "Dot-winged Antwren"
+	},
+	{
+		"latin": "Phalacrocorax auritus",
+		"path": "/bird/Double-crested_Cormorant",
+		"name": "Double-crested Cormorant"
+	},
+	{
+		"latin": "Burhinus bistriatus",
+		"path": "/bird/Double-striped_Thick-knee",
+		"name": "Double-striped Thick-knee"
+	},
+	{
+		"latin": "Harpagus bidentatus",
+		"path": "/bird/Double-toothed_Kite",
+		"name": "Double-toothed Kite"
+	},
+	{
+		"latin": "Picoides pubescens",
+		"path": "/bird/Downy_Woodpecker",
+		"name": "Downy Woodpecker"
+	},
+	{
+		"latin": "Cercomacra tyrannina",
+		"path": "/bird/Dusky_Antbird",
+		"name": "Dusky Antbird"
+	},
+	{
+		"latin": "Cynanthus sordidus",
+		"path": "/bird/Dusky_Hummingbird",
+		"name": "Dusky Hummingbird"
+	},
+	{
+		"latin": "Turdus naumanni",
+		"path": "/bird/Dusky_Thrush",
+		"name": "Dusky Thrush"
+	},
+	{
+		"latin": "Cyanolyca nana",
+		"path": "/bird/Dwarf_Jay",
+		"name": "Dwarf Jay"
+	},
+	{
+		"latin": "Vireo nelsoni",
+		"path": "/bird/Dwarf_Vireo",
+		"name": "Dwarf Vireo"
+	},
+	{
+		"latin": "Nyctiphrynus mcleodii",
+		"path": "/bird/Eared_Poorwill",
+		"name": "Eared Poorwill"
+	},
+	{
+		"latin": "Euptilotis neoxenus",
+		"path": "/bird/Eared_Quetzal",
+		"name": "Eared Quetzal"
+	},
+	{
+		"latin": "Sialia sialis",
+		"path": "/bird/Eastern_Bluebird",
+		"name": "Eastern Bluebird"
+	},
+	{
+		"latin": "Tyrannus tyrannus",
+		"path": "/bird/Eastern_Kingbird",
+		"name": "Eastern Kingbird"
+	},
+	{
+		"latin": "Sayornis phoebe",
+		"path": "/bird/Eastern_Phoebe",
+		"name": "Eastern Phoebe"
+	},
+	{
+		"latin": "Pipilo erythrophthalmus",
+		"path": "/bird/Eastern_Towhee",
+		"name": "Eastern Towhee"
+	},
+	{
+		"latin": "Callipepla douglasii",
+		"path": "/bird/Elegant_Quail",
+		"name": "Elegant Quail"
+	},
+	{
+		"latin": "Sterna elegans",
+		"path": "/bird/Elegant_Tern",
+		"name": "Elegant Tern"
+	},
+	{
+		"latin": "Micrathene whitneyi",
+		"path": "/bird/Elf_Owl",
+		"name": "Elf Owl"
+	},
+	{
+		"latin": "Aulacorhynchus prasinus",
+		"path": "/bird/Emerald_Toucanet",
+		"name": "Emerald Toucanet"
+	},
+	{
+		"latin": "Abeillia abeillei",
+		"path": "/bird/Emerald-chinned_Hummingbird",
+		"name": "Emerald-chinned Hummingbird"
+	},
+	{
+		"latin": "Chen canagica",
+		"path": "/bird/Emperor_Goose",
+		"name": "Emperor Goose"
+	},
+	{
+		"latin": "Numenius borealis",
+		"path": "/bird/Eskimo_Curlew",
+		"name": "Eskimo Curlew"
+	},
+	{
+		"latin": "Pyrrhula pyrrhula",
+		"path": "/bird/Eurasian_Bullfinch",
+		"name": "Eurasian Bullfinch"
+	},
+	{
+		"latin": "Eudromias morinellus",
+		"path": "/bird/Eurasian_Dotterel",
+		"name": "Eurasian Dotterel"
+	},
+	{
+		"latin": "Carduelis spinus",
+		"path": "/bird/Eurasian_Siskin",
+		"name": "Eurasian Siskin"
+	},
+	{
+		"latin": "Jynx torquilla",
+		"path": "/bird/Eurasian_Wryneck",
+		"name": "Eurasian Wryneck"
+	},
+	{
+		"latin": "Coccothraustes vespertinus",
+		"path": "/bird/Evening_Grosbeak",
+		"name": "Evening Grosbeak"
+	},
+	{
+		"latin": "Rhynchocyclus brevirostris",
+		"path": "/bird/Eye-ringed_Flatbill",
+		"name": "Eye-ringed Flatbill"
+	},
+	{
+		"latin": "Turdus obscurus",
+		"path": "/bird/Eyebrowed_Thrush",
+		"name": "Eyebrowed Thrush"
+	},
+	{
+		"latin": "Pterodroma feae",
+		"path": "/bird/Fea's_Petrel",
+		"name": "Fea's Petrel"
+	},
+	{
+		"latin": "Buteo regalis",
+		"path": "/bird/Ferruginous_Hawk",
+		"name": "Ferruginous Hawk"
+	},
+	{
+		"latin": "Glaucidium brasilianum",
+		"path": "/bird/Ferruginous_Pygmy-owl",
+		"name": "Ferruginous Pygmy-owl"
+	},
+	{
+		"latin": "Spizella pusilla",
+		"path": "/bird/Field_Sparrow",
+		"name": "Field Sparrow"
+	},
+	{
+		"latin": "Corvus ossifragus",
+		"path": "/bird/Fish_Crow",
+		"name": "Fish Crow"
+	},
+	{
+		"latin": "Amphispiza quinquestriata",
+		"path": "/bird/Five-striped_Sparrow",
+		"name": "Five-striped Sparrow"
+	},
+	{
+		"latin": "Deltarhynchus flammulatus",
+		"path": "/bird/Flammulated_Flycatcher",
+		"name": "Flammulated Flycatcher"
+	},
+	{
+		"latin": "Otus flammeolus",
+		"path": "/bird/Flammulated_Owl",
+		"name": "Flammulated Owl"
+	},
+	{
+		"latin": "Puffinus carneipes",
+		"path": "/bird/Flesh-footed_Shearwater",
+		"name": "Flesh-footed Shearwater"
+	},
+	{
+		"latin": "Tyrannus savana",
+		"path": "/bird/Fork-tailed_Flycatcher",
+		"name": "Fork-tailed Flycatcher"
+	},
+	{
+		"latin": "Oceanodroma furcata",
+		"path": "/bird/Fork-tailed_Storm-petrel",
+		"name": "Fork-tailed Storm-petrel"
+	},
+	{
+		"latin": "Sterna forsteri",
+		"path": "/bird/Forster's_Tern",
+		"name": "Forster's Tern"
+	},
+	{
+		"latin": "Passerella iliaca",
+		"path": "/bird/Fox_Sparrow",
+		"name": "Fox Sparrow"
+	},
+	{
+		"latin": "Larus pipixcan",
+		"path": "/bird/Franklin's_Gull",
+		"name": "Franklin's Gull"
+	},
+	{
+		"latin": "Strix fulvescens",
+		"path": "/bird/Fulvous_Owl",
+		"name": "Fulvous Owl"
+	},
+	{
+		"latin": "Pterodroma phaeopygia",
+		"path": "/bird/Galapagos_Petrel",
+		"name": "Galapagos Petrel"
+	},
+	{
+		"latin": "Callipepla gambelii",
+		"path": "/bird/Gambel's_Quail",
+		"name": "Gambel's Quail"
+	},
+	{
+		"latin": "Lamprolaima rhami",
+		"path": "/bird/Garnet-throated_Hummingbird",
+		"name": "Garnet-throated Hummingbird"
+	},
+	{
+		"latin": "Melanerpes uropygialis",
+		"path": "/bird/Gila_Woodpecker",
+		"name": "Gila Woodpecker"
+	},
+	{
+		"latin": "Colaptes chrysoides",
+		"path": "/bird/Gilded_Flicker",
+		"name": "Gilded Flicker"
+	},
+	{
+		"latin": "Larus hyperboreus",
+		"path": "/bird/Glaucous_Gull",
+		"name": "Glaucous Gull"
+	},
+	{
+		"latin": "Larus glaucescens",
+		"path": "/bird/Glaucous-winged_Gull",
+		"name": "Glaucous-winged Gull"
+	},
+	{
+		"latin": "Plegadis falcinellus",
+		"path": "/bird/Glossy_Ibis",
+		"name": "Glossy Ibis"
+	},
+	{
+		"latin": "Aquila chrysaetos",
+		"path": "/bird/Golden_Eagle",
+		"name": "Golden Eagle"
+	},
+	{
+		"latin": "Vireo hypochryseus",
+		"path": "/bird/Golden_Vireo",
+		"name": "Golden Vireo"
+	},
+	{
+		"latin": "Melanerpes chrysogenys",
+		"path": "/bird/Golden-cheeked_Woodpecker",
+		"name": "Golden-cheeked Woodpecker"
+	},
+	{
+		"latin": "Regulus satrapa",
+		"path": "/bird/Golden-crowned_Kinglet",
+		"name": "Golden-crowned Kinglet"
+	},
+	{
+		"latin": "Zonotrichia atricapilla",
+		"path": "/bird/Golden-crowned_Sparrow",
+		"name": "Golden-crowned Sparrow"
+	},
+	{
+		"latin": "Melanerpes aurifrons",
+		"path": "/bird/Golden-fronted_Woodpecker",
+		"name": "Golden-fronted Woodpecker"
+	},
+	{
+		"latin": "Colaptes rubiginosus",
+		"path": "/bird/Golden-olive_Woodpecker",
+		"name": "Golden-olive Woodpecker"
+	},
+	{
+		"latin": "Vermivora chrysoptera",
+		"path": "/bird/Golden-winged_Warbler",
+		"name": "Golden-winged Warbler"
+	},
+	{
+		"latin": "Dendroica graciae",
+		"path": "/bird/Grace's_Warbler",
+		"name": "Grace's Warbler"
+	},
+	{
+		"latin": "Ammodramus savannarum",
+		"path": "/bird/Grasshopper_Sparrow",
+		"name": "Grasshopper Sparrow"
+	},
+	{
+		"latin": "Leucosticte tephrocotis",
+		"path": "/bird/Gray-crowned_Rosy-finch",
+		"name": "Gray-crowned Rosy-finch"
+	},
+	{
+		"latin": "Taraba major",
+		"path": "/bird/Great_Antshrike",
+		"name": "Great Antshrike"
+	},
+	{
+		"latin": "Phalacrocorax carbo",
+		"path": "/bird/Great_Cormorant",
+		"name": "Great Cormorant"
+	},
+	{
+		"latin": "Crax rubra",
+		"path": "/bird/Great_Curassow",
+		"name": "Great Curassow"
+	},
+	{
+		"latin": "Casmerodius albus",
+		"path": "/bird/Great_Egret",
+		"name": "Great Egret"
+	},
+	{
+		"latin": "Pitangus sulphuratus",
+		"path": "/bird/Great_Kiskadee",
+		"name": "Great Kiskadee"
+	},
+	{
+		"latin": "Nyctibius grandis",
+		"path": "/bird/Great_Potoo",
+		"name": "Great Potoo"
+	},
+	{
+		"latin": "Puffinus gravis",
+		"path": "/bird/Great_Shearwater",
+		"name": "Great Shearwater"
+	},
+	{
+		"latin": "Stercorarius skua",
+		"path": "/bird/Great_Skua",
+		"name": "Great Skua"
+	},
+	{
+		"latin": "Tinamus major",
+		"path": "/bird/Great_Tinamou",
+		"name": "Great Tinamou"
+	},
+	{
+		"latin": "Fregata minor",
+		"path": "/bird/Greater_Frigatebird",
+		"name": "Greater Frigatebird"
+	},
+	{
+		"latin": "Rhodacanthis palmeri",
+		"path": "/bird/Greater_Koa-finch",
+		"name": "Greater Koa-finch"
+	},
+	{
+		"latin": "Contopus pertinax",
+		"path": "/bird/Greater_Pewee",
+		"name": "Greater Pewee"
+	},
+	{
+		"latin": "Tympanuchus cupido",
+		"path": "/bird/Greater_Prairie-chicken",
+		"name": "Greater Prairie-chicken"
+	},
+	{
+		"latin": "Geococcyx californianus",
+		"path": "/bird/Greater_Roadrunner",
+		"name": "Greater Roadrunner"
+	},
+	{
+		"latin": "Centrocercus urophasianus",
+		"path": "/bird/Greater_Sage-grouse",
+		"name": "Greater Sage-grouse"
+	},
+	{
+		"latin": "Aythya marila",
+		"path": "/bird/Greater_Scaup",
+		"name": "Greater Scaup"
+	},
+	{
+		"latin": "Tringa melanoleuca",
+		"path": "/bird/Greater_Yellowlegs",
+		"name": "Greater Yellowlegs"
+	},
+	{
+		"latin": "Butorides virescens",
+		"path": "/bird/Green_Heron",
+		"name": "Green Heron"
+	},
+	{
+		"latin": "Cyanocorax yncas",
+		"path": "/bird/Green_Jay",
+		"name": "Green Jay"
+	},
+	{
+		"latin": "Chloroceryle americana",
+		"path": "/bird/Green_Kingfisher",
+		"name": "Green Kingfisher"
+	},
+	{
+		"latin": "Colibri thalassinus",
+		"path": "/bird/Green_Violet-ear",
+		"name": "Green Violet-ear"
+	},
+	{
+		"latin": "Arremonops chloronotus",
+		"path": "/bird/Green-backed_Sparrow",
+		"name": "Green-backed Sparrow"
+	},
+	{
+		"latin": "Anthracothorax prevostii",
+		"path": "/bird/Green-breasted_Mango",
+		"name": "Green-breasted Mango"
+	},
+	{
+		"latin": "Amazilia viridifrons",
+		"path": "/bird/Green-fronted_Hummingbird",
+		"name": "Green-fronted Hummingbird"
+	},
+	{
+		"latin": "Arremon virenticeps",
+		"path": "/bird/Green-striped_Brush-finch",
+		"name": "Green-striped Brush-finch"
+	},
+	{
+		"latin": "Pipilo chlorurus",
+		"path": "/bird/Green-tailed_Towhee",
+		"name": "Green-tailed Towhee"
+	},
+	{
+		"latin": "Myiopagis viridicata",
+		"path": "/bird/Greenish_Elaenia",
+		"name": "Greenish Elaenia"
+	},
+	{
+		"latin": "Emberiza variabilis",
+		"path": "/bird/Grey_Bunting",
+		"name": "Grey Bunting"
+	},
+	{
+		"latin": "Empidonax wrightii",
+		"path": "/bird/Grey_Flycatcher",
+		"name": "Grey Flycatcher"
+	},
+	{
+		"latin": "Perisoreus canadensis",
+		"path": "/bird/Grey_Jay",
+		"name": "Grey Jay"
+	},
+	{
+		"latin": "Tyrannus dominicensis",
+		"path": "/bird/Grey_Kingbird",
+		"name": "Grey Kingbird"
+	},
+	{
+		"latin": "Perdix perdix",
+		"path": "/bird/Grey_Partridge",
+		"name": "Grey Partridge"
+	},
+	{
+		"latin": "Pluvialis squatarola",
+		"path": "/bird/Grey_Plover",
+		"name": "Grey Plover"
+	},
+	{
+		"latin": "Motacilla cinerea",
+		"path": "/bird/Grey_Wagtail",
+		"name": "Grey Wagtail"
+	},
+	{
+		"latin": "Campylorhynchus megalopterus",
+		"path": "/bird/Grey-barred_Wren",
+		"name": "Grey-barred Wren"
+	},
+	{
+		"latin": "Melanerpes hypopolius",
+		"path": "/bird/Grey-breasted_Woodpecker",
+		"name": "Grey-breasted Woodpecker"
+	},
+	{
+		"latin": "Carduelis sinica",
+		"path": "/bird/Grey-capped_Greenfinch",
+		"name": "Grey-capped Greenfinch"
+	},
+	{
+		"latin": "Leptotila cassini",
+		"path": "/bird/Grey-chested_Dove",
+		"name": "Grey-chested Dove"
+	},
+	{
+		"latin": "Pachyramphus major",
+		"path": "/bird/Grey-collared_Becard",
+		"name": "Grey-collared Becard"
+	},
+	{
+		"latin": "Colaptes auricularis",
+		"path": "/bird/Grey-crowned_Woodpecker",
+		"name": "Grey-crowned Woodpecker"
+	},
+	{
+		"latin": "Aramides cajaneus",
+		"path": "/bird/Grey-necked_Wood-rail",
+		"name": "Grey-necked Wood-rail"
+	},
+	{
+		"latin": "Heteroscelus brevipes",
+		"path": "/bird/Grey-tailed_Tattler",
+		"name": "Grey-tailed Tattler"
+	},
+	{
+		"latin": "Crotophaga sulcirostris",
+		"path": "/bird/Groove-billed_Ani",
+		"name": "Groove-billed Ani"
+	},
+	{
+		"latin": "Oceanodroma macrodactyla",
+		"path": "/bird/Guadalupe_Storm-petrel",
+		"name": "Guadalupe Storm-petrel"
+	},
+	{
+		"latin": "Sterna nilotica",
+		"path": "/bird/Gull-billed_Tern",
+		"name": "Gull-billed Tern"
+	},
+	{
+		"latin": "Falco rusticolus",
+		"path": "/bird/Gyr_Falcon",
+		"name": "Gyr Falcon"
+	},
+	{
+		"latin": "Picoides villosus",
+		"path": "/bird/Hairy_Woodpecker",
+		"name": "Hairy Woodpecker"
+	},
+	{
+		"latin": "Empidonax hammondii",
+		"path": "/bird/Hammond's_Flycatcher",
+		"name": "Hammond's Flycatcher"
+	},
+	{
+		"latin": "Thryothorus felix",
+		"path": "/bird/Happy_Wren",
+		"name": "Happy Wren"
+	},
+	{
+		"latin": "Histrionicus histrionicus",
+		"path": "/bird/Harlequin_Duck",
+		"name": "Harlequin Duck"
+	},
+	{
+		"latin": "Harpia harpyja",
+		"path": "/bird/Harpy_Eagle",
+		"name": "Harpy Eagle"
+	},
+	{
+		"latin": "Parabuteo unicinctus",
+		"path": "/bird/Harris's_Hawk",
+		"name": "Harris's Hawk"
+	},
+	{
+		"latin": "Zonotrichia querula",
+		"path": "/bird/Harris's_Sparrow",
+		"name": "Harris's Sparrow"
+	},
+	{
+		"latin": "Moho nobilis",
+		"path": "/bird/Hawaii_Oo",
+		"name": "Hawaii Oo"
+	},
+	{
+		"latin": "Fulica alai",
+		"path": "/bird/Hawaiian_Coot",
+		"name": "Hawaiian Coot"
+	},
+	{
+		"latin": "Corvus hawaiiensis",
+		"path": "/bird/Hawaiian_Crow",
+		"name": "Hawaiian Crow"
+	},
+	{
+		"latin": "Branta sandvicensis",
+		"path": "/bird/Hawaiian_Goose",
+		"name": "Hawaiian Goose"
+	},
+	{
+		"latin": "Buteo solitarius",
+		"path": "/bird/Hawaiian_Hawk",
+		"name": "Hawaiian Hawk"
+	},
+	{
+		"latin": "Pterodroma sandwichensis",
+		"path": "/bird/Hawaiian_Petrel",
+		"name": "Hawaiian Petrel"
+	},
+	{
+		"latin": "Larus heermanni",
+		"path": "/bird/Heermann's_Gull",
+		"name": "Heermann's Gull"
+	},
+	{
+		"latin": "Ammodramus henslowii",
+		"path": "/bird/Henslow's_Sparrow",
+		"name": "Henslow's Sparrow"
+	},
+	{
+		"latin": "Catharus guttatus",
+		"path": "/bird/Hermit_Thrush",
+		"name": "Hermit Thrush"
+	},
+	{
+		"latin": "Dendroica occidentalis",
+		"path": "/bird/Hermit_Warbler",
+		"name": "Hermit Warbler"
+	},
+	{
+		"latin": "Larus argentatus",
+		"path": "/bird/Herring_Gull",
+		"name": "Herring Gull"
+	},
+	{
+		"latin": "Penelopina nigra",
+		"path": "/bird/Highland_Guan",
+		"name": "Highland Guan"
+	},
+	{
+		"latin": "Coccothraustes abeillei",
+		"path": "/bird/Hooded_Grosbeak",
+		"name": "Hooded Grosbeak"
+	},
+	{
+		"latin": "Chondrohierax uncinatus",
+		"path": "/bird/Hook-billed_Kite",
+		"name": "Hook-billed Kite"
+	},
+	{
+		"latin": "Podiceps auritus",
+		"path": "/bird/Horned_Grebe",
+		"name": "Horned Grebe"
+	},
+	{
+		"latin": "Oreophasis derbianus",
+		"path": "/bird/Horned_Guan",
+		"name": "Horned Guan"
+	},
+	{
+		"latin": "Fratercula corniculata",
+		"path": "/bird/Horned_Puffin",
+		"name": "Horned Puffin"
+	},
+	{
+		"latin": "Carpodacus mexicanus",
+		"path": "/bird/House_Finch",
+		"name": "House Finch"
+	},
+	{
+		"latin": "Troglodytes aedon",
+		"path": "/bird/House_Wren",
+		"name": "House Wren"
+	},
+	{
+		"latin": "Limosa haemastica",
+		"path": "/bird/Hudsonian_Godwit",
+		"name": "Hudsonian Godwit"
+	},
+	{
+		"latin": "Vireo huttoni",
+		"path": "/bird/Hutton's_Vireo",
+		"name": "Hutton's Vireo"
+	},
+	{
+		"latin": "Larus glaucoides",
+		"path": "/bird/Iceland_Gull",
+		"name": "Iceland Gull"
+	},
+	{
+		"latin": "Campephilus imperialis",
+		"path": "/bird/Imperial_Woodpecker",
+		"name": "Imperial Woodpecker"
+	},
+	{
+		"latin": "Columbina inca",
+		"path": "/bird/Inca_Dove",
+		"name": "Inca Dove"
+	},
+	{
+		"latin": "Pagophila eburnea",
+		"path": "/bird/Ivory_Gull",
+		"name": "Ivory Gull"
+	},
+	{
+		"latin": "Campephilus principalis",
+		"path": "/bird/Ivory-billed_Woodpecker",
+		"name": "Ivory-billed Woodpecker"
+	},
+	{
+		"latin": "Moho braccatus",
+		"path": "/bird/Kauai_Oo",
+		"name": "Kauai Oo"
+	},
+	{
+		"latin": "Electron carinatum",
+		"path": "/bird/Keel-billed_Motmot",
+		"name": "Keel-billed Motmot"
+	},
+	{
+		"latin": "Ramphastos sulfuratus",
+		"path": "/bird/Keel-billed_Toucan",
+		"name": "Keel-billed Toucan"
+	},
+	{
+		"latin": "Larus dominicanus",
+		"path": "/bird/Kelp_Gull",
+		"name": "Kelp Gull"
+	},
+	{
+		"latin": "Charadrius alexandrinus",
+		"path": "/bird/Kentish_Plover",
+		"name": "Kentish Plover"
+	},
+	{
+		"latin": "Somateria spectabilis",
+		"path": "/bird/King_Eider",
+		"name": "King Eider"
+	},
+	{
+		"latin": "Rallus elegans",
+		"path": "/bird/King_Rail",
+		"name": "King Rail"
+	},
+	{
+		"latin": "Sarcoramphus papa",
+		"path": "/bird/King_Vulture",
+		"name": "King Vulture"
+	},
+	{
+		"latin": "Dendroica kirtlandii",
+		"path": "/bird/Kirtland's_Warbler",
+		"name": "Kirtland's Warbler"
+	},
+	{
+		"latin": "Brachyramphus brevirostris",
+		"path": "/bird/Kittlitz's_Murrelet",
+		"name": "Kittlitz's Murrelet"
+	},
+	{
+		"latin": "Camptorhynchus labradorius",
+		"path": "/bird/Labrador_Duck",
+		"name": "Labrador Duck"
+	},
+	{
+		"latin": "Picoides scalaris",
+		"path": "/bird/Ladder-backed_Woodpecker",
+		"name": "Ladder-backed Woodpecker"
+	},
+	{
+		"latin": "Locustella lanceolata",
+		"path": "/bird/Lanceolated_Warbler",
+		"name": "Lanceolated Warbler"
+	},
+	{
+		"latin": "Calcarius lapponicus",
+		"path": "/bird/Lapland_Longspur",
+		"name": "Lapland Longspur"
+	},
+	{
+		"latin": "Phaetusa simplex",
+		"path": "/bird/Large-billed_Tern",
+		"name": "Large-billed Tern"
+	},
+	{
+		"latin": "Calamospiza melanocorys",
+		"path": "/bird/Lark_Bunting",
+		"name": "Lark Bunting"
+	},
+	{
+		"latin": "Chondestes grammacus",
+		"path": "/bird/Lark_Sparrow",
+		"name": "Lark Sparrow"
+	},
+	{
+		"latin": "Herpetotheres cachinnans",
+		"path": "/bird/Laughing_Falcon",
+		"name": "Laughing Falcon"
+	},
+	{
+		"latin": "Larus atricilla",
+		"path": "/bird/Laughing_Gull",
+		"name": "Laughing Gull"
+	},
+	{
+		"latin": "Estrilda caerulescens",
+		"path": "/bird/Lavender_Waxbill",
+		"name": "Lavender Waxbill"
+	},
+	{
+		"latin": "Carduelis lawrencei",
+		"path": "/bird/Lawrence's_Goldfinch",
+		"name": "Lawrence's Goldfinch"
+	},
+	{
+		"latin": "Phoebastria immutabilis",
+		"path": "/bird/Laysan_Albatross",
+		"name": "Laysan Albatross"
+	},
+	{
+		"latin": "Anas laysanensis",
+		"path": "/bird/Laysan_Duck",
+		"name": "Laysan Duck"
+	},
+	{
+		"latin": "Telespiza cantans",
+		"path": "/bird/Laysan_Finch",
+		"name": "Laysan Finch"
+	},
+	{
+		"latin": "Porzana palmeri",
+		"path": "/bird/Laysan_Rail",
+		"name": "Laysan Rail"
+	},
+	{
+		"latin": "Oceanodroma leucorhoa",
+		"path": "/bird/Leach's_Storm-petrel",
+		"name": "Leach's Storm-petrel"
+	},
+	{
+		"latin": "Aethia pusilla",
+		"path": "/bird/Least_Auklet",
+		"name": "Least Auklet"
+	},
+	{
+		"latin": "Ixobrychus exilis",
+		"path": "/bird/Least_Bittern",
+		"name": "Least Bittern"
+	},
+	{
+		"latin": "Empidonax minimus",
+		"path": "/bird/Least_Flycatcher",
+		"name": "Least Flycatcher"
+	},
+	{
+		"latin": "Tachybaptus dominicus",
+		"path": "/bird/Least_Grebe",
+		"name": "Least Grebe"
+	},
+	{
+		"latin": "Calidris minutilla",
+		"path": "/bird/Least_Sandpiper",
+		"name": "Least Sandpiper"
+	},
+	{
+		"latin": "Halocyptena microsoma",
+		"path": "/bird/Least_Storm-petrel",
+		"name": "Least Storm-petrel"
+	},
+	{
+		"latin": "Sterna antillarum",
+		"path": "/bird/Least_Tern",
+		"name": "Least Tern"
+	},
+	{
+		"latin": "Fregata ariel",
+		"path": "/bird/Lesser_Frigatebird",
+		"name": "Lesser Frigatebird"
+	},
+	{
+		"latin": "Carduelis psaltria",
+		"path": "/bird/Lesser_Goldfinch",
+		"name": "Lesser Goldfinch"
+	},
+	{
+		"latin": "Chordeiles acutipennis",
+		"path": "/bird/Lesser_Nighthawk",
+		"name": "Lesser Nighthawk"
+	},
+	{
+		"latin": "Geococcyx velox",
+		"path": "/bird/Lesser_Roadrunner",
+		"name": "Lesser Roadrunner"
+	},
+	{
+		"latin": "Aythya affinis",
+		"path": "/bird/Lesser_Scaup",
+		"name": "Lesser Scaup"
+	},
+	{
+		"latin": "Tringa flavipes",
+		"path": "/bird/Lesser_Yellowlegs",
+		"name": "Lesser Yellowlegs"
+	},
+	{
+		"latin": "Melanerpes lewis",
+		"path": "/bird/Lewis's_Woodpecker",
+		"name": "Lewis's Woodpecker"
+	},
+	{
+		"latin": "Amazona finschi",
+		"path": "/bird/Lilac-crowned_Amazon",
+		"name": "Lilac-crowned Amazon"
+	},
+	{
+		"latin": "Melospiza lincolnii",
+		"path": "/bird/Lincoln's_Sparrow",
+		"name": "Lincoln's Sparrow"
+	},
+	{
+		"latin": "Dryocopus lineatus",
+		"path": "/bird/Lineated_Woodpecker",
+		"name": "Lineated Woodpecker"
+	},
+	{
+		"latin": "Alle alle",
+		"path": "/bird/Little_Auk",
+		"name": "Little Auk"
+	},
+	{
+		"latin": "Emberiza pusilla",
+		"path": "/bird/Little_Bunting",
+		"name": "Little Bunting"
+	},
+	{
+		"latin": "Larus minutus",
+		"path": "/bird/Little_Gull",
+		"name": "Little Gull"
+	},
+	{
+		"latin": "Crypturellus soui",
+		"path": "/bird/Little_Tinamou",
+		"name": "Little Tinamou"
+	},
+	{
+		"latin": "Tyrannus caudifasciatus",
+		"path": "/bird/Loggerhead_Kingbird",
+		"name": "Loggerhead Kingbird"
+	},
+	{
+		"latin": "Numenius americanus",
+		"path": "/bird/Long-billed_Curlew",
+		"name": "Long-billed Curlew"
+	},
+	{
+		"latin": "Limnodromus scolopaceus",
+		"path": "/bird/Long-billed_Dowitcher",
+		"name": "Long-billed Dowitcher"
+	},
+	{
+		"latin": "Heliomaster longirostris",
+		"path": "/bird/Long-billed_Starthroat",
+		"name": "Long-billed Starthroat"
+	},
+	{
+		"latin": "Toxostoma longirostre",
+		"path": "/bird/Long-billed_Thrasher",
+		"name": "Long-billed Thrasher"
+	},
+	{
+		"latin": "Asio otus",
+		"path": "/bird/Long-eared_Owl",
+		"name": "Long-eared Owl"
+	},
+	{
+		"latin": "Clangula hyemalis",
+		"path": "/bird/Long-tailed_Duck",
+		"name": "Long-tailed Duck"
+	},
+	{
+		"latin": "Stercorarius longicaudus",
+		"path": "/bird/Long-tailed_Jaeger",
+		"name": "Long-tailed Jaeger"
+	},
+	{
+		"latin": "Chiroxiphia linearis",
+		"path": "/bird/Long-tailed_Manakin",
+		"name": "Long-tailed Manakin"
+	},
+	{
+		"latin": "Campylopterus excellens",
+		"path": "/bird/Long-tailed_Sabrewing",
+		"name": "Long-tailed Sabrewing"
+	},
+	{
+		"latin": "Dendrortyx macroura",
+		"path": "/bird/Long-tailed_Wood-partridge",
+		"name": "Long-tailed Wood-partridge"
+	},
+	{
+		"latin": "Calidris subminuta",
+		"path": "/bird/Long-toed_Stint",
+		"name": "Long-toed Stint"
+	},
+	{
+		"latin": "Cotinga amabilis",
+		"path": "/bird/Lovely_Cotinga",
+		"name": "Lovely Cotinga"
+	},
+	{
+		"latin": "Eugenes fulgens",
+		"path": "/bird/Magnificent_Hummingbird",
+		"name": "Magnificent Hummingbird"
+	},
+	{
+		"latin": "Dendroica magnolia",
+		"path": "/bird/Magnolia_Warbler",
+		"name": "Magnolia Warbler"
+	},
+	{
+		"latin": "Coccyzus minor",
+		"path": "/bird/Mangrove_Cuckoo",
+		"name": "Mangrove Cuckoo"
+	},
+	{
+		"latin": "Vireo pallens",
+		"path": "/bird/Mangrove_Vireo",
+		"name": "Mangrove Vireo"
+	},
+	{
+		"latin": "Puffinus puffinus",
+		"path": "/bird/Manx_Shearwater",
+		"name": "Manx Shearwater"
+	},
+	{
+		"latin": "Limosa fedoa",
+		"path": "/bird/Marbled_Godwit",
+		"name": "Marbled Godwit"
+	},
+	{
+		"latin": "Brachyramphus marmoratus",
+		"path": "/bird/Marbled_Murrelet",
+		"name": "Marbled Murrelet"
+	},
+	{
+		"latin": "Rhynchopsitta terrisi",
+		"path": "/bird/Maroon-fronted_Parrot",
+		"name": "Maroon-fronted Parrot"
+	},
+	{
+		"latin": "Cistothorus palustris",
+		"path": "/bird/Marsh_Wren",
+		"name": "Marsh Wren"
+	},
+	{
+		"latin": "Nomonyx dominicus",
+		"path": "/bird/Masked_Duck",
+		"name": "Masked Duck"
+	},
+	{
+		"latin": "Paroreomyza montana",
+		"path": "/bird/Maui_Alauahio",
+		"name": "Maui Alauahio"
+	},
+	{
+		"latin": "Pseudonestor xanthophrys",
+		"path": "/bird/Maui_Parrotbill",
+		"name": "Maui Parrotbill"
+	},
+	{
+		"latin": "Rhynchophanes mccownii",
+		"path": "/bird/McCown's_Longspur",
+		"name": "McCown's Longspur"
+	},
+	{
+		"latin": "Amazona farinosa",
+		"path": "/bird/Mealy_Amazon",
+		"name": "Mealy Amazon"
+	},
+	{
+		"latin": "Parus sclateri",
+		"path": "/bird/Mexican_Chickadee",
+		"name": "Mexican Chickadee"
+	},
+	{
+		"latin": "Forpus cyanopygius",
+		"path": "/bird/Mexican_Parrotlet",
+		"name": "Mexican Parrotlet"
+	},
+	{
+		"latin": "Thalurania ridgwayi",
+		"path": "/bird/Mexican_Woodnymph",
+		"name": "Mexican Woodnymph"
+	},
+	{
+		"latin": "Ara militaris",
+		"path": "/bird/Military_Macaw",
+		"name": "Military Macaw"
+	},
+	{
+		"latin": "Ictinia mississippiensis",
+		"path": "/bird/Mississippi_Kite",
+		"name": "Mississippi Kite"
+	},
+	{
+		"latin": "Cyrtonyx montezumae",
+		"path": "/bird/Montezuma_Quail",
+		"name": "Montezuma Quail"
+	},
+	{
+		"latin": "Anas fulvigula",
+		"path": "/bird/Mottled_Duck",
+		"name": "Mottled Duck"
+	},
+	{
+		"latin": "Pterodroma inexpectata",
+		"path": "/bird/Mottled_Petrel",
+		"name": "Mottled Petrel"
+	},
+	{
+		"latin": "Sialia currucoides",
+		"path": "/bird/Mountain_Bluebird",
+		"name": "Mountain Bluebird"
+	},
+	{
+		"latin": "Parus gambeli",
+		"path": "/bird/Mountain_Chickadee",
+		"name": "Mountain Chickadee"
+	},
+	{
+		"latin": "Charadrius montanus",
+		"path": "/bird/Mountain_Plover",
+		"name": "Mountain Plover"
+	},
+	{
+		"latin": "Oreortyx pictus",
+		"path": "/bird/Mountain_Quail",
+		"name": "Mountain Quail"
+	},
+	{
+		"latin": "Zenaida macroura",
+		"path": "/bird/Mourning_Dove",
+		"name": "Mourning Dove"
+	},
+	{
+		"latin": "Cairina moschata",
+		"path": "/bird/Muscovy_Duck",
+		"name": "Muscovy Duck"
+	},
+	{
+		"latin": "Ficedula narcissina",
+		"path": "/bird/Narcissus_Flycatcher",
+		"name": "Narcissus Flycatcher"
+	},
+	{
+		"latin": "Vermivora ruficapilla",
+		"path": "/bird/Nashville_Warbler",
+		"name": "Nashville Warbler"
+	},
+	{
+		"latin": "Phalacrocorax brasilianus",
+		"path": "/bird/Neotropic_Cormorant",
+		"name": "Neotropic Cormorant"
+	},
+	{
+		"latin": "Puffinus newelli",
+		"path": "/bird/Newell's_Shearwater",
+		"name": "Newell's Shearwater"
+	},
+	{
+		"latin": "Telespiza ultima",
+		"path": "/bird/Nihoa_Finch",
+		"name": "Nihoa Finch"
+	},
+	{
+		"latin": "Camptostoma imberbe",
+		"path": "/bird/Northern_Beardless-tyrannulet",
+		"name": "Northern Beardless-tyrannulet"
+	},
+	{
+		"latin": "Oncostoma cinereigulare",
+		"path": "/bird/Northern_Bentbill",
+		"name": "Northern Bentbill"
+	},
+	{
+		"latin": "Colaptes auratus",
+		"path": "/bird/Northern_Flicker",
+		"name": "Northern Flicker"
+	},
+	{
+		"latin": "Fulmarus glacialis",
+		"path": "/bird/Northern_Fulmar",
+		"name": "Northern Fulmar"
+	},
+	{
+		"latin": "Morus bassanus",
+		"path": "/bird/Northern_Gannet",
+		"name": "Northern Gannet"
+	},
+	{
+		"latin": "Accipiter gentilis",
+		"path": "/bird/Northern_Goshawk",
+		"name": "Northern Goshawk"
+	},
+	{
+		"latin": "Circus cyaneus",
+		"path": "/bird/Northern_Harrier",
+		"name": "Northern Harrier"
+	},
+	{
+		"latin": "Jacana spinosa",
+		"path": "/bird/Northern_Jacana",
+		"name": "Northern Jacana"
+	},
+	{
+		"latin": "Mimus polyglottos",
+		"path": "/bird/Northern_Mockingbird",
+		"name": "Northern Mockingbird"
+	},
+	{
+		"latin": "Parula americana",
+		"path": "/bird/Northern_Parula",
+		"name": "Northern Parula"
+	},
+	{
+		"latin": "Anas acuta",
+		"path": "/bird/Northern_Pintail",
+		"name": "Northern Pintail"
+	},
+	{
+		"latin": "Nyctibius jamaicensis",
+		"path": "/bird/Northern_Potoo",
+		"name": "Northern Potoo"
+	},
+	{
+		"latin": "Anas clypeata",
+		"path": "/bird/Northern_Shoveler",
+		"name": "Northern Shoveler"
+	},
+	{
+		"latin": "Oenanthe oenanthe",
+		"path": "/bird/Northern_Wheatear",
+		"name": "Northern Wheatear"
+	},
+	{
+		"latin": "Picoides nuttallii",
+		"path": "/bird/Nuttall's_Woodpecker",
+		"name": "Nuttall's Woodpecker"
+	},
+	{
+		"latin": "Myiarchus nuttingi",
+		"path": "/bird/Nutting's_Flycatcher",
+		"name": "Nutting's Flycatcher"
+	},
+	{
+		"latin": "Moho apicalis",
+		"path": "/bird/Oahu_Oo",
+		"name": "Oahu Oo"
+	},
+	{
+		"latin": "Baeolophus inornatus",
+		"path": "/bird/Oak_Titmouse",
+		"name": "Oak Titmouse"
+	},
+	{
+		"latin": "Cyrtonyx ocellatus",
+		"path": "/bird/Ocellated_Quail",
+		"name": "Ocellated Quail"
+	},
+	{
+		"latin": "Toxostoma ocellatum",
+		"path": "/bird/Ocellated_Thrasher",
+		"name": "Ocellated Thrasher"
+	},
+	{
+		"latin": "Meleagris ocellata",
+		"path": "/bird/Ocellated_Turkey",
+		"name": "Ocellated Turkey"
+	},
+	{
+		"latin": "Contopus ochraceus",
+		"path": "/bird/Ochraceous_Pewee",
+		"name": "Ochraceous Pewee"
+	},
+	{
+		"latin": "Mionectes oleagineus",
+		"path": "/bird/Ochre-bellied_Flycatcher",
+		"name": "Ochre-bellied Flycatcher"
+	},
+	{
+		"latin": "Sittasomus griseicapillus",
+		"path": "/bird/Olivaceous_Woodcreeper",
+		"name": "Olivaceous Woodcreeper"
+	},
+	{
+		"latin": "Arremonops rufivirgatus",
+		"path": "/bird/Olive_Sparrow",
+		"name": "Olive Sparrow"
+	},
+	{
+		"latin": "Peucedramus taeniatus",
+		"path": "/bird/Olive_Warbler",
+		"name": "Olive Warbler"
+	},
+	{
+		"latin": "Contopus cooperi",
+		"path": "/bird/Olive-sided_Flycatcher",
+		"name": "Olive-sided Flycatcher"
+	},
+	{
+		"latin": "Aratinga nana",
+		"path": "/bird/Olive-throated_Parakeet",
+		"name": "Olive-throated Parakeet"
+	},
+	{
+		"latin": "Catharus aurantiirostris",
+		"path": "/bird/Orange-billed_Nightingale-thrush",
+		"name": "Orange-billed Nightingale-thrush"
+	},
+	{
+		"latin": "Arremon aurantiirostris",
+		"path": "/bird/Orange-billed_Sparrow",
+		"name": "Orange-billed Sparrow"
+	},
+	{
+		"latin": "Falco deiroleucus",
+		"path": "/bird/Orange-breasted_Falcon",
+		"name": "Orange-breasted Falcon"
+	},
+	{
+		"latin": "Brotogeris jugularis",
+		"path": "/bird/Orange-chinned_Parakeet",
+		"name": "Orange-chinned Parakeet"
+	},
+	{
+		"latin": "Vermivora celata",
+		"path": "/bird/Orange-crowned_Warbler",
+		"name": "Orange-crowned Warbler"
+	},
+	{
+		"latin": "Aratinga canicularis",
+		"path": "/bird/Orange-fronted_Parakeet",
+		"name": "Orange-fronted Parakeet"
+	},
+	{
+		"latin": "Glareola maldivarum",
+		"path": "/bird/Oriental_Pratincole",
+		"name": "Oriental Pratincole"
+	},
+	{
+		"latin": "Spizaetus ornatus",
+		"path": "/bird/Ornate_Hawk-eagle",
+		"name": "Ornate Hawk-eagle"
+	},
+	{
+		"latin": "Gavia pacifica",
+		"path": "/bird/Pacific_Loon",
+		"name": "Pacific Loon"
+	},
+	{
+		"latin": "Empidonax difficilis",
+		"path": "/bird/Pacific-slope_Flycatcher",
+		"name": "Pacific-slope Flycatcher"
+	},
+	{
+		"latin": "Neocrex erythrops",
+		"path": "/bird/Paint-billed_Crake",
+		"name": "Paint-billed Crake"
+	},
+	{
+		"latin": "Campephilus guatemalensis",
+		"path": "/bird/Pale-billed_Woodpecker",
+		"name": "Pale-billed Woodpecker"
+	},
+	{
+		"latin": "Patagioenas cayennensis",
+		"path": "/bird/Pale-vented_Pigeon",
+		"name": "Pale-vented Pigeon"
+	},
+	{
+		"latin": "Zimmerius vilissimus",
+		"path": "/bird/Paltry_Tyrannulet",
+		"name": "Paltry Tyrannulet"
+	},
+	{
+		"latin": "Aethia psittacula",
+		"path": "/bird/Parakeet_Auklet",
+		"name": "Parakeet Auklet"
+	},
+	{
+		"latin": "Stercorarius parasiticus",
+		"path": "/bird/Parasitic_Jaeger",
+		"name": "Parasitic Jaeger"
+	},
+	{
+		"latin": "Ectopistes migratorius",
+		"path": "/bird/Passenger_Pigeon",
+		"name": "Passenger Pigeon"
+	},
+	{
+		"latin": "Anthus gustavi",
+		"path": "/bird/Pechora_Pipit",
+		"name": "Pechora Pipit"
+	},
+	{
+		"latin": "Calidris melanotos",
+		"path": "/bird/Pectoral_Sandpiper",
+		"name": "Pectoral Sandpiper"
+	},
+	{
+		"latin": "Falco peregrinus",
+		"path": "/bird/Peregrine_Falcon",
+		"name": "Peregrine Falcon"
+	},
+	{
+		"latin": "Dromococcyx phasianellus",
+		"path": "/bird/Pheasant_Cuckoo",
+		"name": "Pheasant Cuckoo"
+	},
+	{
+		"latin": "Vireo philadelphicus",
+		"path": "/bird/Philadelphia_Vireo",
+		"name": "Philadelphia Vireo"
+	},
+	{
+		"latin": "Podilymbus podiceps",
+		"path": "/bird/Pied-billed_Grebe",
+		"name": "Pied-billed Grebe"
+	},
+	{
+		"latin": "Cepphus columba",
+		"path": "/bird/Pigeon_Guillemot",
+		"name": "Pigeon Guillemot"
+	},
+	{
+		"latin": "Xenotriccus mexicanus",
+		"path": "/bird/Pileated_Flycatcher",
+		"name": "Pileated Flycatcher"
+	},
+	{
+		"latin": "Dryocopus pileatus",
+		"path": "/bird/Pileated_Woodpecker",
+		"name": "Pileated Woodpecker"
+	},
+	{
+		"latin": "Empidonax affinis",
+		"path": "/bird/Pine_Flycatcher",
+		"name": "Pine Flycatcher"
+	},
+	{
+		"latin": "Pinicola enucleator",
+		"path": "/bird/Pine_Grosbeak",
+		"name": "Pine Grosbeak"
+	},
+	{
+		"latin": "Carduelis pinus",
+		"path": "/bird/Pine_Siskin",
+		"name": "Pine Siskin"
+	},
+	{
+		"latin": "Dendroica pinus",
+		"path": "/bird/Pine_Warbler",
+		"name": "Pine Warbler"
+	},
+	{
+		"latin": "Puffinus creatopus",
+		"path": "/bird/Pink-footed_Shearwater",
+		"name": "Pink-footed Shearwater"
+	},
+	{
+		"latin": "Botaurus pinnatus",
+		"path": "/bird/Pinnated_Bittern",
+		"name": "Pinnated Bittern"
+	},
+	{
+		"latin": "Gallinago stenura",
+		"path": "/bird/Pintail_Snipe",
+		"name": "Pintail Snipe"
+	},
+	{
+		"latin": "Gymnorhinus cyanocephalus",
+		"path": "/bird/Pinyon_Jay",
+		"name": "Pinyon Jay"
+	},
+	{
+		"latin": "Legatus leucophaius",
+		"path": "/bird/Piratic_Flycatcher",
+		"name": "Piratic Flycatcher"
+	},
+	{
+		"latin": "Dysithamnus mentalis",
+		"path": "/bird/Plain_Antvireo",
+		"name": "Plain Antvireo"
+	},
+	{
+		"latin": "Ortalis vetula",
+		"path": "/bird/Plain_Chachalaca",
+		"name": "Plain Chachalaca"
+	},
+	{
+		"latin": "Thryothorus modestus",
+		"path": "/bird/Plain_Wren",
+		"name": "Plain Wren"
+	},
+	{
+		"latin": "Xenops minutus",
+		"path": "/bird/Plain_Xenops",
+		"name": "Plain Xenops"
+	},
+	{
+		"latin": "Heliomaster constantii",
+		"path": "/bird/Plain-capped_Starthroat",
+		"name": "Plain-capped Starthroat"
+	},
+	{
+		"latin": "Ictinia plumbea",
+		"path": "/bird/Plumbeous_Kite",
+		"name": "Plumbeous Kite"
+	},
+	{
+		"latin": "Vireo plumbeus",
+		"path": "/bird/Plumbeous_Vireo",
+		"name": "Plumbeous Vireo"
+	},
+	{
+		"latin": "Stercorarius pomarinus",
+		"path": "/bird/Pomarine_Jaeger",
+		"name": "Pomarine Jaeger"
+	},
+	{
+		"latin": "Falco mexicanus",
+		"path": "/bird/Prairie_Falcon",
+		"name": "Prairie Falcon"
+	},
+	{
+		"latin": "Dendroica discolor",
+		"path": "/bird/Prairie_Warbler",
+		"name": "Prairie Warbler"
+	},
+	{
+		"latin": "Pterodroma solandri",
+		"path": "/bird/Providence_Petrel",
+		"name": "Providence Petrel"
+	},
+	{
+		"latin": "Carpodacus purpureus",
+		"path": "/bird/Purple_Finch",
+		"name": "Purple Finch"
+	},
+	{
+		"latin": "Progne subis",
+		"path": "/bird/Purple_Martin",
+		"name": "Purple Martin"
+	},
+	{
+		"latin": "Calidris maritima",
+		"path": "/bird/Purple_Sandpiper",
+		"name": "Purple Sandpiper"
+	},
+	{
+		"latin": "Heliothryx barroti",
+		"path": "/bird/Purple-crowned_Fairy",
+		"name": "Purple-crowned Fairy"
+	},
+	{
+		"latin": "Pterodroma pycrofti",
+		"path": "/bird/Pycroft's_Petrel",
+		"name": "Pycroft's Petrel"
+	},
+	{
+		"latin": "Sitta pygmaea",
+		"path": "/bird/Pygmy_Nuthatch",
+		"name": "Pygmy Nuthatch"
+	},
+	{
+		"latin": "Phalaropus fulicarius",
+		"path": "/bird/Red_Phalarope",
+		"name": "Red Phalarope"
+	},
+	{
+		"latin": "Melanerpes carolinus",
+		"path": "/bird/Red-bellied_Woodpecker",
+		"name": "Red-bellied Woodpecker"
+	},
+	{
+		"latin": "Patagioenas flavirostris",
+		"path": "/bird/Red-billed_Pigeon",
+		"name": "Red-billed Pigeon"
+	},
+	{
+		"latin": "Phaethon aethereus",
+		"path": "/bird/Red-billed_Tropicbird",
+		"name": "Red-billed Tropicbird"
+	},
+	{
+		"latin": "Mergus serrator",
+		"path": "/bird/Red-breasted_Merganser",
+		"name": "Red-breasted Merganser"
+	},
+	{
+		"latin": "Sitta canadensis",
+		"path": "/bird/Red-breasted_Nuthatch",
+		"name": "Red-breasted Nuthatch"
+	},
+	{
+		"latin": "Sphyrapicus ruber",
+		"path": "/bird/Red-breasted_Sapsucker",
+		"name": "Red-breasted Sapsucker"
+	},
+	{
+		"latin": "Pipra mentalis",
+		"path": "/bird/Red-capped_Manakin",
+		"name": "Red-capped Manakin"
+	},
+	{
+		"latin": "Picoides borealis",
+		"path": "/bird/Red-cockaded_Woodpecker",
+		"name": "Red-cockaded Woodpecker"
+	},
+	{
+		"latin": "Amazona viridigenalis",
+		"path": "/bird/Red-crowned_Amazon",
+		"name": "Red-crowned Amazon"
+	},
+	{
+		"latin": "Vireo olivaceus",
+		"path": "/bird/Red-eyed_Vireo",
+		"name": "Red-eyed Vireo"
+	},
+	{
+		"latin": "Phalacrocorax urile",
+		"path": "/bird/Red-faced_Cormorant",
+		"name": "Red-faced Cormorant"
+	},
+	{
+		"latin": "Sula sula",
+		"path": "/bird/Red-footed_Booby",
+		"name": "Red-footed Booby"
+	},
+	{
+		"latin": "Melanerpes erythrocephalus",
+		"path": "/bird/Red-headed_Woodpecker",
+		"name": "Red-headed Woodpecker"
+	},
+	{
+		"latin": "Rissa brevirostris",
+		"path": "/bird/Red-legged_Kittiwake",
+		"name": "Red-legged Kittiwake"
+	},
+	{
+		"latin": "Amazona autumnalis",
+		"path": "/bird/Red-lored_Amazon",
+		"name": "Red-lored Amazon"
+	},
+	{
+		"latin": "Sphyrapicus nuchalis",
+		"path": "/bird/Red-naped_Sapsucker",
+		"name": "Red-naped Sapsucker"
+	},
+	{
+		"latin": "Podiceps grisegena",
+		"path": "/bird/Red-necked_Grebe",
+		"name": "Red-necked Grebe"
+	},
+	{
+		"latin": "Phalaropus lobatus",
+		"path": "/bird/Red-necked_Phalarope",
+		"name": "Red-necked Phalarope"
+	},
+	{
+		"latin": "Calidris ruficollis",
+		"path": "/bird/Red-necked_Stint",
+		"name": "Red-necked Stint"
+	},
+	{
+		"latin": "Buteo lineatus",
+		"path": "/bird/Red-shouldered_Hawk",
+		"name": "Red-shouldered Hawk"
+	},
+	{
+		"latin": "Buteo jamaicensis",
+		"path": "/bird/Red-tailed_Hawk",
+		"name": "Red-tailed Hawk"
+	},
+	{
+		"latin": "Phaethon rubricauda",
+		"path": "/bird/Red-tailed_Tropicbird",
+		"name": "Red-tailed Tropicbird"
+	},
+	{
+		"latin": "Anthus cervinus",
+		"path": "/bird/Red-throated_Pipit",
+		"name": "Red-throated Pipit"
+	},
+	{
+		"latin": "Egretta rufescens",
+		"path": "/bird/Reddish_Egret",
+		"name": "Reddish Egret"
+	},
+	{
+		"latin": "Emberiza schoeniclus",
+		"path": "/bird/Reed_Bunting",
+		"name": "Reed Bunting"
+	},
+	{
+		"latin": "Pharomachrus mocinno",
+		"path": "/bird/Resplendent_Quetzal",
+		"name": "Resplendent Quetzal"
+	},
+	{
+		"latin": "Cerorhinca monocerata",
+		"path": "/bird/Rhinoceros_Auklet",
+		"name": "Rhinoceros Auklet"
+	},
+	{
+		"latin": "Larus delawarensis",
+		"path": "/bird/Ring-billed_Gull",
+		"name": "Ring-billed Gull"
+	},
+	{
+		"latin": "Megaceryle torquata",
+		"path": "/bird/Ringed_Kingfisher",
+		"name": "Ringed Kingfisher"
+	},
+	{
+		"latin": "Buteo magnirostris",
+		"path": "/bird/Roadside_Hawk",
+		"name": "Roadside Hawk"
+	},
+	{
+		"latin": "Lagopus muta",
+		"path": "/bird/Rock_Ptarmigan",
+		"name": "Rock Ptarmigan"
+	},
+	{
+		"latin": "Calidris ptilocnemis",
+		"path": "/bird/Rock_Sandpiper",
+		"name": "Rock Sandpiper"
+	},
+	{
+		"latin": "Salpinctes obsoletus",
+		"path": "/bird/Rock_Wren",
+		"name": "Rock Wren"
+	},
+	{
+		"latin": "Pachyramphus aglaiae",
+		"path": "/bird/Rose-throated_Becard",
+		"name": "Rose-throated Becard"
+	},
+	{
+		"latin": "Platalea ajaja",
+		"path": "/bird/Roseate_Spoonbill",
+		"name": "Roseate Spoonbill"
+	},
+	{
+		"latin": "Sterna dougallii",
+		"path": "/bird/Roseate_Tern",
+		"name": "Roseate Tern"
+	},
+	{
+		"latin": "Chen rossii",
+		"path": "/bird/Ross's_Goose",
+		"name": "Ross's Goose"
+	},
+	{
+		"latin": "Buteo lagopus",
+		"path": "/bird/Rough-legged_Hawk",
+		"name": "Rough-legged Hawk"
+	},
+	{
+		"latin": "Sterna maxima",
+		"path": "/bird/Royal_Tern",
+		"name": "Royal Tern"
+	},
+	{
+		"latin": "Regulus calendula",
+		"path": "/bird/Ruby-crowned_Kinglet",
+		"name": "Ruby-crowned Kinglet"
+	},
+	{
+		"latin": "Archilochus colubris",
+		"path": "/bird/Ruby-throated_Hummingbird",
+		"name": "Ruby-throated Hummingbird"
+	},
+	{
+		"latin": "Laterallus ruber",
+		"path": "/bird/Ruddy_Crake",
+		"name": "Ruddy Crake"
+	},
+	{
+		"latin": "Oxyura jamaicensis",
+		"path": "/bird/Ruddy_Duck",
+		"name": "Ruddy Duck"
+	},
+	{
+		"latin": "Dendrocincla homochroa",
+		"path": "/bird/Ruddy_Woodcreeper",
+		"name": "Ruddy Woodcreeper"
+	},
+	{
+		"latin": "Catharus frantzii",
+		"path": "/bird/Ruddy-capped_Nightingale-thrush",
+		"name": "Ruddy-capped Nightingale-thrush"
+	},
+	{
+		"latin": "Terenotriccus erythrurus",
+		"path": "/bird/Ruddy-tailed_Flycatcher",
+		"name": "Ruddy-tailed Flycatcher"
+	},
+	{
+		"latin": "Bonasa umbellus",
+		"path": "/bird/Ruffed_Grouse",
+		"name": "Ruffed Grouse"
+	},
+	{
+		"latin": "Selasphorus rufus",
+		"path": "/bird/Rufous_Hummingbird",
+		"name": "Rufous Hummingbird"
+	},
+	{
+		"latin": "Rhytipterna holerythra",
+		"path": "/bird/Rufous_Mourner",
+		"name": "Rufous Mourner"
+	},
+	{
+		"latin": "Lipaugus unirufus",
+		"path": "/bird/Rufous_Piha",
+		"name": "Rufous Piha"
+	},
+	{
+		"latin": "Thryothorus rufalbus",
+		"path": "/bird/Rufous-and-white_Wren",
+		"name": "Rufous-and-white Wren"
+	},
+	{
+		"latin": "Ortalis wagleri",
+		"path": "/bird/Rufous-bellied_Chachalaca",
+		"name": "Rufous-bellied Chachalaca"
+	},
+	{
+		"latin": "Cyclarhis gujanensis",
+		"path": "/bird/Rufous-browed_Peppershrike",
+		"name": "Rufous-browed Peppershrike"
+	},
+	{
+		"latin": "Troglodytes rufociliatus",
+		"path": "/bird/Rufous-browed_Wren",
+		"name": "Rufous-browed Wren"
+	},
+	{
+		"latin": "Turdus rufitorques",
+		"path": "/bird/Rufous-collared_Robin",
+		"name": "Rufous-collared Robin"
+	},
+	{
+		"latin": "Zonotrichia capensis",
+		"path": "/bird/Rufous-collared_Sparrow",
+		"name": "Rufous-collared Sparrow"
+	},
+	{
+		"latin": "Aimophila ruficeps",
+		"path": "/bird/Rufous-crowned_Sparrow",
+		"name": "Rufous-crowned Sparrow"
+	},
+	{
+		"latin": "Campylorhynchus rufinucha",
+		"path": "/bird/Rufous-naped_Wren",
+		"name": "Rufous-naped Wren"
+	},
+	{
+		"latin": "Galbula ruficauda",
+		"path": "/bird/Rufous-tailed_Jacamar",
+		"name": "Rufous-tailed Jacamar"
+	},
+	{
+		"latin": "Thamnistes anabatinus",
+		"path": "/bird/Russet_Antshrike",
+		"name": "Russet Antshrike"
+	},
+	{
+		"latin": "Catharus occidentalis",
+		"path": "/bird/Russet_Nightingale-thrush",
+		"name": "Russet Nightingale-thrush"
+	},
+	{
+		"latin": "Momotus mexicanus",
+		"path": "/bird/Russet-crowned_Motmot",
+		"name": "Russet-crowned Motmot"
+	},
+	{
+		"latin": "Melozone kieneri",
+		"path": "/bird/Rusty-crowned_Ground-sparrow",
+		"name": "Rusty-crowned Ground-sparrow"
+	},
+	{
+		"latin": "Xema sabini",
+		"path": "/bird/Sabine's_Gull",
+		"name": "Sabine's Gull"
+	},
+	{
+		"latin": "Amphispiza belli",
+		"path": "/bird/Sage_Sparrow",
+		"name": "Sage Sparrow"
+	},
+	{
+		"latin": "Oreoscoptes montanus",
+		"path": "/bird/Sage_Thrasher",
+		"name": "Sage Thrasher"
+	},
+	{
+		"latin": "Ammodramus caudacutus",
+		"path": "/bird/Saltmarsh_Sparrow",
+		"name": "Saltmarsh Sparrow"
+	},
+	{
+		"latin": "Riparia riparia",
+		"path": "/bird/Sand_Martin",
+		"name": "Sand Martin"
+	},
+	{
+		"latin": "Sterna sandvicensis",
+		"path": "/bird/Sandwich_Tern",
+		"name": "Sandwich Tern"
+	},
+	{
+		"latin": "Passerculus sandwichensis",
+		"path": "/bird/Savannah_Sparrow",
+		"name": "Savannah Sparrow"
+	},
+	{
+		"latin": "Sayornis saya",
+		"path": "/bird/Say's_Phoebe",
+		"name": "Say's Phoebe"
+	},
+	{
+		"latin": "Grallaria guatimalensis",
+		"path": "/bird/Scaled_Antpitta",
+		"name": "Scaled Antpitta"
+	},
+	{
+		"latin": "Patagioenas speciosa",
+		"path": "/bird/Scaled_Pigeon",
+		"name": "Scaled Pigeon"
+	},
+	{
+		"latin": "Callipepla squamata",
+		"path": "/bird/Scaled_Quail",
+		"name": "Scaled Quail"
+	},
+	{
+		"latin": "Phaeochroa cuvierii",
+		"path": "/bird/Scaly-breasted_Hummingbird",
+		"name": "Scaly-breasted Hummingbird"
+	},
+	{
+		"latin": "Patagioenas squamosa",
+		"path": "/bird/Scaly-naped_Pigeon",
+		"name": "Scaly-naped Pigeon"
+	},
+	{
+		"latin": "Anabacerthia variegaticeps",
+		"path": "/bird/Scaly-throated_Foliage-gleaner",
+		"name": "Scaly-throated Foliage-gleaner"
+	},
+	{
+		"latin": "Ara macao",
+		"path": "/bird/Scarlet_Macaw",
+		"name": "Scarlet Macaw"
+	},
+	{
+		"latin": "Tyrannus forficatus",
+		"path": "/bird/Scissor-tailed_Flycatcher",
+		"name": "Scissor-tailed Flycatcher"
+	},
+	{
+		"latin": "Ammodramus maritimus",
+		"path": "/bird/Seaside_Sparrow",
+		"name": "Seaside Sparrow"
+	},
+	{
+		"latin": "Cistothorus platensis",
+		"path": "/bird/Sedge_Wren",
+		"name": "Sedge Wren"
+	},
+	{
+		"latin": "Charadrius semipalmatus",
+		"path": "/bird/Semipalmated_Plover",
+		"name": "Semipalmated Plover"
+	},
+	{
+		"latin": "Leptopogon amaurocephalus",
+		"path": "/bird/Sepia-capped_Flycatcher",
+		"name": "Sepia-capped Flycatcher"
+	},
+	{
+		"latin": "Tympanuchus phasianellus",
+		"path": "/bird/Sharp-tailed_Grouse",
+		"name": "Sharp-tailed Grouse"
+	},
+	{
+		"latin": "Calidris acuminata",
+		"path": "/bird/Sharp-tailed_Sandpiper",
+		"name": "Sharp-tailed Sandpiper"
+	},
+	{
+		"latin": "Limnodromus griseus",
+		"path": "/bird/Short-billed_Dowitcher",
+		"name": "Short-billed Dowitcher"
+	},
+	{
+		"latin": "Lophornis brachylophus",
+		"path": "/bird/Short-crested_Coquette",
+		"name": "Short-crested Coquette"
+	},
+	{
+		"latin": "Asio flammeus",
+		"path": "/bird/Short-eared_Owl",
+		"name": "Short-eared Owl"
+	},
+	{
+		"latin": "Phoebastria albatrus",
+		"path": "/bird/Short-tailed_Albatross",
+		"name": "Short-tailed Albatross"
+	},
+	{
+		"latin": "Buteo brachyurus",
+		"path": "/bird/Short-tailed_Hawk",
+		"name": "Short-tailed Hawk"
+	},
+	{
+		"latin": "Lurocalis semitorquatus",
+		"path": "/bird/Short-tailed_Nighthawk",
+		"name": "Short-tailed Nighthawk"
+	},
+	{
+		"latin": "Puffinus tenuirostris",
+		"path": "/bird/Short-tailed_Shearwater",
+		"name": "Short-tailed Shearwater"
+	},
+	{
+		"latin": "Prunella montanella",
+		"path": "/bird/Siberian_Accentor",
+		"name": "Siberian Accentor"
+	},
+	{
+		"latin": "Parus cinctus",
+		"path": "/bird/Siberian_Tit",
+		"name": "Siberian Tit"
+	},
+	{
+		"latin": "Corvus sinaloae",
+		"path": "/bird/Sinaloa_Crow",
+		"name": "Sinaloa Crow"
+	},
+	{
+		"latin": "Thryothorus sinaloa",
+		"path": "/bird/Sinaloa_Wren",
+		"name": "Sinaloa Wren"
+	},
+	{
+		"latin": "Dactylortyx thoracicus",
+		"path": "/bird/Singing_Quail",
+		"name": "Singing Quail"
+	},
+	{
+		"latin": "Myadestes unicolor",
+		"path": "/bird/Slate-coloured_Solitaire",
+		"name": "Slate-coloured Solitaire"
+	},
+	{
+		"latin": "Myrmotherula schisticolor",
+		"path": "/bird/Slaty_Antwren",
+		"name": "Slaty Antwren"
+	},
+	{
+		"latin": "Vireo brevipennis",
+		"path": "/bird/Slaty_Vireo",
+		"name": "Slaty Vireo"
+	},
+	{
+		"latin": "Larus schistisagus",
+		"path": "/bird/Slaty-backed_Gull",
+		"name": "Slaty-backed Gull"
+	},
+	{
+		"latin": "Crypturellus boucardi",
+		"path": "/bird/Slaty-breasted_Tinamou",
+		"name": "Slaty-breasted Tinamou"
+	},
+	{
+		"latin": "Trogon massena",
+		"path": "/bird/Slaty-tailed_Trogon",
+		"name": "Slaty-tailed Trogon"
+	},
+	{
+		"latin": "Doricha enicura",
+		"path": "/bird/Slender_Sheartail",
+		"name": "Slender Sheartail"
+	},
+	{
+		"latin": "Calcarius pictus",
+		"path": "/bird/Smith's_Longspur",
+		"name": "Smith's Longspur"
+	},
+	{
+		"latin": "Picoides fumigatus",
+		"path": "/bird/Smoky-brown_Woodpecker",
+		"name": "Smoky-brown Woodpecker"
+	},
+	{
+		"latin": "Crotophaga ani",
+		"path": "/bird/Smooth-billed_Ani",
+		"name": "Smooth-billed Ani"
+	},
+	{
+		"latin": "Rostrhamus sociabilis",
+		"path": "/bird/Snail_Kite",
+		"name": "Snail Kite"
+	},
+	{
+		"latin": "Plectrophenax nivalis",
+		"path": "/bird/Snow_Bunting",
+		"name": "Snow Bunting"
+	},
+	{
+		"latin": "Chen caerulescens",
+		"path": "/bird/Snow_Goose",
+		"name": "Snow Goose"
+	},
+	{
+		"latin": "Egretta thula",
+		"path": "/bird/Snowy_Egret",
+		"name": "Snowy Egret"
+	},
+	{
+		"latin": "Bubo scandiaca",
+		"path": "/bird/Snowy_Owl",
+		"name": "Snowy Owl"
+	},
+	{
+		"latin": "Zenaida graysoni",
+		"path": "/bird/Socorro_Dove",
+		"name": "Socorro Dove"
+	},
+	{
+		"latin": "Mimus graysoni",
+		"path": "/bird/Socorro_Mockingbird",
+		"name": "Socorro Mockingbird"
+	},
+	{
+		"latin": "Aratinga brevipes",
+		"path": "/bird/Socorro_Parakeet",
+		"name": "Socorro Parakeet"
+	},
+	{
+		"latin": "Troglodytes sissonii",
+		"path": "/bird/Socorro_Wren",
+		"name": "Socorro Wren"
+	},
+	{
+		"latin": "Harpyhaliaetus solitarius",
+		"path": "/bird/Solitary_Eagle",
+		"name": "Solitary Eagle"
+	},
+	{
+		"latin": "Tringa solitaria",
+		"path": "/bird/Solitary_Sandpiper",
+		"name": "Solitary Sandpiper"
+	},
+	{
+		"latin": "Puffinus griseus",
+		"path": "/bird/Sooty_Shearwater",
+		"name": "Sooty Shearwater"
+	},
+	{
+		"latin": "Sterna fuscata",
+		"path": "/bird/Sooty_Tern",
+		"name": "Sooty Tern"
+	},
+	{
+		"latin": "Laniocera rufescens",
+		"path": "/bird/Speckled_Mourner",
+		"name": "Speckled Mourner"
+	},
+	{
+		"latin": "Somateria fischeri",
+		"path": "/bird/Spectacled_Eider",
+		"name": "Spectacled Eider"
+	},
+	{
+		"latin": "Pulsatrix perspicillata",
+		"path": "/bird/Spectacled_Owl",
+		"name": "Spectacled Owl"
+	},
+	{
+		"latin": "Thryothorus maculipectus",
+		"path": "/bird/Spot-breasted_Wren",
+		"name": "Spot-breasted Wren"
+	},
+	{
+		"latin": "Caprimulgus maculicaudus",
+		"path": "/bird/Spot-tailed_Nightjar",
+		"name": "Spot-tailed Nightjar"
+	},
+	{
+		"latin": "Catharus dryas",
+		"path": "/bird/Spotted_Nightingale-thrush",
+		"name": "Spotted Nightingale-thrush"
+	},
+	{
+		"latin": "Strix occidentalis",
+		"path": "/bird/Spotted_Owl",
+		"name": "Spotted Owl"
+	},
+	{
+		"latin": "Pardirallus maculatus",
+		"path": "/bird/Spotted_Rail",
+		"name": "Spotted Rail"
+	},
+	{
+		"latin": "Tringa erythropus",
+		"path": "/bird/Spotted_Redshank",
+		"name": "Spotted Redshank"
+	},
+	{
+		"latin": "Actitis macularius",
+		"path": "/bird/Spotted_Sandpiper",
+		"name": "Spotted Sandpiper"
+	},
+	{
+		"latin": "Xiphorhynchus erythropygius",
+		"path": "/bird/Spotted_Woodcreeper",
+		"name": "Spotted Woodcreeper"
+	},
+	{
+		"latin": "Campylorhynchus gularis",
+		"path": "/bird/Spotted_Wren",
+		"name": "Spotted Wren"
+	},
+	{
+		"latin": "Anthus spragueii",
+		"path": "/bird/Sprague's_Pipit",
+		"name": "Sprague's Pipit"
+	},
+	{
+		"latin": "Dendragapus canadensis",
+		"path": "/bird/Spruce_Grouse",
+		"name": "Spruce Grouse"
+	},
+	{
+		"latin": "Piaya cayana",
+		"path": "/bird/Squirrel_Cuckoo",
+		"name": "Squirrel Cuckoo"
+	},
+	{
+		"latin": "Polysticta stelleri",
+		"path": "/bird/Steller's_Eider",
+		"name": "Steller's Eider"
+	},
+	{
+		"latin": "Cyanocitta stelleri",
+		"path": "/bird/Steller's_Jay",
+		"name": "Steller's Jay"
+	},
+	{
+		"latin": "Calidris himantopus",
+		"path": "/bird/Stilt_Sandpiper",
+		"name": "Stilt Sandpiper"
+	},
+	{
+		"latin": "Lepidocolaptes souleyetii",
+		"path": "/bird/Streak-headed_Woodcreeper",
+		"name": "Streak-headed Woodcreeper"
+	},
+	{
+		"latin": "Calonectris leucomelas",
+		"path": "/bird/Streaked_Shearwater",
+		"name": "Streaked Shearwater"
+	},
+	{
+		"latin": "Picoides stricklandi",
+		"path": "/bird/Strickland's_Woodpecker",
+		"name": "Strickland's Woodpecker"
+	},
+	{
+		"latin": "Peucaea ruficauda",
+		"path": "/bird/Stripe-headed_Sparrow",
+		"name": "Stripe-headed Sparrow"
+	},
+	{
+		"latin": "Tapera naevia",
+		"path": "/bird/Striped_Cuckoo",
+		"name": "Striped Cuckoo"
+	},
+	{
+		"latin": "Pseudoscops clamator",
+		"path": "/bird/Striped_Owl",
+		"name": "Striped Owl"
+	},
+	{
+		"latin": "Xiphocolaptes promeropirhynchus",
+		"path": "/bird/Strong-billed_Woodcreeper",
+		"name": "Strong-billed Woodcreeper"
+	},
+	{
+		"latin": "Platyrinchus cancrominus",
+		"path": "/bird/Stub-tailed_Spadebill",
+		"name": "Stub-tailed Spadebill"
+	},
+	{
+		"latin": "Asio stygius",
+		"path": "/bird/Stygian_Owl",
+		"name": "Stygian Owl"
+	},
+	{
+		"latin": "Myiodynastes luteiventris",
+		"path": "/bird/Sulphur-bellied_Flycatcher",
+		"name": "Sulphur-bellied Flycatcher"
+	},
+	{
+		"latin": "Hylorchilus sumichrasti",
+		"path": "/bird/Sumichrast's_Wren",
+		"name": "Sumichrast's Wren"
+	},
+	{
+		"latin": "Melanitta perspicillata",
+		"path": "/bird/Surf_Scoter",
+		"name": "Surf Scoter"
+	},
+	{
+		"latin": "Buteo swainsoni",
+		"path": "/bird/Swainson's_Hawk",
+		"name": "Swainson's Hawk"
+	},
+	{
+		"latin": "Catharus ustulatus",
+		"path": "/bird/Swainson's_Thrush",
+		"name": "Swainson's Thrush"
+	},
+	{
+		"latin": "Melospiza georgiana",
+		"path": "/bird/Swamp_Sparrow",
+		"name": "Swamp Sparrow"
+	},
+	{
+		"latin": "Corvus imparatus",
+		"path": "/bird/Tamaulipas_Crow",
+		"name": "Tamaulipas Crow"
+	},
+	{
+		"latin": "Hylophilus ochraceiceps",
+		"path": "/bird/Tawny-crowned_Greenlet",
+		"name": "Tawny-crowned Greenlet"
+	},
+	{
+		"latin": "Sclerurus mexicanus",
+		"path": "/bird/Tawny-throated_Leaftosser",
+		"name": "Tawny-throated Leaftosser"
+	},
+	{
+		"latin": "Dendrocincla anabatina",
+		"path": "/bird/Tawny-winged_Woodcreeper",
+		"name": "Tawny-winged Woodcreeper"
+	},
+	{
+		"latin": "Vermivora peregrina",
+		"path": "/bird/Tennessee_Warbler",
+		"name": "Tennessee Warbler"
+	},
+	{
+		"latin": "Xenus cinereus",
+		"path": "/bird/Terek_Sandpiper",
+		"name": "Terek Sandpiper"
+	},
+	{
+		"latin": "Tyrannus crassirostris",
+		"path": "/bird/Thick-billed_Kingbird",
+		"name": "Thick-billed Kingbird"
+	},
+	{
+		"latin": "Rhynchopsitta pachyrhyncha",
+		"path": "/bird/Thick-billed_Parrot",
+		"name": "Thick-billed Parrot"
+	},
+	{
+		"latin": "Vireo crassirostris",
+		"path": "/bird/Thick-billed_Vireo",
+		"name": "Thick-billed Vireo"
+	},
+	{
+		"latin": "Crypturellus cinnamomeus",
+		"path": "/bird/Thicket_Tinamou",
+		"name": "Thicket Tinamou"
+	},
+	{
+		"latin": "Schiffornis turdina",
+		"path": "/bird/Thrush-like_Schiffornis",
+		"name": "Thrush-like Schiffornis"
+	},
+	{
+		"latin": "Hylomanes momotula",
+		"path": "/bird/Tody_Motmot",
+		"name": "Tody Motmot"
+	},
+	{
+		"latin": "Puffinus auricularis",
+		"path": "/bird/Townsend's_Shearwater",
+		"name": "Townsend's Shearwater"
+	},
+	{
+		"latin": "Dendroica townsendi",
+		"path": "/bird/Townsend's_Warbler",
+		"name": "Townsend's Warbler"
+	},
+	{
+		"latin": "Anthus trivialis",
+		"path": "/bird/Tree_Pipit",
+		"name": "Tree Pipit"
+	},
+	{
+		"latin": "Tyrannus melancholicus",
+		"path": "/bird/Tropical_Kingbird",
+		"name": "Tropical Kingbird"
+	},
+	{
+		"latin": "Mimus gilvus",
+		"path": "/bird/Tropical_Mockingbird",
+		"name": "Tropical Mockingbird"
+	},
+	{
+		"latin": "Parula pitiayumi",
+		"path": "/bird/Tropical_Parula",
+		"name": "Tropical Parula"
+	},
+	{
+		"latin": "Cygnus buccinator",
+		"path": "/bird/Trumpeter_Swan",
+		"name": "Trumpeter Swan"
+	},
+	{
+		"latin": "Aythya fuligula",
+		"path": "/bird/Tufted_Duck",
+		"name": "Tufted Duck"
+	},
+	{
+		"latin": "Mitrephanes phaeocercus",
+		"path": "/bird/Tufted_Flycatcher",
+		"name": "Tufted Flycatcher"
+	},
+	{
+		"latin": "Cyanocorax dickeyi",
+		"path": "/bird/Tufted_Jay",
+		"name": "Tufted Jay"
+	},
+	{
+		"latin": "Fratercula cirrhata",
+		"path": "/bird/Tufted_Puffin",
+		"name": "Tufted Puffin"
+	},
+	{
+		"latin": "Baeolophus bicolor",
+		"path": "/bird/Tufted_Titmouse",
+		"name": "Tufted Titmouse"
+	},
+	{
+		"latin": "Cygnus columbianus",
+		"path": "/bird/Tundra_Swan",
+		"name": "Tundra Swan"
+	},
+	{
+		"latin": "Cathartes aura",
+		"path": "/bird/Turkey_Vulture",
+		"name": "Turkey Vulture"
+	},
+	{
+		"latin": "Eumomota superciliosa",
+		"path": "/bird/Turquoise-browed_Motmot",
+		"name": "Turquoise-browed Motmot"
+	},
+	{
+		"latin": "Geotrygon carrikeri",
+		"path": "/bird/Tuxtla_Quail-dove",
+		"name": "Tuxtla Quail-dove"
+	},
+	{
+		"latin": "Bartramia longicauda",
+		"path": "/bird/Upland_Sandpiper",
+		"name": "Upland Sandpiper"
+	},
+	{
+		"latin": "Zoothera naevia",
+		"path": "/bird/Varied_Thrush",
+		"name": "Varied Thrush"
+	},
+	{
+		"latin": "Pyrocephalus rubinus",
+		"path": "/bird/Vermilion_Flycatcher",
+		"name": "Vermilion Flycatcher"
+	},
+	{
+		"latin": "Pooecetes gramineus",
+		"path": "/bird/Vesper_Sparrow",
+		"name": "Vesper Sparrow"
+	},
+	{
+		"latin": "Campylopterus hemileucurus",
+		"path": "/bird/Violet_Sabrewing",
+		"name": "Violet Sabrewing"
+	},
+	{
+		"latin": "Amazilia violiceps",
+		"path": "/bird/Violet-crowned_Hummingbird",
+		"name": "Violet-crowned Hummingbird"
+	},
+	{
+		"latin": "Tachycineta thalassina",
+		"path": "/bird/Violet-green_Swallow",
+		"name": "Violet-green Swallow"
+	},
+	{
+		"latin": "Rallus limicola",
+		"path": "/bird/Virginia_Rail",
+		"name": "Virginia Rail"
+	},
+	{
+		"latin": "Vermivora virginiae",
+		"path": "/bird/Virginia's_Warbler",
+		"name": "Virginia's Warbler"
+	},
+	{
+		"latin": "Heteroscelus incanus",
+		"path": "/bird/Wandering_Tattler",
+		"name": "Wandering Tattler"
+	},
+	{
+		"latin": "Campylopterus curvipennis",
+		"path": "/bird/Wedge-tailed_Sabrewing",
+		"name": "Wedge-tailed Sabrewing"
+	},
+	{
+		"latin": "Puffinus pacificus",
+		"path": "/bird/Wedge-tailed_Shearwater",
+		"name": "Wedge-tailed Shearwater"
+	},
+	{
+		"latin": "Sialia mexicana",
+		"path": "/bird/Western_Bluebird",
+		"name": "Western Bluebird"
+	},
+	{
+		"latin": "Aechmophorus occidentalis",
+		"path": "/bird/Western_Grebe",
+		"name": "Western Grebe"
+	},
+	{
+		"latin": "Larus occidentalis",
+		"path": "/bird/Western_Gull",
+		"name": "Western Gull"
+	},
+	{
+		"latin": "Tyrannus verticalis",
+		"path": "/bird/Western_Kingbird",
+		"name": "Western Kingbird"
+	},
+	{
+		"latin": "Calidris mauri",
+		"path": "/bird/Western_Sandpiper",
+		"name": "Western Sandpiper"
+	},
+	{
+		"latin": "Aethia pygmaea",
+		"path": "/bird/Whiskered_Auklet",
+		"name": "Whiskered Auklet"
+	},
+	{
+		"latin": "Megascops trichopsis",
+		"path": "/bird/Whiskered_Screech-owl",
+		"name": "Whiskered Screech-owl"
+	},
+	{
+		"latin": "Eudocimus albus",
+		"path": "/bird/White_Ibis",
+		"name": "White Ibis"
+	},
+	{
+		"latin": "Motacilla alba",
+		"path": "/bird/White_Wagtail",
+		"name": "White Wagtail"
+	},
+	{
+		"latin": "Ortalis leucogastra",
+		"path": "/bird/White-bellied_Chachalaca",
+		"name": "White-bellied Chachalaca"
+	},
+	{
+		"latin": "Amazilia candida",
+		"path": "/bird/White-bellied_Emerald",
+		"name": "White-bellied Emerald"
+	},
+	{
+		"latin": "Uropsila leucogastra",
+		"path": "/bird/White-bellied_Wren",
+		"name": "White-bellied Wren"
+	},
+	{
+		"latin": "Sitta carolinensis",
+		"path": "/bird/White-breasted_Nuthatch",
+		"name": "White-breasted Nuthatch"
+	},
+	{
+		"latin": "Anas bahamensis",
+		"path": "/bird/White-cheeked_Pintail",
+		"name": "White-cheeked Pintail"
+	},
+	{
+		"latin": "Cypseloides cryptus",
+		"path": "/bird/White-chinned_Swift",
+		"name": "White-chinned Swift"
+	},
+	{
+		"latin": "Manacus candei",
+		"path": "/bird/White-collared_Manakin",
+		"name": "White-collared Manakin"
+	},
+	{
+		"latin": "Pionus senilis",
+		"path": "/bird/White-crowned_Parrot",
+		"name": "White-crowned Parrot"
+	},
+	{
+		"latin": "Patagioenas leucocephala",
+		"path": "/bird/White-crowned_Pigeon",
+		"name": "White-crowned Pigeon"
+	},
+	{
+		"latin": "Zonotrichia leucophrys",
+		"path": "/bird/White-crowned_Sparrow",
+		"name": "White-crowned Sparrow"
+	},
+	{
+		"latin": "Hylocharis leucotis",
+		"path": "/bird/White-eared_Hummingbird",
+		"name": "White-eared Hummingbird"
+	},
+	{
+		"latin": "Vireo griseus",
+		"path": "/bird/White-eyed_Vireo",
+		"name": "White-eyed Vireo"
+	},
+	{
+		"latin": "Plegadis chihi",
+		"path": "/bird/White-faced_Ibis",
+		"name": "White-faced Ibis"
+	},
+	{
+		"latin": "Myrmotherula axillaris",
+		"path": "/bird/White-flanked_Antwren",
+		"name": "White-flanked Antwren"
+	},
+	{
+		"latin": "Amazona albifrons",
+		"path": "/bird/White-fronted_Amazon",
+		"name": "White-fronted Amazon"
+	},
+	{
+		"latin": "Cypseloides storeri",
+		"path": "/bird/White-fronted_Swift",
+		"name": "White-fronted Swift"
+	},
+	{
+		"latin": "Picoides albolarvatus",
+		"path": "/bird/White-headed_Woodpecker",
+		"name": "White-headed Woodpecker"
+	},
+	{
+		"latin": "Polioptila albiloris",
+		"path": "/bird/White-lored_Gnatcatcher",
+		"name": "White-lored Gnatcatcher"
+	},
+	{
+		"latin": "Streptoprocne semicollaris",
+		"path": "/bird/White-naped_Swift",
+		"name": "White-naped Swift"
+	},
+	{
+		"latin": "Florisuga mellivora",
+		"path": "/bird/White-necked_Jacobin",
+		"name": "White-necked Jacobin"
+	},
+	{
+		"latin": "Calidris fuscicollis",
+		"path": "/bird/White-rumped_Sandpiper",
+		"name": "White-rumped Sandpiper"
+	},
+	{
+		"latin": "Lepidocolaptes leucogaster",
+		"path": "/bird/White-striped_Woodcreeper",
+		"name": "White-striped Woodcreeper"
+	},
+	{
+		"latin": "Buteo albicaudatus",
+		"path": "/bird/White-tailed_Hawk",
+		"name": "White-tailed Hawk"
+	},
+	{
+		"latin": "Eupherusa poliocerca",
+		"path": "/bird/White-tailed_Hummingbird",
+		"name": "White-tailed Hummingbird"
+	},
+	{
+		"latin": "Elanus leucurus",
+		"path": "/bird/White-tailed_Kite",
+		"name": "White-tailed Kite"
+	},
+	{
+		"latin": "Lagopus leucura",
+		"path": "/bird/White-tailed_Ptarmigan",
+		"name": "White-tailed Ptarmigan"
+	},
+	{
+		"latin": "Phaethon lepturus",
+		"path": "/bird/White-tailed_Tropicbird",
+		"name": "White-tailed Tropicbird"
+	},
+	{
+		"latin": "Empidonax albigularis",
+		"path": "/bird/White-throated_Flycatcher",
+		"name": "White-throated Flycatcher"
+	},
+	{
+		"latin": "Cyanolyca mirabilis",
+		"path": "/bird/White-throated_Jay",
+		"name": "White-throated Jay"
+	},
+	{
+		"latin": "Zonotrichia albicollis",
+		"path": "/bird/White-throated_Sparrow",
+		"name": "White-throated Sparrow"
+	},
+	{
+		"latin": "Aeronautes saxatalis",
+		"path": "/bird/White-throated_Swift",
+		"name": "White-throated Swift"
+	},
+	{
+		"latin": "Turdus assimilis",
+		"path": "/bird/White-throated_Thrush",
+		"name": "White-throated Thrush"
+	},
+	{
+		"latin": "Melozone albicollis",
+		"path": "/bird/White-throated_Towhee",
+		"name": "White-throated Towhee"
+	},
+	{
+		"latin": "Leptotila verreauxi",
+		"path": "/bird/White-tipped_Dove",
+		"name": "White-tipped Dove"
+	},
+	{
+		"latin": "Pachyramphus polychopterus",
+		"path": "/bird/White-winged_Becard",
+		"name": "White-winged Becard"
+	},
+	{
+		"latin": "Cygnus cygnus",
+		"path": "/bird/Whooper_Swan",
+		"name": "Whooper Swan"
+	},
+	{
+		"latin": "Grus americana",
+		"path": "/bird/Whooping_Crane",
+		"name": "Whooping Crane"
+	},
+	{
+		"latin": "Meleagris gallopavo",
+		"path": "/bird/Wild_Turkey",
+		"name": "Wild Turkey"
+	},
+	{
+		"latin": "Sphyrapicus thyroideus",
+		"path": "/bird/Williamson's_Sapsucker",
+		"name": "Williamson's Sapsucker"
+	},
+	{
+		"latin": "Empidonax traillii",
+		"path": "/bird/Willow_Flycatcher",
+		"name": "Willow Flycatcher"
+	},
+	{
+		"latin": "Lagopus lagopus",
+		"path": "/bird/Willow_Ptarmigan",
+		"name": "Willow Ptarmigan"
+	},
+	{
+		"latin": "Steganopus tricolor",
+		"path": "/bird/Wilson's_Phalarope",
+		"name": "Wilson's Phalarope"
+	},
+	{
+		"latin": "Charadrius wilsonia",
+		"path": "/bird/Wilson's_Plover",
+		"name": "Wilson's Plover"
+	},
+	{
+		"latin": "Atthis ellioti",
+		"path": "/bird/Wine-throated_Hummingbird",
+		"name": "Wine-throated Hummingbird"
+	},
+	{
+		"latin": "Troglodytes troglodytes",
+		"path": "/bird/Winter_Wren",
+		"name": "Winter Wren"
+	},
+	{
+		"latin": "Aix sponsa",
+		"path": "/bird/Wood_Duck",
+		"name": "Wood Duck"
+	},
+	{
+		"latin": "Tringa glareola",
+		"path": "/bird/Wood_Sandpiper",
+		"name": "Wood Sandpiper"
+	},
+	{
+		"latin": "Mycteria americana",
+		"path": "/bird/Wood_Stork",
+		"name": "Wood Stork"
+	},
+	{
+		"latin": "Hylocichla mustelina",
+		"path": "/bird/Wood_Thrush",
+		"name": "Wood Thrush"
+	},
+	{
+		"latin": "Hylocharis xantusii",
+		"path": "/bird/Xantus's_Hummingbird",
+		"name": "Xantus's Hummingbird"
+	},
+	{
+		"latin": "Ixobrychus sinensis",
+		"path": "/bird/Yellow_Bittern",
+		"name": "Yellow Bittern"
+	},
+	{
+		"latin": "Motacilla flava",
+		"path": "/bird/Yellow_Wagtail",
+		"name": "Yellow Wagtail"
+	},
+	{
+		"latin": "Dendroica petechia",
+		"path": "/bird/Yellow_Warbler",
+		"name": "Yellow Warbler"
+	},
+	{
+		"latin": "Empidonax flaviventris",
+		"path": "/bird/Yellow-bellied_Flycatcher",
+		"name": "Yellow-bellied Flycatcher"
+	},
+	{
+		"latin": "Sphyrapicus varius",
+		"path": "/bird/Yellow-bellied_Sapsucker",
+		"name": "Yellow-bellied Sapsucker"
+	},
+	{
+		"latin": "Ornithion semiflavum",
+		"path": "/bird/Yellow-bellied_Tyrannulet",
+		"name": "Yellow-bellied Tyrannulet"
+	},
+	{
+		"latin": "Paroaria capitata",
+		"path": "/bird/Yellow-billed_Cardinal",
+		"name": "Yellow-billed Cardinal"
+	},
+	{
+		"latin": "Coccyzus americanus",
+		"path": "/bird/Yellow-billed_Cuckoo",
+		"name": "Yellow-billed Cuckoo"
+	},
+	{
+		"latin": "Gavia adamsii",
+		"path": "/bird/Yellow-billed_Loon",
+		"name": "Yellow-billed Loon"
+	},
+	{
+		"latin": "Pica nuttalli",
+		"path": "/bird/Yellow-billed_Magpie",
+		"name": "Yellow-billed Magpie"
+	},
+	{
+		"latin": "Porzana flaviventer",
+		"path": "/bird/Yellow-breasted_Crake",
+		"name": "Yellow-breasted Crake"
+	},
+	{
+		"latin": "Junco phaeonotus",
+		"path": "/bird/Yellow-eyed_Junco",
+		"name": "Yellow-eyed Junco"
+	},
+	{
+		"latin": "Larus livens",
+		"path": "/bird/Yellow-footed_Gull",
+		"name": "Yellow-footed Gull"
+	},
+	{
+		"latin": "Vireo flavoviridis",
+		"path": "/bird/Yellow-green_Vireo",
+		"name": "Yellow-green Vireo"
+	},
+	{
+		"latin": "Amazona oratrix",
+		"path": "/bird/Yellow-headed_Amazon",
+		"name": "Yellow-headed Amazon"
+	},
+	{
+		"latin": "Amazona xantholora",
+		"path": "/bird/Yellow-lored_Amazon",
+		"name": "Yellow-lored Amazon"
+	},
+	{
+		"latin": "Amazona auropalliata",
+		"path": "/bird/Yellow-naped_Amazon",
+		"name": "Yellow-naped Amazon"
+	},
+	{
+		"latin": "Dendroica coronata",
+		"path": "/bird/Yellow-rumped_Warbler",
+		"name": "Yellow-rumped Warbler"
+	},
+	{
+		"latin": "Vireo flavifrons",
+		"path": "/bird/Yellow-throated_Vireo",
+		"name": "Yellow-throated Vireo"
+	},
+	{
+		"latin": "Empidonax flavescens",
+		"path": "/bird/Yellowish_Flycatcher",
+		"name": "Yellowish Flycatcher"
+	},
+	{
+		"latin": "Myiarchus yucatanensis",
+		"path": "/bird/Yucatan_Flycatcher",
+		"name": "Yucatan Flycatcher"
+	},
+	{
+		"latin": "Cyanocorax yucatanicus",
+		"path": "/bird/Yucatan_Jay",
+		"name": "Yucatan Jay"
+	},
+	{
+		"latin": "Caprimulgus badius",
+		"path": "/bird/Yucatan_Nightjar",
+		"name": "Yucatan Nightjar"
+	},
+	{
+		"latin": "Nyctiphrynus yucatanicus",
+		"path": "/bird/Yucatan_Poorwill",
+		"name": "Yucatan Poorwill"
+	},
+	{
+		"latin": "Vireo magister",
+		"path": "/bird/Yucatan_Vireo",
+		"name": "Yucatan Vireo"
+	},
+	{
+		"latin": "Campylorhynchus yucatanicus",
+		"path": "/bird/Yucatan_Wren",
+		"name": "Yucatan Wren"
+	},
+	{
+		"latin": "Zenaida aurita",
+		"path": "/bird/Zenaida_Dove",
+		"name": "Zenaida Dove"
+	},
+	{
+		"latin": "Buteo albonotatus",
+		"path": "/bird/Zone-tailed_Hawk",
+		"name": "Zone-tailed Hawk"
+	}
+]
