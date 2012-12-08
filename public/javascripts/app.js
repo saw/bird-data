@@ -113,10 +113,15 @@
 				matches = birdname.match(/(?:\/bird\/)?(.+)/);
 				birdname = matches[1].replace('_', ' ');
 			}
-			
+			console.log('setting bird to '+ birdname);
 			currentBird = birdMap[birdname];
 		}
 		
+		function shift(amount) {
+			if(myBirdList[currentBird + amount]) {
+				currentBird = currentBird + amount;
+			}
+		}
 		
 		return {
 			init:init,
@@ -125,9 +130,10 @@
 			thisBird:getThisBird,
 			birdAtOffset:birdAtOffset,
 			advance:function() {
-				if(myBirdList[currentBird + 1]) {
-					currentBird++;
-				}
+				shift(1);
+			},
+			goBack: function() {
+				shift(-1)
 			},
 			setBird:setBird
 		}
@@ -237,7 +243,12 @@
 	}
 	
 	Slide.prototype.destroy = function() {
-		this.node.parentNode.removeChild(this.node);
+		console.log('destroying', this.id);
+		this._listeners = [];
+		if(this.node.parentNode) {
+			this.node.parentNode.removeChild(this.node);
+		}
+		
 	}
 
 	var startSlide, nextSlide, lastSlide;
@@ -246,40 +257,79 @@
 	var THRESHOLD = 100;
 	var startSlide = new Slide(thisBird, false, '.slide');
 	var nextSlide;
-	
+	var prevSlide;
+	console.log(birds.nextBird());
 	getBirdData(birds.nextBird().path, function(resp) {
-		nextSlide = new Slide(birds.nextBird().name, resp);
+		nextSlide = new Slide(birds.nextBird().name,  resp);
 		nextSlide.hide();
 		nextSlide.setLeft(window.innerWidth);
 	});
 	
-	getBirdData(birds.birdAtOffset(2).path);
-	getBirdData(birds.birdAtOffset(3).path);
+	if(birds.prevBird()){
+		getBirdData(birds.prevBird().path, function(resp) {
+			prevSlide = new Slide(birds.prevBird().name, resp);
+			prevSlide.hide();
+			prevSlide.setLeft(-window.innerWidth);
+		});
+	}
 	
+
+	birds.birdAtOffset(-2) && getBirdData(birds.birdAtOffset(-2).path);
+	birds.birdAtOffset(2) && getBirdData(birds.birdAtOffset(2).path);
+	birds.birdAtOffset(3) && getBirdData(birds.birdAtOffset(3).path);
+	
+	function prepare() {
+		if(birds.nextBird()) {
+			getBirdData(birds.nextBird().path, function(resp) {
+				nextSlide = new Slide(birds.nextBird().name, resp);
+				nextSlide.hide();
+				nextSlide.setLeft(window.innerWidth);
+			});
+		} else {
+			prevSlide = false;
+		}
+		
+		if(birds.prevBird()){
+			getBirdData(birds.prevBird().path, function(resp) {
+				prevSlide = new Slide(birds.prevBird().name, resp);
+				prevSlide.hide();
+				prevSlide.setLeft(-window.innerWidth);
+			});
+		} else {
+			prevSlide = false;
+		}
+	}
 	
 
 	function goTo(direction) {
 		moving = true;
-		
-		startSlide.moveTo(0 - window.innerWidth);
-		nextSlide.moveTo(0);
+		console.log('going to');
+		if(direction == 1) {
+			startSlide.moveTo(0 - window.innerWidth);
+			nextSlide.moveTo(0);
 
-		startSlide.onMoveEnd(function(){
-
-			startSlide.destroy();
-			startSlide = nextSlide;
-			birds.advance();
-			getBirdData(birds.nextBird().path , function(resp) {
-				
-				nextSlide = new Slide(birds.nextBird().name, resp);
-				nextSlide.hide();
-				nextSlide.setLeft(window.innerWidth);
-				getBirdData(birds.birdAtOffset(2).path);
-				getBirdData(birds.birdAtOffset(3).path);
-				
+			startSlide.onMoveEnd(function(){
+				startSlide.destroy();
+				prevSlide = startSlide;
+				startSlide = nextSlide;
+				birds.advance();
+				prepare();
 			});
-			
-		})
+		} else {
+			startSlide.moveTo(window.innerWidth);
+			nextSlide.moveTo(window.innerWidth);
+			startSlide.onMoveEnd(function(){
+				console.log('move end' + Math.random());
+				console.log('destruction', startSlide.id);
+				startSlide.destroy();
+				startSlide = prevSlide;
+				nextSlide = startSlide;
+				birds.goBack();
+				prepare();
+			});
+			prevSlide.moveTo(0);
+		}
+
 	}
 
 	
@@ -302,10 +352,10 @@
 		}
 	}
 	
-	var lastPos, startPoint, direction = 0;
+	var lastPos, startPoint;
 	
 	function handleTouch(e) {
-		var diff, anchor;
+		var diff, anchor, direction = 0;
 		
 		if(moving) {
 			return;
@@ -324,23 +374,39 @@
 			
 				startPoint = e.touches[0].pageX;
 				startSlide.cleanTransitions();
-				nextSlide.cleanTransitions();
-				nextSlide.show();
+				if(nextSlide) {
+					nextSlide.cleanTransitions();
+					nextSlide.show();
+				}
+				
+				if(prevSlide) {
+					prevSlide.cleanTransitions();
+					prevSlide.show();
+				}
+				
 				lastPos = e.touches[0].pageX;
 				break;
 				
 			case 'touchmove':
-				diff = e.touches[0].pageX - startPoint;
-				console.log(diff);
 				e.preventDefault();
+				diff = e.touches[0].pageX - startPoint;
+
+				
 				startSlide.setLeft(diff);
-				nextSlide.setLeft(diff + window.innerWidth);
+				
+				if(diff > 0) {
+					prevSlide && prevSlide.setLeft(diff - window.innerWidth);
+				} else {
+					nextSlide && nextSlide.setLeft(diff + window.innerWidth);
+				}
+				
 				lastPos = e.touches[0].pageX;
 				break;
 				
 			case 'touchcancel':
 			case 'touchend':
 				diff = lastPos - startPoint;
+				
 				if(Math.abs(diff) < 5) {
 					anchor = isLink(e.target);
 					if(isLink(e.target)) {
@@ -348,13 +414,14 @@
 					}
 				}
 				
-				if(diff < -THRESHOLD) {
+				if(diff < -THRESHOLD && nextSlide) {
 					goTo(1);
-				}else if (diff > THRESHOLD) {
+				}else if (diff > THRESHOLD && prevSlide) {
 					goTo(-1);
 				} else {
 					startSlide.moveTo(0);
 					nextSlide.moveTo(window.innerWidth);
+					prevSlide.moveTo(-window.innerWidth);
 				}
 				break;
 		}

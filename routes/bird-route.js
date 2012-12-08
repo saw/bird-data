@@ -33,7 +33,7 @@ function birdPage(req, res, nextr) {
 	var birdId;
 	console.time('getid');
 	var birdId = idMap[req.params.name];
-	if(!birdId) {
+	if(birdId === undefined) {
 		for (var i=0; i < req.birdList.length; i++) {
 			if(req.birdList[i].name == req.params.name.replace('_',' ' )) {
 				birdId = i;
@@ -41,11 +41,10 @@ function birdPage(req, res, nextr) {
 			}
 		}
 	}
-	console.timeEnd('getid');
-	console.log('this', req.params.name);
+
 	var next = req.birdList[birdId + 1], prev = req.birdList[birdId -1];
 
-	if(!birdId) {
+	if(birdId === undefined) {
 		nextr();
 		return;
 	}
