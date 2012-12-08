@@ -10,7 +10,7 @@
 		TRANSFORM_CSS  = 'transform',
 		TRANSITION_CSS = 'transition';
 
-	if(typeof document.body.style.webkitTransform !== undefined) {
+	if(typeof document.body.style.webkitTransform !== "undefined") {
 		TRANSITION = 'webkitTransition';
 		TRANSFORM = 'webkitTransform';
 		TRANSITION_END = 'webkitTransitionEnd';
@@ -234,7 +234,7 @@
 				return;
 			}
 			var i;
-			myNode.style[TRANSITION] = '';
+			that.cleanTransitions();
 			moving = false;
 			for (i=0; i < that._listeners.length; i++) {
 				if(typeof that._listeners[i] == "function") {
@@ -245,7 +245,7 @@
 	}
 	
 	Slide.prototype.setLeft = function(left) {
-		
+		// this.node.style.left = left + 'px';
 		this.node.style[TRANSFORM] = "translate3d(" + left + 'px,0,0)';
 	}
 	
@@ -286,6 +286,8 @@
 
 	
 	function prepare() {
+		// return;
+
 		var nextBird = birds.nextBird(),
 		    prevBird = birds.prevBird();
 		
@@ -293,12 +295,12 @@
 			getBirdData(birds.nextBird().path, function(resp) {
 				nextSlide = new Slide(birds.nextBird().name, resp);
 				nextSlide.hide();
+
 				nextSlide.setLeft(window.innerWidth);
 			});
 		} else if(!nextBird) {
 			nextSlide = false;
 		}
-		
 		if(prevBird && (!prevSlide || prevSlide.id != prevBird)){
 			getBirdData(birds.prevBird().path, function(resp) {
 				console.time('build');
@@ -367,6 +369,8 @@
 	var lastPos, startPoint;
 	
 	function handleTouch(e) {
+		try {
+			
 		var diff, anchor, direction = 0;
 		
 		if(moving) {
@@ -383,9 +387,10 @@
 		}
 		
 		switch (e.type) {
+			case 'MSPointerDown':
 			case 'touchstart':
-				startPoint = e.touches[0].pageX;
-				
+
+				startPoint = e.touches ? e.touches[0].pageX : e.screenX;
 				//make sure transitions are cleaned off
 				currentSlide.cleanTransitions();
 				
@@ -400,13 +405,13 @@
 					prevSlide.show();
 				}
 				
-				lastPos = e.touches[0].pageX;
+				lastPos = e.touches ? e.touches[0].pageX : e.screenX;
 				break;
-				
+			case 'MSPointerMove':
+			
 			case 'touchmove':
-				e.preventDefault();
-				diff = e.touches[0].pageX - startPoint;
-				
+				// e.preventDefault();
+				diff = e.touches ? e.touches[0].pageX - startPoint : e.screenX - startPoint;
 				//move all three slides together
 				currentSlide.setLeft(diff);
 				if(diff > 0) {
@@ -415,13 +420,15 @@
 					nextSlide && nextSlide.setLeft(diff + window.innerWidth);
 				}
 				
-				lastPos = e.touches[0].pageX;
+				lastPos = e.touches ? e.touches[0].pageX : e.screenX;
 				break;
 				
+			case 'MSPointerUp':
 			case 'touchcancel':
 			case 'touchend':
 				diff = lastPos - startPoint;
 				
+				title.innerHTML = diff;
 				//if the swipe was very short,
 				//and on an anchor, assume it was a tap
 				if(Math.abs(diff) < 5) {
@@ -429,8 +436,7 @@
 					if(isLink(e.target)) {
 						window.location = anchor.href;
 					}
-				}
-				
+				}			
 				//figure out if we are advancing,
 				//going back or going nowhere
 				if(diff < -THRESHOLD && nextSlide) {
@@ -441,10 +447,14 @@
 					//snap back if we are going nowhere
 					currentSlide.moveTo(0);
 					nextSlide.moveTo(window.innerWidth);
-					prevSlide.moveTo(-window.innerWidth);
+					prevSlide.moveTo(0-window.innerWidth);
 				}
 				break;
 		}
+		
+	}catch (e) {
+		alert(JSON.stringify(e));
+	}
 	}
 	
 	var previousOrientation = 0;
@@ -466,6 +476,14 @@
 	document.addEventListener('touchstart', handleTouch);
 	document.addEventListener('touchmove', handleTouch);
 	document.addEventListener('touchend', handleTouch);
+	
+	var title = document.querySelector('.title');
+	var targ = document.querySelector('body');
+	
+	document.addEventListener('MSPointerDown', handleTouch, false);
+	document.addEventListener('MSPointerMove', handleTouch, false);
+	document.addEventListener('MSPointerUp', handleTouch, false);
+	title.innerHTML = 478;
 	
 	//prime the cache
 	birds.birdAtOffset(-2) && getBirdData(birds.birdAtOffset(-2).path);
