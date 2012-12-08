@@ -373,19 +373,23 @@
 			return;
 		}
 		
+		//if the target is inside the scrollable area,
+		//stop handling events
 		if(getAncestor(e.target, 'DIV').className == 'bd') {
 			nextSlide.hide();
-			return;
-			
+			return;	
 		} else {
 			e.preventDefault();
 		}
 		
 		switch (e.type) {
 			case 'touchstart':
-			
 				startPoint = e.touches[0].pageX;
+				
+				//make sure transitions are cleaned off
 				currentSlide.cleanTransitions();
+				
+				//show the hidden slides
 				if(nextSlide) {
 					nextSlide.cleanTransitions();
 					nextSlide.show();
@@ -402,10 +406,9 @@
 			case 'touchmove':
 				e.preventDefault();
 				diff = e.touches[0].pageX - startPoint;
-
 				
+				//move all three slides together
 				currentSlide.setLeft(diff);
-				
 				if(diff > 0) {
 					prevSlide && prevSlide.setLeft(diff - window.innerWidth);
 				} else {
@@ -419,6 +422,8 @@
 			case 'touchend':
 				diff = lastPos - startPoint;
 				
+				//if the swipe was very short,
+				//and on an anchor, assume it was a tap
 				if(Math.abs(diff) < 5) {
 					anchor = isLink(e.target);
 					if(isLink(e.target)) {
@@ -426,11 +431,14 @@
 					}
 				}
 				
+				//figure out if we are advancing,
+				//going back or going nowhere
 				if(diff < -THRESHOLD && nextSlide) {
 					goTo(1);
 				}else if (diff > THRESHOLD && prevSlide) {
 					goTo(-1);
 				} else {
+					//snap back if we are going nowhere
 					currentSlide.moveTo(0);
 					nextSlide.moveTo(window.innerWidth);
 					prevSlide.moveTo(-window.innerWidth);
@@ -463,8 +471,5 @@
 	birds.birdAtOffset(-2) && getBirdData(birds.birdAtOffset(-2).path);
 	birds.birdAtOffset(2) && getBirdData(birds.birdAtOffset(2).path);
 	birds.birdAtOffset(3) && getBirdData(birds.birdAtOffset(3).path);
-	
-	
-	
 
 }());
