@@ -4,6 +4,20 @@
 		return document.querySelector(selector);
 	}
 	
+	var TRANSITION     = 'transition',
+		TRANSFORM      = 'transform',
+		TRANSITION_END = 'transitionend',
+		TRANSFORM_CSS  = 'transform',
+		TRANSITION_CSS = 'transition';
+
+	if(typeof document.body.style.webkitTransform !== undefined) {
+		TRANSITION = 'webkitTransition';
+		TRANSFORM = 'webkitTransform';
+		TRANSITION_END = 'webkitTransitionEnd';
+		TRANSFORM_CSS = '-webkit-transform';
+		TRANSITION_CSS = '-webkit-transition'
+	}
+	
 	//a simple LRU cache to store models
 	var modelCache = function() {
 		
@@ -215,12 +229,12 @@
 		this.node.id = this.id;
 		myNode = this.node;
 		that = this;
-		this._handler = this.node.addEventListener('webkitTransitionEnd', function(e){
+		this._handler = this.node.addEventListener(TRANSITION_END, function(e){
 			if(!that || !that._listeners) {
 				return;
 			}
 			var i;
-			myNode.style.webkitTransition = '';
+			myNode.style[TRANSITION] = '';
 			moving = false;
 			for (i=0; i < that._listeners.length; i++) {
 				if(typeof that._listeners[i] == "function") {
@@ -232,16 +246,16 @@
 	
 	Slide.prototype.setLeft = function(left) {
 		
-		this.node.style.webkitTransform = "translate3d(" + left + 'px,0,0)';
+		this.node.style[TRANSFORM] = "translate3d(" + left + 'px,0,0)';
 	}
 	
 	Slide.prototype.moveTo = function(pos) {
-		this.node.style.webkitTransition = '-webkit-transform .2s ease-out';
-		this.node.style.webkitTransform = "translate3d("+pos+"px,0,0)";
+		this.node.style[TRANSITION] = TRANSFORM_CSS +' .2s ease-out';
+		this.node.style[TRANSFORM] = "translate3d("+pos+"px,0,0)";
 	}
 	
 	Slide.prototype.cleanTransitions = function() {
-		this.node.style.webkitTransition = '';
+		this.node.style[TRANSITION] = '';
 	}
 	
 	Slide.prototype.hide = function() {
@@ -262,51 +276,38 @@
 		}	
 	}
 
-	var startSlide, nextSlide, lastSlide;
-	var nextBird;
-	var moving = false;
-	var THRESHOLD = 100;
-	var startSlide = new Slide(thisBird, false, '.slide');
-	var nextSlide;
-	var prevSlide;
-	console.log(birds.nextBird());
-	getBirdData(birds.nextBird().path, function(resp) {
-		nextSlide = new Slide(birds.nextBird().name,  resp);
-		nextSlide.hide();
-		nextSlide.setLeft(window.innerWidth);
-	});
-	
-	if(birds.prevBird()){
-		getBirdData(birds.prevBird().path, function(resp) {
-			prevSlide = new Slide(birds.prevBird().name, resp);
-			prevSlide.hide();
-			prevSlide.setLeft(-window.innerWidth);
-		});
-	}
+	var startSlide, nextSlide, lastSlide,
+	nextBird,
+	moving = false,
+	THRESHOLD = 100,
+	nextSlide,
+	prevSlide;
 	
 
-	birds.birdAtOffset(-2) && getBirdData(birds.birdAtOffset(-2).path);
-	birds.birdAtOffset(2) && getBirdData(birds.birdAtOffset(2).path);
-	birds.birdAtOffset(3) && getBirdData(birds.birdAtOffset(3).path);
 	
 	function prepare() {
-		if(birds.nextBird()) {
+		var nextBird = birds.nextBird(),
+		    prevBird = birds.prevBird();
+		
+		if(nextBird && (!nextSlide || nextSlide.id !== nextBird)) {
 			getBirdData(birds.nextBird().path, function(resp) {
 				nextSlide = new Slide(birds.nextBird().name, resp);
 				nextSlide.hide();
 				nextSlide.setLeft(window.innerWidth);
 			});
-		} else {
-			prevSlide = false;
+		} else if(!nextBird) {
+			nextSlide = false;
 		}
 		
-		if(birds.prevBird()){
+		if(prevBird && (!prevSlide || prevSlide.id != prevBird)){
 			getBirdData(birds.prevBird().path, function(resp) {
+				console.time('build');
 				prevSlide = new Slide(birds.prevBird().name, resp);
+				console.timeEnd('build');
 				prevSlide.hide();
 				prevSlide.setLeft(-window.innerWidth);
 			});
-		} else {
+		} else if (!prevBird){
 			prevSlide = false;
 		}
 	}
@@ -316,8 +317,6 @@
 		moving = true;
 
 		if(direction == 1) {
-			
-			
 
 			startSlide.onMoveEnd(function(){
 				startSlide.destroy();
@@ -344,14 +343,10 @@
 			nextSlide.moveTo(window.innerWidth);
 			prevSlide.moveTo(0);
 			
-			
 		}
 
 	}
 
-	
-	
-	
 	function isLink(element) {
 		return getAncestor(element, 'A');
 	}
@@ -462,6 +457,16 @@
 	window.addEventListener("resize", checkOrientation);
 	window.addEventListener("orientationchange", checkOrientation);
 	setInterval(checkOrientation, 2000);
+	
+	//The First slide
+	startSlide = new Slide(thisBird, false, '.slide');
+	
+	prepare();
+	
+	//prime the cache
+	birds.birdAtOffset(-2) && getBirdData(birds.birdAtOffset(-2).path);
+	birds.birdAtOffset(2) && getBirdData(birds.birdAtOffset(2).path);
+	birds.birdAtOffset(3) && getBirdData(birds.birdAtOffset(3).path);
 	
 	
 	
