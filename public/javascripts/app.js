@@ -173,6 +173,12 @@
 		})
 	}
 
+	/*
+	 * id is the unique DOM idea
+	 * content is the html that this slide represents
+	 * and the selector is used in the case that the slide
+	 * content is already on the page 
+	 */
 	function Slide(id, content, selector) {
 		
 		this.id = id;
@@ -185,6 +191,10 @@
 		this._build();
 	}
 	
+	/*
+	 * register a listener to be notified when the
+	 * transition is over 
+	 */
 	Slide.prototype.onMoveEnd = function(callback) {
 		this._listeners.push(callback);
 	}
@@ -242,13 +252,14 @@
 		this.node.style.display = 'block';
 	}
 	
+	/* remove from the DOM. This will also allow the garbage collector
+	 * to clean up listeners
+	 */
 	Slide.prototype.destroy = function() {
-		console.log('destroying', this.id);
 		this._listeners = [];
 		if(this.node.parentNode) {
 			this.node.parentNode.removeChild(this.node);
-		}
-		
+		}	
 	}
 
 	var startSlide, nextSlide, lastSlide;
@@ -303,10 +314,10 @@
 
 	function goTo(direction) {
 		moving = true;
-		console.log('going to');
+
 		if(direction == 1) {
-			startSlide.moveTo(0 - window.innerWidth);
-			nextSlide.moveTo(0);
+			
+			
 
 			startSlide.onMoveEnd(function(){
 				startSlide.destroy();
@@ -315,19 +326,25 @@
 				birds.advance();
 				prepare();
 			});
+			
+			startSlide.moveTo(0 - window.innerWidth);
+			nextSlide.moveTo(0);
+			
 		} else {
-			startSlide.moveTo(window.innerWidth);
-			nextSlide.moveTo(window.innerWidth);
+			
 			startSlide.onMoveEnd(function(){
-				console.log('move end' + Math.random());
-				console.log('destruction', startSlide.id);
 				startSlide.destroy();
 				startSlide = prevSlide;
 				nextSlide = startSlide;
 				birds.goBack();
 				prepare();
 			});
+			
+			startSlide.moveTo(window.innerWidth);
+			nextSlide.moveTo(window.innerWidth);
 			prevSlide.moveTo(0);
+			
+			
 		}
 
 	}
