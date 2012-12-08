@@ -276,7 +276,7 @@
 		}	
 	}
 
-	var startSlide, nextSlide, lastSlide,
+	var currentSlide, nextSlide, lastSlide,
 	nextBird,
 	moving = false,
 	THRESHOLD = 100,
@@ -318,28 +318,28 @@
 
 		if(direction == 1) {
 
-			startSlide.onMoveEnd(function(){
-				startSlide.destroy();
-				prevSlide = startSlide;
-				startSlide = nextSlide;
+			currentSlide.onMoveEnd(function(){
+				currentSlide.destroy();
+				prevSlide = currentSlide;
+				currentSlide = nextSlide;
 				birds.advance();
 				prepare();
 			});
 			
-			startSlide.moveTo(0 - window.innerWidth);
+			currentSlide.moveTo(0 - window.innerWidth);
 			nextSlide.moveTo(0);
 			
 		} else {
 			
-			startSlide.onMoveEnd(function(){
-				startSlide.destroy();
-				startSlide = prevSlide;
-				nextSlide = startSlide;
+			currentSlide.onMoveEnd(function(){
+				currentSlide.destroy();
+				currentSlide = prevSlide;
+				nextSlide = currentSlide;
 				birds.goBack();
 				prepare();
 			});
 			
-			startSlide.moveTo(window.innerWidth);
+			currentSlide.moveTo(window.innerWidth);
 			nextSlide.moveTo(window.innerWidth);
 			prevSlide.moveTo(0);
 			
@@ -385,7 +385,7 @@
 			case 'touchstart':
 			
 				startPoint = e.touches[0].pageX;
-				startSlide.cleanTransitions();
+				currentSlide.cleanTransitions();
 				if(nextSlide) {
 					nextSlide.cleanTransitions();
 					nextSlide.show();
@@ -404,7 +404,7 @@
 				diff = e.touches[0].pageX - startPoint;
 
 				
-				startSlide.setLeft(diff);
+				currentSlide.setLeft(diff);
 				
 				if(diff > 0) {
 					prevSlide && prevSlide.setLeft(diff - window.innerWidth);
@@ -431,7 +431,7 @@
 				}else if (diff > THRESHOLD && prevSlide) {
 					goTo(-1);
 				} else {
-					startSlide.moveTo(0);
+					currentSlide.moveTo(0);
 					nextSlide.moveTo(window.innerWidth);
 					prevSlide.moveTo(-window.innerWidth);
 				}
@@ -459,7 +459,7 @@
 	setInterval(checkOrientation, 2000);
 	
 	//The First slide
-	startSlide = new Slide(thisBird, false, '.slide');
+	currentSlide = new Slide(thisBird, false, '.slide');
 	
 	prepare();
 	
