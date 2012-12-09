@@ -369,8 +369,7 @@
 	var lastPos, startPoint;
 	
 	function handleTouch(e) {
-		try {
-			
+
 		var diff, anchor, direction = 0;
 		
 		if(moving) {
@@ -428,7 +427,7 @@
 			case 'touchend':
 				diff = lastPos - startPoint;
 				
-				title.innerHTML = diff;
+				
 				//if the swipe was very short,
 				//and on an anchor, assume it was a tap
 				if(Math.abs(diff) < 5) {
@@ -451,10 +450,6 @@
 				}
 				break;
 		}
-		
-	}catch (e) {
-		alert(JSON.stringify(e));
-	}
 	}
 	
 	var previousOrientation = 0;
@@ -477,13 +472,12 @@
 	document.addEventListener('touchmove', handleTouch);
 	document.addEventListener('touchend', handleTouch);
 	
-	var title = document.querySelector('.title');
-	var targ = document.querySelector('body');
+
 	
-	document.addEventListener('MSPointerDown', handleTouch, false);
-	document.addEventListener('MSPointerMove', handleTouch, false);
-	document.addEventListener('MSPointerUp', handleTouch, false);
-	title.innerHTML = 478;
+	document.addEventListener('MSPointerDown', handleTouch);
+	document.addEventListener('MSPointerMove', handleTouch);
+	document.addEventListener('MSPointerCancel', handleTouch);
+	document.addEventListener('MSPointerUp', handleTouch);
 	
 	//prime the cache
 	birds.birdAtOffset(-2) && getBirdData(birds.birdAtOffset(-2).path);
